@@ -1,0 +1,398 @@
+{
+  "1054": {
+    "name": "Doran's Shield",
+    "unique_passive": ["STARTER_NON_JUNGLE"]
+  },
+  "1055": {
+    "name": "Doran's Blade",
+    "unique_passive": ["STARTER_NON_JUNGLE"]
+  },
+  "1056": {
+    "name": "Doran's Ring",
+    "unique_passive": ["STARTER_NON_JUNGLE"]
+  },
+  "1082": {
+    "name": "Dark Seal",
+    "unique_passive": ["STARTER_NON_JUNGLE"]
+  },
+  "1083": {
+    "name": "Cull",
+    "unique_passive": ["STARTER_NON_JUNGLE"]
+  },
+  "1101": {
+    "name": "Scorchclaw Pup",
+    "unique_passive": ["STARTER_JUNGLE"]
+  },
+  "1102": {
+    "name": "Gustwalker Hatchling",
+    "unique_passive": ["STARTER_JUNGLE"]
+  },
+  "1103": {
+    "name": "Mosstomper Seedling",
+    "unique_passive": ["STARTER_JUNGLE"]
+  },
+  "3006": {
+    "name": "Berserker's Greaves",
+    "unique_passive": ["BOOTS"]
+  },
+  "3009": {
+    "name": "Boots of Swiftness",
+    "unique_passive": ["BOOTS"]
+  },
+  "3013": {
+    "name": "Synchronized Souls",
+    "unique_passive": ["BOOTS"]
+  },
+  "3020": {
+    "name": "Sorcerer's Shoes",
+    "unique_passive": ["BOOTS"]
+  },
+  "3047": {
+    "name": "Plated Steelcaps",
+    "unique_passive": ["BOOTS"]
+  },
+  "3111": {
+    "name": "Mercury's Treads",
+    "unique_passive": ["BOOTS"]
+  },
+  "3158": {
+    "name": "Ionian Boots of Lucidity",
+    "unique_passive": ["BOOTS"]
+  },
+  "3865": {
+    "name": "World Atlas",
+    "unique_passive": ["STARTER_SUPPORT"]
+  },
+  "2501": {
+    "name": "Overlord's Bloodmail"
+  },
+  "2502": {
+    "name": "Unending Despair"
+  },
+  "2503": {
+    "name": "Blackfire Torch"
+  },
+  "2504": {
+    "name": "Kaenic Rookern"
+  },
+  "3002": {
+    "name": "Trailblazer",
+    "unique_passive": ["MS_ITEMS"]
+  },
+  "3026": {
+    "name": "Guardian Angel"
+  },
+  "3031": {
+    "name": "Infinity Edge"
+  },
+  "3032": {
+    "name": "Yun Tal Wildarrows"
+  },
+  "3033": {
+    "name": "Mortal Reminder",
+    "unique_passive": ["ARMOR_PEN"]
+  },
+  "3036": {
+    "name": "Lord Dominik's Regards",
+    "unique_passive": ["ARMOR_PEN"]
+  },
+  "3040": {
+    "name": "Seraph's Embrace",
+    "unique_passive": ["TEAR_BASED", "SHIELD"]
+  },
+  "3041": {
+    "name": "Mejai's Soulstealer"
+  },
+  "3042": {
+    "name": "Muramana",
+    "unique_passive": ["TEAR_BASED"]
+  },
+  "3046": {
+    "name": "Phantom Dancer"
+  },
+  "3050": {
+    "name": "Zeke's Convergence"
+  },
+  "3053": {
+    "name": "Sterak's Gage",
+    "unique_passive": ["SHIELD"]
+  },
+  "3065": {
+    "name": "Spirit Visage"
+  },
+  "3068": {
+    "name": "Sunfire Aegis",
+    "unique_passive": ["BAMI_BASED"]
+  },
+  "3071": {
+    "name": "Black Cleaver",
+    "unique_passive": ["ARMOR_PEN"]
+  },
+  "3072": {
+    "name": "Bloodthirster"
+  },
+  "3073": {
+    "name": "Experimental Hexplate"
+  },
+  "3074": {
+    "name": "Ravenous Hydra",
+    "unique_passive": ["TIAMAT_BASED"]
+  },
+  "3075": {
+    "name": "Thornmail"
+  },
+  "3078": {
+    "name": "Trinity Force",
+    "unique_passive": ["SHEEN_ITEMS"]
+  },
+  "3083": {
+    "name": "Warmog's Armor"
+  },
+  "3084": {
+    "name": "Heartsteel"
+  },
+  "3085": {
+    "name": "Runaan's Hurricane"
+  },
+  "3087": {
+    "name": "Statikk Shiv"
+  },
+  "3089": {
+    "name": "Rabadon's Deathcap"
+  },
+  "3091": {
+    "name": "Wit's End"
+  },
+  "3094": {
+    "name": "Rapid Firecannon"
+  },
+  "3100": {
+    "name": "Lich Bane",
+    "unique_passive": ["SHEEN_ITEMS"]
+  },
+  "3102": {
+    "name": "Banshee's Veil",
+    "unique_passive": ["PASSIVE_SHIELD"]
+  },
+  "3107": {
+    "name": "Redemption"
+  },
+  "3109": {
+    "name": "Knight's Vow"
+  },
+  "3110": {
+    "name": "Frozen Heart"
+  },
+  "3115": {
+    "name": "Nashor's Tooth"
+  },
+  "3116": {
+    "name": "Rylai's Crystal Scepter"
+  },
+  "3118": {
+    "name": "Malignance"
+  },
+  "3121": {
+    "name": "Fimbulwinter",
+    "unique_passive": ["TEAR_BASED"]
+  },
+  "3124": {
+    "name": "Guinsoo's Rageblade"
+  },
+  "3135": {
+    "name": "Void Staff",
+    "unique_passive": ["MAGIC_PEN"]
+  },
+  "3137": {
+    "name": "Cryptbloom",
+    "unique_passive": ["MAGIC_PEN"]
+  },
+  "3139": {
+    "name": "Mercurial Scimitar"
+  },
+  "3142": {
+    "name": "Youmuu's Ghostblade"
+  },
+  "3143": {
+    "name": "Randuin's Omen"
+  },
+  "3152": {
+    "name": "Hextech Rocketbelt"
+  },
+  "3156": {
+    "name": "Maw of Malmortius",
+    "unique_passive": ["SHIELD"]
+  },
+  "3157": {
+    "name": "Zhonya's Hourglass"
+  },
+  "3161": {
+    "name": "Spear of Shojin"
+  },
+  "3165": {
+    "name": "Morellonomicon"
+  },
+  "3179": {
+    "name": "Umbral Glaive"
+  },
+  "3181": {
+    "name": "Hullbreaker"
+  },
+  "3190": {
+    "name": "Locket of the Iron Solari"
+  },
+  "3222": {
+    "name": "Mikael's Blessing"
+  },
+  "3302": {
+    "name": "Terminus",
+    "unique_passive": ["ARMOR_PEN", "MAGIC_PEN"]
+  },
+  "3504": {
+    "name": "Ardent Censer"
+  },
+  "3508": {
+    "name": "Essence Reaver"
+  },
+  "3742": {
+    "name": "Dead Man's Plate",
+    "unique_passive": ["MS_ITEMS"]
+  },
+  "3748": {
+    "name": "Titanic Hydra",
+    "unique_passive": ["TIAMAT_BASED"]
+  },
+  "3814": {
+    "name": "Edge of Night",
+    "unique_passive": ["PASSIVE_SHIELD"]
+  },
+  "3869": {
+    "name": "Celestial Opposition",
+    "unique_passive": ["SUPPORT"]
+  },
+  "3870": {
+    "name": "Dream Maker",
+    "unique_passive": ["SUPPORT"]
+  },
+  "3871": {
+    "name": "Zaz'Zak's Realmspike",
+    "unique_passive": ["SUPPORT"]
+  },
+  "3876": {
+    "name": "Solstice Sleigh",
+    "unique_passive": ["SUPPORT"]
+  },
+  "3877": {
+    "name": "Bloodsong",
+    "unique_passive": ["SUPPORT"]
+  },
+  "4005": {
+    "name": "Imperial Mandate"
+  },
+  "4401": {
+    "name": "Force of Nature"
+  },
+  "4628": {
+    "name": "Horizon Focus"
+  },
+  "4629": {
+    "name": "Cosmic Drive"
+  },
+  "4633": {
+    "name": "Riftmaker"
+  },
+  "4645": {
+    "name": "Shadowflame"
+  },
+  "4646": {
+    "name": "Stormsurge"
+  },
+  "6333": {
+    "name": "Death's Dance"
+  },
+  "6609": {
+    "name": "Chempunk Chainsword"
+  },
+  "6610": {
+    "name": "Sundered Sky"
+  },
+  "6616": {
+    "name": "Staff of Flowing Water"
+  },
+  "6617": {
+    "name": "Moonstone Renewer"
+  },
+  "6620": {
+    "name": "Echoes of Helia"
+  },
+  "6621": {
+    "name": "Dawncore"
+  },
+  "6631": {
+    "name": "Stridebreaker",
+    "unique_passive": ["TIAMAT_BASED"]
+  },
+  "6653": {
+    "name": "Liandry's Torment"
+  },
+  "6655": {
+    "name": "Luden's Companion"
+  },
+  "6657": {
+    "name": "Rod of Ages"
+  },
+  "6662": {
+    "name": "Iceborn Gauntlet",
+    "unique_passive": ["SHEEN_ITEMS"]
+  },
+  "6664": {
+    "name": "Hollow Radiance",
+    "unique_passive": ["BAMI_BASED"]
+  },
+  "6665": {
+    "name": "Jak'Sho, The Protean"
+  },
+  "6672": {
+    "name": "Kraken Slayer"
+  },
+  "6673": {
+    "name": "Immortal Shieldbow",
+    "unique_passive": ["SHIELD"]
+  },
+  "6675": {
+    "name": "Navori Flickerblade"
+  },
+  "6676": {
+    "name": "The Collector"
+  },
+  "6692": {
+    "name": "Eclipse"
+  },
+  "6694": {
+    "name": "Serylda's Grudge",
+    "unique_passive": ["ARMOR_PEN"]
+  },
+  "6695": {
+    "name": "Serpent's Fang"
+  },
+  "6696": {
+    "name": "Axiom Arc"
+  },
+  "6697": {
+    "name": "Hubris"
+  },
+  "6698": {
+    "name": "Profane Hydra",
+    "unique_passive": ["TIAMAT_BASED"]
+  },
+  "6699": {
+    "name": "Voltaic Cyclosword"
+  },
+  "6701": {
+    "name": "Opportunity"
+  },
+  "8020": {
+    "name": "Abyssal Mask",
+    "unique_passive": ["MAGIC_PEN"]
+  }
+}
