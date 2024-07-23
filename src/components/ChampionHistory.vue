@@ -51,12 +51,19 @@ export default {
       <div
         v-for="champion in champions.slice().reverse()"
         :key="champion.id"
-        class="champion-icon flex flex-col items-center space-y-2 md:space-y-0 md:space-x-2"
+        class="champion-icon flex flex-col items-center space-y-2 md:space-y-0 md:space-x-2 relative"
       >
         <img
           :src="champion.icon"
           :alt="champion.name"
-          class="w-20 h-auto max-h-[150px] champion-icon"
+          class="w-20 h-20 max-h-[150px] champion-icon"
+          @click="handleClick(champion)"
+        />
+        <img
+          :src="champion.role[1]"
+          :alt="champion.role[0]"
+          class="absolute bottom-0 right-0 bg-gray-800 bg-opacity-50 text-white text-base font-bold px-1 py-0.5"
+          style="width: 35px; height: 32px"
           @click="handleClick(champion)"
         />
       </div>
@@ -76,16 +83,17 @@ export default {
   flex-wrap: nowrap;
   overflow-x: auto;
   max-width: 100%;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .box::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
+  display: none;
 }
 
 .champion-icon {
   flex: 0 0 auto;
+  position: relative;
 }
 
 .champion-icon img {
@@ -101,5 +109,13 @@ export default {
 
 .champion-icon img:active {
   transform: scale(0.97);
+}
+
+.role-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 </style>
