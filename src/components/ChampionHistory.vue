@@ -71,9 +71,21 @@ export default {
 </template>
 
 <style scoped>
-.h-full {
-  max-height: 92vh;
-  overflow-y: auto;
+.box {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  max-width: 100%;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+
+.box::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.champion-icon {
+  flex: 0 0 auto;
 }
 
 .champion-icon img {

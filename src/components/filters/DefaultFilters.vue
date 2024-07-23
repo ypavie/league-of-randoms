@@ -28,7 +28,7 @@
           @input="updateSearchText"
         />
       </div>
-      <div class="flex space-x-4 order-3 mb-4 md:mb-0">
+      <!-- <div class="flex space-x-4 order-3 mb-4 md:mb-0">
         <button
           @click="selectAll"
           class="custom-button bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-white font-bold py-2 px-4 rounded"
@@ -41,14 +41,14 @@
         >
           Unselect All
         </button>
-      </div>
+      </div> -->
     </div>
     <div class="flex justify-center mt-4">
       <button
         @click="generate"
-        class="custom-button bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-white font-bold py-2 px-4 rounded"
+        class="custom-button bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-white font-bold py-3 px-8 rounded"
       >
-        GENERATE
+        GENERATE CHAMPION
       </button>
     </div>
     <AdvancedFilters ref="advancedFilters" @update-filter="emitFilters" />
