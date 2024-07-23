@@ -30,12 +30,9 @@ export default {
       this.getFilteredChampions()
     },
     updateFilteredChampions(champions) {
-      console.log('updateFilteredChampions', champions)
-      console.log(this.getFilteredChampions())
       this.filteredChampions = this.filteredChampions.filter(
         (championName) => !champions.includes(championName)
       )
-      console.log(this.getFilteredChampions())
     },
 
     getChampionIconUrl(id) {

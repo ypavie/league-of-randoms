@@ -174,25 +174,35 @@ export function getChampionNamesFromFilters(filters) {
 
 export function getRandomChampion(searchText, filters) {
   let championsList = Object.keys(champions)
+  console.log(championsList)
+
+  if (searchText !== '') {
+    championsList = championsList.filter((key) =>
+      champions[key].name.toLowerCase().includes(searchText)
+    )
+  }
+
+  console.log(filters)
+
   if (filters !== undefined) {
-    if (filters.gender !== '') {
+    if (filters.gender !== undefined && filters.gender !== '') {
       championsList = championsList.filter((key) => champions[key].gender === filters.gender)
     }
-    if (filters.mana !== '') {
+    if (filters.mana !== undefined && filters.mana !== '') {
       championsList = championsList.filter((key) => champions[key].mana === filters.mana)
     }
-    if (filters.class !== '') {
+    if (filters.class !== undefined && filters.class !== '') {
       championsList = championsList.filter((key) => champions[key].class.includes(filters.class))
     }
-    if (filters.range !== '') {
+    if (filters.range !== undefined && filters.range !== '') {
       championsList = championsList.filter((key) => champions[key].range.includes(filters.range))
     }
-    if (filters.species !== '') {
+    if (filters.species !== undefined && filters.species !== '') {
       championsList = championsList.filter((key) =>
         champions[key].species.includes(filters.species)
       )
     }
-    if (filters.region !== '') {
+    if (filters.region !== undefined && filters.region !== '') {
       championsList = championsList.filter((key) => champions[key].region.includes(filters.region))
     }
     // if (filters.skinlines !== '') {
@@ -205,11 +215,11 @@ export function getRandomChampion(searchText, filters) {
     //     champions[key].year >= filters.releaseyearmin &&
     //     champions[key].year <= filters.releaseyearmax
     // )
-
     const randomIndex = Math.floor(Math.random() * championsList.length)
+    console.log(championsList)
     return champions[championsList[randomIndex]]
   }
-
+  console.log(championsList)
   if (championsList.length === 0) {
     const randomIndex = Math.floor(Math.random() * Object.keys(champions).length)
     return champions[Object.keys(champions)[randomIndex]]
