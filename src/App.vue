@@ -4,8 +4,11 @@ import AppHeader from '@/components/AppHeader.vue'
 import RandomChampion from './components/RandomChampion.vue'
 import ChampionHistory from './components/ChampionHistory.vue'
 
-import { generateItemBuild } from '@/utils/item_utils'
-import { getChampions, getChampion_tofix, getRandomChampion } from './utils/champion_utils'
+import {
+  getChampions,
+  getChampion_tofix,
+  getChampionNamesFromFilters
+} from './utils/champion_utils'
 
 export default {
   components: {
@@ -18,13 +21,31 @@ export default {
     return {
       champions: [],
       currentChampion: null,
+      filters: {
+        lanes: ['Top', 'Jungle', 'Middle', 'Bottom', 'Support'],
+        searchText: '',
+        selectAll: false,
+        unselectAll: false,
+        summs: true,
+        roles: true,
+        runes: true,
+        items: true,
+        gender: '',
+        mana: '',
+        class: '',
+        range: '',
+        species: '',
+        region: '',
+        skinlines: '',
+        releaseyearmin: 2009,
+        releaseyearmax: 2024
+      },
       lastGenerationTime: 0,
       isLoading: false,
       currentWaitingTime: 500
     }
   },
   mounted() {
-    console.log('App mounted')
     this.initializeChampions()
   },
   methods: {
@@ -41,7 +62,7 @@ export default {
       }
       this.isLoading = true
       this.lastGenerationTime = now
-      this.currentChampion = getChampion_tofix()
+      this.currentChampion = getChampion_tofix(this.filters)
       if (this.$refs.randomChampion && this.currentChampion) {
         this.$refs.randomChampion.updateCurrentChampion(this.currentChampion)
         this.$refs.championHistory.addChampion(this.currentChampion)
@@ -53,6 +74,12 @@ export default {
     championFromHistory(champion) {
       this.currentChampion = champion
       this.$refs.randomChampion.updateCurrentChampion(champion)
+    },
+    updateFilters(filters) {
+      this.filters = filters
+      this.$refs.championList.updateSearchTerm(filters)
+      const championFromFilters = getChampionNamesFromFilters(filters)
+      this.$refs.championList.updateFilteredChampions(championFromFilters)
     }
   }
 }
@@ -68,9 +95,7 @@ export default {
         <ChampionHistory ref="championHistory" @champion-clicked="championFromHistory" />
 
         <!-- Middle Column -->
-        <div
-          class="flex-1 p-4 overflow-y-auto border border-gray-200 dark:border-gray-700 rounded-lg relative"
-        >
+        <div class="flex-1 p-4 overflow-y-auto rounded-lg relative">
           <div
             v-if="isLoading"
             class="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-10"
@@ -93,11 +118,12 @@ export default {
               ></circle>
             </svg>
           </div>
-          <RandomChampion ref="randomChampion" @generate="generateRandomChampion" />
+          <RandomChampion
+            ref="randomChampion"
+            @generate="generateRandomChampion"
+            @update-filters="updateFilters"
+          />
         </div>
-
-        <!-- Right Column -->
-
         <ChampionList ref="championList" :champions="champions" />
       </div>
     </div>

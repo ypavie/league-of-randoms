@@ -4,7 +4,7 @@ export default {
   components: {
     DefaultFilters
   },
-  emits: ['generate'],
+  emits: ['generate', 'update-filters'],
   data() {
     return {
       currentChampion: {},
@@ -23,26 +23,10 @@ export default {
       this.$emit('generate', filters)
     },
     updateCurrentChampion(champion) {
-      try {
-        console.log('Updating current champion', champion)
-        this.currentChampion = champion
-      } catch (error) {
-        console.error('Error updating current champion', error)
-      }
-      // this.selectedFiltersTypes = this.$refs.Filters.getSelectedFiltersTypes()
+      this.currentChampion = champion
     },
     updateFilter(filters) {
-      console.log('Updating filters', filters)
-      this.$emit('update-filter', filters)
-    },
-    inputChange(searchTerm) {
-      this.$emit('input-change', searchTerm)
-    },
-    selectAll() {
-      this.$emit('select-all')
-    },
-    unselectAll() {
-      this.$emit('unselect-all')
+      this.$emit('update-filters', filters)
     },
     getRuneProgress(rune, type) {
       if (type) {
@@ -479,7 +463,7 @@ export default {
   </div>
   <!-- FILTERS -->
   <div class="mt-8">
-    <DefaultFilters @generate="generate" @update-filter="updateFilter" />
+    <DefaultFilters @generate="generate" @update-filters="updateFilter" />
   </div>
 </template>
 

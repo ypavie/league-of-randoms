@@ -12,9 +12,6 @@ export default {
   },
   computed: {},
   methods: {
-    getChampionIconUrl(id) {
-      return `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${id}.png`
-    },
     toggleBan(championName) {
       if (this.disabledChampions.includes(championName)) {
         this.disabledChampions.splice(this.disabledChampions.indexOf(championName), 1)
@@ -22,10 +19,31 @@ export default {
         this.disabledChampions.push(championName)
       }
     },
+    updateSearchTerm(filters) {
+      this.searchTerm = filters.searchText
+      if (filters.selectAll) {
+        this.disabledChampions = []
+      }
+      if (filters.unselectAll) {
+        this.disabledChampions = this.getChampionList()
+      }
+      this.getFilteredChampions()
+    },
+    updateFilteredChampions(champions) {
+      console.log('updateFilteredChampions', champions)
+      console.log(this.getFilteredChampions())
+      this.filteredChampions = this.filteredChampions.filter(
+        (championName) => !champions.includes(championName)
+      )
+      console.log(this.getFilteredChampions())
+    },
+
+    getChampionIconUrl(id) {
+      return `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${id}.png`
+    },
     getFilteredChampions() {
       const input = this.searchTerm.trim().toLowerCase()
       if (input === '') {
-        this.filteredChampions = []
         return this.champions
       } else {
         this.filteredChampions = Object.keys(this.champions).filter((championName) =>
@@ -50,7 +68,6 @@ export default {
 <template>
   <div class="md:w-4/12 bg-white dark:bg-gray-800 overflow-y-auto">
     <div class="champion-list-vue">
-      <!-- Display Filtered Icons -->
       <div class="champion-icons flex flex-wrap justify-center">
         <div
           v-for="(champion, championName) in getFilteredChampions()"

@@ -1,10 +1,8 @@
 <template>
   <div class="container mx-auto p-4">
-    <!-- Responsive flex container -->
     <div
       class="flex flex-wrap md:flex-row md:flex-wrap items-center justify-center space-y-4 md:space-y-0 md:space-x-4"
     >
-      <!-- LANES ICON -->
       <div class="flex space-x-4 order-1 mb-4 md:mb-0">
         <img
           v-for="(role, index) in roles"
@@ -21,16 +19,15 @@
           alt="Role Image"
         />
       </div>
-      <!-- SEARCH -->
       <div class="order-2 mb-4 md:mb-0">
         <input
           type="text"
-          class="border border-gray-300 dark:border-gray-700 rounded-md pl-6 pr-4 py-2 w-full sm:w-48 md:w-auto focus:outline-none focus:border-blue-500 dark:bg-gray-800 dark:text-white"
+          class="border border-gray-300 dark:border-gray-700 rounded-md pl-6 pr-4 py-2 w-full sm:w-64 md:w-auto focus:outline-none focus:border-blue-500 dark:bg-gray-800 dark:text-white"
           placeholder="Champion name..."
-          @input="emitInput"
+          v-model="searchText"
+          @input="updateSearchText"
         />
       </div>
-      <!-- SELECT ALL AND UNSELECT ALL BUTTONS -->
       <div class="flex space-x-4 order-3 mb-4 md:mb-0">
         <button
           @click="selectAll"
@@ -46,7 +43,6 @@
         </button>
       </div>
     </div>
-    <!-- GENERATE BUTTON -->
     <div class="flex justify-center mt-4">
       <button
         @click="generate"
@@ -55,8 +51,8 @@
         GENERATE
       </button>
     </div>
+    <AdvancedFilters ref="advancedFilters" @update-filter="emitFilters" />
   </div>
-  <AdvancedFilters ref="advancedFilters" @update-filter="updateFilter" />
 </template>
 
 <script>
@@ -64,7 +60,7 @@ import AdvancedFilters from '../filters/AdvancedFilters.vue'
 
 export default {
   name: 'DefaultFilters',
-  emits: ['update-filter', 'generate'],
+  emits: ['update-filters', 'generate'],
   components: {
     AdvancedFilters
   },
@@ -96,29 +92,68 @@ export default {
           icon: 'https://raw.githubusercontent.com/InFinity54/LoL_DDragon/master/extras/lanes/support.png',
           isSelected: true
         }
-      ]
+      ],
+      searchText: ''
     }
   },
   methods: {
     generate() {
-      const filters = {
-        lanes: this.getSelectedLanes(),
-        types: this.getSelectedFiltersTypes(),
-        all: this.$refs.advancedFilters.getFilters()
-      }
-      this.$emit('generate', filters)
+      this.selectAllClicked = false
+      this.unselectAllClicked = false
+      this.$emit('generate', this.getFilters())
     },
-    updateFilter(filter) {
-      this.$emit('update-filter', filter)
+    emitFilters() {
+      this.$emit('update-filters', this.getFilters())
     },
     toggleSelectedLane(index) {
       this.roles[index].isSelected = !this.roles[index].isSelected
+      this.emitFilters()
+    },
+    updateSearchText() {
+      this.selectAllClicked = false
+      this.unselectAllClicked = false
+      this.emitFilters()
+    },
+    selectAll() {
+      this.selectAllClicked = true
+      this.unselectAllClicked = false
+      this.emitFilters()
+    },
+    unselectAll() {
+      this.unselectAllClicked = true
+      this.selectAllClicked = false
+      this.emitFilters()
+    },
+    getFilters() {
+      const filters = {
+        lanes: this.getSelectedLanes(),
+        searchText: this.searchText,
+        selectAll: this.selectAllClicked,
+        unselectAll: this.unselectAllClicked
+      }
+      const types = this.getSelectedFiltersTypes()
+      Object.keys(types).forEach((type) => {
+        filters[type] = types[type]
+      })
+
+      if (this.$refs.advancedFilters.showFilters) {
+        const advancedFilters = this.$refs.advancedFilters.getFilters()
+        Object.keys(advancedFilters).forEach((key) => {
+          filters[key] = advancedFilters[key]
+        })
+      }
+      return filters
     },
     getSelectedFiltersTypes() {
       return this.$refs.advancedFilters.getSelectedFiltersTypes()
     },
     getSelectedLanes() {
       return this.roles.filter((role) => role.isSelected).map((role) => role.name)
+    }
+  },
+  watch: {
+    searchText() {
+      this.emitFilters()
     }
   }
 }

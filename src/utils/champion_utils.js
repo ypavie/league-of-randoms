@@ -108,11 +108,12 @@ function getSummonerSpells(role) {
 
   return summoner_spells
 }
-
-function getRole() {
-  // https://raw.githubusercontent.com/InFinity54/LoL_DDragon/master/extras/lanes/bottom.png
-  const roles = ['top', 'jungle', 'middle', 'bottom', 'support']
-  // 'https://raw.githubusercontent.com/InFinity54/LoL_DDragon/master/extras/lanes/' + + '.png'
+function getRole(roles) {
+  if (!roles || roles.length === 0) {
+    roles = ['top', 'jungle', 'middle', 'bottom', 'support']
+  } else {
+    roles = roles.map((role) => role?.toLowerCase())
+  }
   const randomIndex = Math.floor(Math.random() * roles.length)
   return [
     roles[randomIndex],
@@ -123,32 +124,105 @@ function getRole() {
 }
 
 function getSpellToMax(spells) {
-  return [0, 'https://ddragon.leagueoflegends.com/cdn/14.11.1/img/spell/' + spells[0] + '.png']
+  // const spell = spells?.[0] || 'defaultSpell'
+  // random from 0 to 2
+  const randomIndex = Math.floor(Math.random() * 3)
+  return [
+    randomIndex,
+    'https://ddragon.leagueoflegends.com/cdn/14.11.1/img/spell/' + spells[randomIndex] + '.png'
+  ]
 }
 
 function getItems(role) {
-  const build = generateItemBuild('', role)
+  const build = generateItemBuild('', role) || []
   const baseUrl = 'https://ddragon.leagueoflegends.com/cdn/14.14.1/img/item/'
 
-  return build.map((item) => [item.name, `${baseUrl}${item.id}.png`])
+  return build.map((item) => [item?.name || 'defaultItem', `${baseUrl}${item?.id || '0'}.png`])
 }
 
 function getStarterItem(role) {
-  const item = generateStarterItem(role)
+  const item = generateStarterItem(role) || 'defaultItem'
   return [item, `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/item/${item}.png`]
 }
 
-export function getRandomChampion() {
-  const keys = Object.keys(champions)
-  const randomIndex = Math.floor(Math.random() * keys.length)
-  return champions[keys[randomIndex]]
+export function getChampionNamesFromFilters(filters) {
+  let championsList = Object.keys(champions)
+  if (filters !== undefined) {
+    if (filters.gender !== '') {
+      championsList = championsList.filter((key) => champions[key].gender === filters.gender)
+    }
+    if (filters.mana !== '') {
+      championsList = championsList.filter((key) => champions[key].mana === filters.mana)
+    }
+    if (filters.class !== '') {
+      championsList = championsList.filter((key) => champions[key].class.includes(filters.class))
+    }
+    if (filters.range !== '') {
+      championsList = championsList.filter((key) => champions[key].range.includes(filters.range))
+    }
+    if (filters.species !== '') {
+      championsList = championsList.filter((key) =>
+        champions[key].species.includes(filters.species)
+      )
+    }
+    if (filters.region !== '') {
+      championsList = championsList.filter((key) => champions[key].region.includes(filters.region))
+    }
+    return championsList.map((key) => champions[key].name)
+  }
 }
 
-export function getChampion_tofix() {
-  let champion = getRandomChampion()
+export function getRandomChampion(searchText, filters) {
+  let championsList = Object.keys(champions)
+  if (filters !== undefined) {
+    if (filters.gender !== '') {
+      championsList = championsList.filter((key) => champions[key].gender === filters.gender)
+    }
+    if (filters.mana !== '') {
+      championsList = championsList.filter((key) => champions[key].mana === filters.mana)
+    }
+    if (filters.class !== '') {
+      championsList = championsList.filter((key) => champions[key].class.includes(filters.class))
+    }
+    if (filters.range !== '') {
+      championsList = championsList.filter((key) => champions[key].range.includes(filters.range))
+    }
+    if (filters.species !== '') {
+      championsList = championsList.filter((key) =>
+        champions[key].species.includes(filters.species)
+      )
+    }
+    if (filters.region !== '') {
+      championsList = championsList.filter((key) => champions[key].region.includes(filters.region))
+    }
+    // if (filters.skinlines !== '') {
+    //   championsList = championsList.filter(
+    //     (key) => champions[key].skinlines && champions[key].skinlines.includes(filters.skinlines)
+    //   )
+    // }
+    // championsList = championsList.filter(
+    //   (key) =>
+    //     champions[key].year >= filters.releaseyearmin &&
+    //     champions[key].year <= filters.releaseyearmax
+    // )
 
+    const randomIndex = Math.floor(Math.random() * championsList.length)
+    return champions[championsList[randomIndex]]
+  }
+
+  if (championsList.length === 0) {
+    const randomIndex = Math.floor(Math.random() * Object.keys(champions).length)
+    return champions[Object.keys(champions)[randomIndex]]
+  }
+
+  const randomIndex = Math.floor(Math.random() * championsList.length)
+  return champions[championsList[randomIndex]]
+}
+
+export function getChampion_tofix(filters) {
+  let champion = getRandomChampion(filters.searchText, filters)
   champion.runes = getRandomRunes()
-  champion.role = getRole()
+  champion.role = getRole(filters.lanes)
   champion.starter_item = getStarterItem(champion.role[0])
   champion.spell_to_max = getSpellToMax(champion.spells)
   champion.icon = `https://ddragon.leagueoflegends.com/cdn/14.11.1/img/champion/${champion.id}.png`
@@ -167,6 +241,30 @@ export function getChampion_tofix() {
 
   return champion
 }
+
+// export function getChampion_tofix() {
+//   let champion = getRandomChampion()
+
+//   champion.runes = getRandomRunes()
+//   champion.role = getRole()
+//   champion.starter_item = getStarterItem(champion.role[0])
+//   champion.spell_to_max = getSpellToMax(champion.spells)
+//   champion.icon = `https://ddragon.leagueoflegends.com/cdn/14.11.1/img/champion/${champion.id}.png`
+
+//   const summoner_spells = getSummonerSpells(champion.role[0])
+//   champion.summoner_spell_1 = summoner_spells.summoner_spell_1
+//   champion.summoner_spell_2 = summoner_spells.summoner_spell_2
+
+//   const items = getItems(champion.role[0])
+//   champion.item_1 = items[0]
+//   champion.item_2 = items[1]
+//   champion.item_3 = items[2]
+//   champion.item_4 = items[3]
+//   champion.item_5 = items[4]
+//   champion.item_6 = items[5]
+
+//   return champion
+// }
 
 export function getChampions() {
   return champions

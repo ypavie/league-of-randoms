@@ -18,12 +18,17 @@ export default {
       this.$emit('champion-clicked', champion)
     },
     saveToLocalStorage() {
+      localStorage.removeItem('champions')
       localStorage.setItem('champions', JSON.stringify(this.champions))
     },
     loadFromLocalStorage() {
       const champions = localStorage.getItem('champions')
       if (champions) {
         this.champions = JSON.parse(champions)
+        if (this.champions.length > this.MAX_CHAMPIONS) {
+          this.champions = this.champions.slice(-this.MAX_CHAMPIONS)
+          this.saveToLocalStorage()
+        }
       }
     },
     clearChampions() {
@@ -57,7 +62,7 @@ export default {
       </div>
     </div>
     <p
-      class="text-center text-gray-700 dark:text-white font-bold py-2 px-4 rounded underline"
+      class="text-center text-gray-700 dark:text-white font-bold py-2 px-4 rounded underline cursor-pointer"
       @click="clearChampions"
     >
       Clear

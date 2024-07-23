@@ -3,70 +3,33 @@
     <div class="text-center">
       <button
         @click="toggleFilters"
-        class="text-gray-700 dark:text-white font-bold py-2 px-4 rounded"
+        class="text-gray-700 dark:text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-gray-700"
       >
         {{ showFilters ? 'Less filters' : 'More filters' }}
       </button>
     </div>
     <div v-if="showFilters" class="grid grid-cols-2 gap-4 pt-4">
-      <div class="col-span-2 flex flex-wrap justify-center items-center space-x-4 select-none">
-        <span class="dark:text-gray-400 dark:text-gray-400 font-bold">Field to randomize</span>
-        <label class="inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            @change="toggleFilterType('summs')"
-            :checked="isSelected('summs')"
-            class="form-checkbox h-5 w-5 dark:text-gray-400 cursor-pointer"
-          />
-          <span class="dark:text-gray-400 dark:text-gray-400 font-bold">&nbsp;Summs</span>
-        </label>
-        <label class="inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            @change="toggleFilterType('roles')"
-            :checked="isSelected('roles')"
-            class="form-checkbox h-5 w-5 dark:text-gray-400 cursor-pointer"
-          />
-          <span class="dark:text-gray-400 dark:text-gray-400 font-bold">&nbsp;Lane</span>
-        </label>
-        <label class="inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            @change="toggleFilterType('runes')"
-            :checked="isSelected('runes')"
-            class="form-checkbox h-5 w-5 dark:text-gray-400 cursor-pointer"
-          />
-          <span class="dark:text-gray-400 dark:text-gray-400 font-bold">&nbsp;Runes</span>
-        </label>
-        <label class="inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            @change="toggleFilterType('items')"
-            :checked="isSelected('items')"
-            class="form-checkbox h-5 w-5 dark:text-gray-400 cursor-pointer"
-          />
-          <span class="dark:text-gray-400 dark:text-gray-400 font-bold">&nbsp;Items</span>
-        </label>
-      </div>
-
       <div v-for="(filterValues, filterName) in filters" :key="filterName">
         <div class="flex items-center">
-          <label :for="filterName" class="block w-24 dark:text-gray-400 font-bold"
+          <label :for="filterName" class="block w-24 dark:text-gray-400 text-gray-700 font-bold"
             >{{ filterName }}:</label
           >
+          <!-- SELECT MENU -->
           <select
             v-model="currentFilters[filterName]"
             @change="udpateSelect(filterName)"
             :id="filterName"
             :name="filterName"
-            class="block w-full mt-1"
+            class="block w-full mt-1 p-2 border border-gray-300 rounded-md shadow-sm dark:bg-gray-700 dark:border-gray-600 text-gray-700 dark:text-white cursor-pointer"
           >
             <option value="">Select {{ filterName }}</option>
             <option v-for="value in filterValues" :key="value" :value="value">{{ value }}</option>
           </select>
+
+          <!-- RESET BUTTON -->
           <button
             @click="resetFilter(filterName)"
-            class="ml-2 p-1 text-red-500 rounded-full hover:bg-gray-200 focus:outline-none"
+            class="ml-2 p-1 text-red-500 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,13 +46,21 @@
           </button>
         </div>
       </div>
+      <!-- <div class="flex items-center">
+        <ReleaseYearFilter ref="releaseYear" />
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
+import ReleaseYearFilter from './ReleaseYearFilter.vue'
+
 export default {
   name: 'AdvancedFilters',
+  components: {
+    ReleaseYearFilter
+  },
   data() {
     return {
       showFilters: false,
@@ -147,224 +118,206 @@ export default {
           'Targon',
           'Void',
           'Zaun'
-        ],
-        Skinlines: [
-          'Academy',
-          'Albion',
-          'Anima Squad',
-          'Arcade: Battle Bosses',
-          'Arcade: Heroes',
-          'Arcana',
-          'Arcane',
-          'Arcanists',
-          'Arclight',
-          'Ashen Knights',
-          'Astronauts',
-          'Battle Academia',
-          'Battle Queens',
-          'Battle of the God-Kings',
-          'Battlecast',
-          'Bees!',
-          'Beta',
-          'Bewitching',
-          'Bilgewater: Burning Tides',
-          'Bilgewater: Curse of the Drowned',
-          'Bilgewater: Mercs',
-          'Black Rose Group',
-          'Blackfrost',
-          'Blood Moon',
-          'Bloodstone',
-          'Broken Covenant',
-          'Cafe Cuties',
-          'Cats Versus Dogs',
-          'Challenger',
-          'Chronicle',
-          "Collector's Edition",
-          'Commando',
-          'Conqueror',
-          'Cops and Robbers',
-          'Cosmic',
-          'Cottontail',
-          'Coven',
-          'Crime City',
-          'Crime City Nightmare',
-          'Crimson Elite',
-          'Crystal Rose',
-          'Crystalis Indomitus',
-          'Crystalis Motus',
-          'Culinary Masters',
-          'Curse of the Void',
-          'Cyber Pop',
-          'DJ',
-          'Dark Star',
-          'Dawnbringer',
-          'Day Job',
-          'Death Blossom',
-          'Death Sworn',
-          'Debonair',
-          'Definitely Not',
-          'Demacia Vice',
-          'Demonic',
-          'Dragon World',
-          'Dragonmancers',
-          'Dreadknights',
-          'Dreadnova',
-          'Dunkmaster',
-          'Eclipse',
-          'Elderwood',
-          'Elementalist',
-          'Empyrean',
-          'Eternum',
-          'Fables',
-          'Faerie Court',
-          'Forgotten Depths',
-          'Freljord',
-          'Fright Night',
-          'Galactic',
-          'Glacial',
-          'Goth',
-          'Guardian of the Sands',
-          'HEARTSTEEL',
-          'Headhunter',
-          'Heartbreakers',
-          'Heartthrobs and Heartaches',
-          'Heavenscale',
-          'Heavy Metal',
-          'Hextech',
-          'High Noon',
-          'High Society',
-          'Highstakes',
-          'Immortal Journey',
-          'Infernal',
-          'Inkshadow',
-          'Invaders',
-          'Justicar',
-          'K/DA',
-          'Kaiju',
-          'Ilusión',
-          'Lancer',
-          'Legacy',
-          'Luchador',
-          'Lunar Beast',
-          'Lunar Revel',
-          'Lunar Revel: Firecracker',
-          'Lunar Revel: Warring Kingdoms',
-          'Mad Scientists',
-          'Marauder',
-          'Mecha',
-          'Mecha Kingdoms',
-          'Medieval',
-          'Monster Tamers',
-          'Mythmaker',
-          'Nightbringer',
-          'Nightbringer and Dawnbringer',
-          'Ocean Song',
-          'Odyssey',
-          'Omega Squad',
-          'Omen of the Dark',
-          'Order of the Lotus',
-          'Otherroads',
-          'PAX',
-          'PROJECT',
-          'Papercraft',
-          'Pentakill',
-          'Pentakill III: The Lost Chapter',
-          'Pharaoh',
-          'Phoenixmancers',
-          'Piltover Customs',
-          'Pool Party',
-          'Popstar',
-          'Porcelain',
-          'Praetorian',
-          'Prehistoric Hunters',
-          'Primal Ambush',
-          'Program',
-          'PsyOps',
-          'Pulsefire',
-          'Rift Hospital',
-          'Rift Quest',
-          'Riot',
-          'Road Warrior',
-          'Ruination',
-          'Ruined',
-          'Sentinels of Light',
-          'Shan Hai Scrolls',
-          'Shockblade',
-          'Silver Age',
-          'Snow Day',
-          'Snow Moon',
-          'Snowdown Showdown',
-          'Soccer Cup',
-          'Soul Fighter',
-          'Soulstealer',
-          'Space Groove',
-          'Spirit Blossom',
-          'Spirit Guard',
-          'Star Guardian Season 1',
-          'Star Guardian Season 2',
-          'Star Guardian Season 3',
-          'Star Guardian Season 4',
-          'Steel Legion',
-          'Steel Valkyries',
-          'Storybook',
-          'Street Demons',
-          'Sugar Rush',
-          'Super Galaxy',
-          'Surprise Party',
-          'Three Honors',
-          'Thunder Lord',
-          'Toy Box',
-          'Traditional',
-          'Trick-or-Treat',
-          'Triumphant',
-          'True Damage',
-          'True Warrior',
-          'Urf the Manatee',
-          'Vandal',
-          'Victorious',
-          'Warden',
-          'Winter Sports',
-          'Winter Wonder',
-          'Winterblessed',
-          'Withered Rose',
-          'Woad',
-          'Wonders of the World',
-          'World Champions: 2011',
-          'World Champions: 2012',
-          'World Champions: 2013',
-          'World Champions: 2014',
-          'World Champions: 2015',
-          'World Champions: 2016',
-          'World Champions: 2017',
-          'World Champions: 2018',
-          'World Champions: 2019',
-          'World Champions: 2020',
-          'World Champions: 2021',
-          'World Champions: 2022',
-          'World Championship',
-          'Worldbreaker',
-          'Zenith Games',
-          'Zombies VS Slayers',
-          'arcticops'
-        ],
-        'Release year': [
-          '2009',
-          '2010',
-          '2011',
-          '2012',
-          '2013',
-          '2014',
-          '2015',
-          '2016',
-          '2017',
-          '2018',
-          '2019',
-          '2020',
-          '2021',
-          '2022',
-          '2023',
-          '2024'
         ]
+        // Skinlines: [
+        //   'Academy',
+        //   'Albion',
+        //   'Anima Squad',
+        //   'Arcade: Battle Bosses',
+        //   'Arcade: Heroes',
+        //   'Arcana',
+        //   'Arcane',
+        //   'Arcanists',
+        //   'Arclight',
+        //   'Ashen Knights',
+        //   'Astronauts',
+        //   'Battle Academia',
+        //   'Battle Queens',
+        //   'Battle of the God-Kings',
+        //   'Battlecast',
+        //   'Bees!',
+        //   'Beta',
+        //   'Bewitching',
+        //   'Bilgewater: Burning Tides',
+        //   'Bilgewater: Curse of the Drowned',
+        //   'Bilgewater: Mercs',
+        //   'Black Rose Group',
+        //   'Blackfrost',
+        //   'Blood Moon',
+        //   'Bloodstone',
+        //   'Broken Covenant',
+        //   'Cafe Cuties',
+        //   'Cats Versus Dogs',
+        //   'Challenger',
+        //   'Chronicle',
+        //   "Collector's Edition",
+        //   'Commando',
+        //   'Conqueror',
+        //   'Cops and Robbers',
+        //   'Cosmic',
+        //   'Cottontail',
+        //   'Coven',
+        //   'Crime City',
+        //   'Crime City Nightmare',
+        //   'Crimson Elite',
+        //   'Crystal Rose',
+        //   'Crystalis Indomitus',
+        //   'Crystalis Motus',
+        //   'Culinary Masters',
+        //   'Curse of the Void',
+        //   'Cyber Pop',
+        //   'DJ',
+        //   'Dark Star',
+        //   'Dawnbringer',
+        //   'Day Job',
+        //   'Death Blossom',
+        //   'Death Sworn',
+        //   'Debonair',
+        //   'Definitely Not',
+        //   'Demacia Vice',
+        //   'Demonic',
+        //   'Dragon World',
+        //   'Dragonmancers',
+        //   'Dreadknights',
+        //   'Dreadnova',
+        //   'Dunkmaster',
+        //   'Eclipse',
+        //   'Elderwood',
+        //   'Elementalist',
+        //   'Empyrean',
+        //   'Eternum',
+        //   'Fables',
+        //   'Faerie Court',
+        //   'Forgotten Depths',
+        //   'Freljord',
+        //   'Fright Night',
+        //   'Galactic',
+        //   'Glacial',
+        //   'Goth',
+        //   'Guardian of the Sands',
+        //   'HEARTSTEEL',
+        //   'Headhunter',
+        //   'Heartbreakers',
+        //   'Heartthrobs and Heartaches',
+        //   'Heavenscale',
+        //   'Heavy Metal',
+        //   'Hextech',
+        //   'High Noon',
+        //   'High Society',
+        //   'Highstakes',
+        //   'Immortal Journey',
+        //   'Infernal',
+        //   'Inkshadow',
+        //   'Invaders',
+        //   'Justicar',
+        //   'K/DA',
+        //   'Kaiju',
+        //   'Ilusión',
+        //   'Lancer',
+        //   'Legacy',
+        //   'Luchador',
+        //   'Lunar Beast',
+        //   'Lunar Revel',
+        //   'Lunar Revel: Firecracker',
+        //   'Lunar Revel: Warring Kingdoms',
+        //   'Mad Scientists',
+        //   'Marauder',
+        //   'Mecha',
+        //   'Mecha Kingdoms',
+        //   'Medieval',
+        //   'Monster Tamers',
+        //   'Mythmaker',
+        //   'Nightbringer',
+        //   'Nightbringer and Dawnbringer',
+        //   'Ocean Song',
+        //   'Odyssey',
+        //   'Omega Squad',
+        //   'Omen of the Dark',
+        //   'Order of the Lotus',
+        //   'Otherroads',
+        //   'PAX',
+        //   'PROJECT',
+        //   'Papercraft',
+        //   'Pentakill',
+        //   'Pentakill III: The Lost Chapter',
+        //   'Pharaoh',
+        //   'Phoenixmancers',
+        //   'Piltover Customs',
+        //   'Pool Party',
+        //   'Popstar',
+        //   'Porcelain',
+        //   'Praetorian',
+        //   'Prehistoric Hunters',
+        //   'Primal Ambush',
+        //   'Program',
+        //   'PsyOps',
+        //   'Pulsefire',
+        //   'Rift Hospital',
+        //   'Rift Quest',
+        //   'Riot',
+        //   'Road Warrior',
+        //   'Ruination',
+        //   'Ruined',
+        //   'Sentinels of Light',
+        //   'Shan Hai Scrolls',
+        //   'Shockblade',
+        //   'Silver Age',
+        //   'Snow Day',
+        //   'Snow Moon',
+        //   'Snowdown Showdown',
+        //   'Soccer Cup',
+        //   'Soul Fighter',
+        //   'Soulstealer',
+        //   'Space Groove',
+        //   'Spirit Blossom',
+        //   'Spirit Guard',
+        //   'Star Guardian Season 1',
+        //   'Star Guardian Season 2',
+        //   'Star Guardian Season 3',
+        //   'Star Guardian Season 4',
+        //   'Steel Legion',
+        //   'Steel Valkyries',
+        //   'Storybook',
+        //   'Street Demons',
+        //   'Sugar Rush',
+        //   'Super Galaxy',
+        //   'Surprise Party',
+        //   'Three Honors',
+        //   'Thunder Lord',
+        //   'Toy Box',
+        //   'Traditional',
+        //   'Trick-or-Treat',
+        //   'Triumphant',
+        //   'True Damage',
+        //   'True Warrior',
+        //   'Urf the Manatee',
+        //   'Vandal',
+        //   'Victorious',
+        //   'Warden',
+        //   'Winter Sports',
+        //   'Winter Wonder',
+        //   'Winterblessed',
+        //   'Withered Rose',
+        //   'Woad',
+        //   'Wonders of the World',
+        //   'World Champions: 2011',
+        //   'World Champions: 2012',
+        //   'World Champions: 2013',
+        //   'World Champions: 2014',
+        //   'World Champions: 2015',
+        //   'World Champions: 2016',
+        //   'World Champions: 2017',
+        //   'World Champions: 2018',
+        //   'World Champions: 2019',
+        //   'World Champions: 2020',
+        //   'World Champions: 2021',
+        //   'World Champions: 2022',
+        //   'World Championship',
+        //   'Worldbreaker',
+        //   'Zenith Games',
+        //   'Zombies VS Slayers',
+        //   'arcticops'
+        // ]
       }
     }
   },
@@ -384,10 +337,17 @@ export default {
       this.udpateSelect(filterName)
     },
     getFilters() {
-      return Object.keys(this.currentFilters).reduce((acc, filterName) => {
+      const filters = Object.keys(this.currentFilters).reduce((acc, filterName) => {
         acc[filterName.toLowerCase()] = this.currentFilters[filterName]
         return acc
       }, {})
+
+      // const rangeMinMax = this.$refs.releaseYear.getRangeMinMax()
+
+      // filters.releaseyearmin = parseInt(rangeMinMax.min, 10)
+      // filters.releaseyearmax = parseInt(rangeMinMax.max, 10)
+
+      return filters
     },
     udpateSelect(filterName) {
       this.currentFilters[filterName] = document.getElementById(filterName).value
