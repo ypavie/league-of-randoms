@@ -215,6 +215,12 @@ export function getRandomChampion(searchText, filters) {
     //     champions[key].year >= filters.releaseyearmin &&
     //     champions[key].year <= filters.releaseyearmax
     // )
+
+    if (championsList.length === 0) {
+      const randomIndex = Math.floor(Math.random() * Object.keys(champions).length)
+      return champions[Object.keys(champions)[randomIndex]]
+    }
+
     const randomIndex = Math.floor(Math.random() * championsList.length)
     console.log(championsList)
     return champions[championsList[randomIndex]]

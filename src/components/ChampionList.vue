@@ -1,16 +1,31 @@
 <script>
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 
 export default {
-  props: ['champions'],
+  props: {
+    champions: {
+      type: Object,
+      required: true
+    }
+  },
   data() {
     return {
       searchTerm: '',
-      disabledChampions: [], // disabled = Champions clicked by the user to be removed
-      filteredChampions: [] // filtered = Champions matching the search term by the user to be kept
+      disabledChampions: [],
+      filteredChampions: [],
+      visibleChampions: {}
     }
   },
-  computed: {},
+  mounted() {
+    this.updateVisibleChampions()
+  },
+  watch: {
+    champions: {
+      handler: 'updateVisibleChampions',
+      deep: true
+    },
+    searchTerm: 'updateVisibleChampions'
+  },
   methods: {
     toggleBan(championName) {
       if (this.disabledChampions.includes(championName)) {
@@ -18,6 +33,7 @@ export default {
       } else {
         this.disabledChampions.push(championName)
       }
+      this.updateVisibleChampions()
     },
     updateSearchTerm(filters) {
       this.searchTerm = filters.searchText
@@ -27,16 +43,26 @@ export default {
       if (filters.unselectAll) {
         this.disabledChampions = this.getChampionList()
       }
-      this.getFilteredChampions()
+      this.updateVisibleChampions()
     },
     updateFilteredChampions(champions) {
-      this.filteredChampions = this.filteredChampions.filter(
-        (championName) => !champions.includes(championName)
-      )
+      this.visibleChampions = Object.keys(this.visibleChampions)
+        .filter((championName) => champions.includes(championName))
+        .reduce((obj, key) => {
+          obj[key] = this.visibleChampions[key]
+          return obj
+        }, {})
     },
-
     getChampionIconUrl(id) {
       return `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${id}.png`
+    },
+    updateVisibleChampions() {
+      const filteredChampions = this.getFilteredChampions()
+      this.visibleChampions = Object.fromEntries(
+        Object.entries(filteredChampions).filter(
+          ([championName]) => !this.disabledChampions.includes(championName)
+        )
+      )
     },
     getFilteredChampions() {
       const input = this.searchTerm.trim().toLowerCase()
@@ -67,7 +93,7 @@ export default {
     <div class="champion-list-vue">
       <div class="champion-icons flex flex-wrap justify-center">
         <div
-          v-for="(champion, championName) in getFilteredChampions()"
+          v-for="(champion, championName) in visibleChampions"
           :key="champion.id"
           class="champion-icon"
         >
