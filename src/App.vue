@@ -39,10 +39,7 @@ export default {
         skinlines: '',
         releaseyearmin: 2009,
         releaseyearmax: 2024
-      },
-      lastGenerationTime: 0,
-      isLoading: false,
-      currentWaitingTime: 500
+      }
     }
   },
   mounted() {
@@ -56,20 +53,11 @@ export default {
       }
     },
     async generateRandomChampion() {
-      const now = Date.now()
-      if (now - this.lastGenerationTime < this.currentWaitingTime) {
-        return
-      }
-      this.isLoading = true
-      this.lastGenerationTime = now
       this.currentChampion = getChampion_tofix(this.filters)
       if (this.$refs.randomChampion && this.currentChampion) {
         this.$refs.randomChampion.updateCurrentChampion(this.currentChampion)
         this.$refs.championHistory.addChampion(this.currentChampion)
       }
-      setTimeout(() => {
-        this.isLoading = false
-      }, this.currentWaitingTime)
     },
     championFromHistory(champion) {
       this.currentChampion = champion
@@ -90,34 +78,8 @@ export default {
     <AppHeader />
     <div class="flex-1 bg-white dark:bg-gray-800 flex">
       <div class="flex flex-col md:flex-row flex-1">
-        <!-- Left Column -->
-
         <ChampionHistory ref="championHistory" @champion-clicked="championFromHistory" />
-
-        <!-- Middle Column -->
         <div class="flex-1 p-4 overflow-y-auto rounded-lg relative">
-          <div
-            v-if="isLoading"
-            class="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-10"
-          >
-            <svg
-              class="spinner"
-              width="65px"
-              height="65px"
-              viewBox="0 0 66 66"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                class="path"
-                fill="none"
-                stroke-width="12"
-                stroke-linecap="round"
-                cx="33"
-                cy="33"
-                r="25"
-              ></circle>
-            </svg>
-          </div>
           <RandomChampion
             ref="randomChampion"
             @generate="generateRandomChampion"

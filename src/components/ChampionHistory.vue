@@ -50,7 +50,7 @@ export default {
     >
       <div
         v-for="champion in champions.slice().reverse()"
-        :key="champion.id"
+        :key="champion.id + Math.random()"
         class="champion-icon flex flex-col items-center space-y-2 md:space-y-0 md:space-x-2 relative"
       >
         <img

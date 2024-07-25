@@ -64,7 +64,6 @@ export default {
   },
   methods: {
     getRangeMinMax() {
-      console.log('getRangeMinMax', this.currentMinYear, this.currentMaxYear)
       return {
         min: this.currentMinYear,
         max: this.currentMaxYear

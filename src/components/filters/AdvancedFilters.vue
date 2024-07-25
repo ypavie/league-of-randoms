@@ -70,18 +70,14 @@ export default {
         Gender: ['Female', 'Male', 'Other'],
         Mana: ['Mana', 'Manaless'],
         Class: ['Assassin', 'Fighter', 'Mage', 'Marksman', 'Support', 'Tank'],
-        Range: ['Melee', 'Ranged'],
+        Range: ['Melee', 'Range'],
         Species: [
           'Aspect',
-          'Brackern',
-          'Cat',
           'Celestial',
           'Chemically Altered',
           'Cyborg',
           'Darkin',
           'Demon',
-          'Dog',
-          'Dragon',
           'God',
           'God-Warrior',
           'Golem',
@@ -89,12 +85,9 @@ export default {
           'Iceborn',
           'Magically Altered',
           'Magicborn',
-          'Minotaur',
-          'Rat',
           'Revenant',
           'Spirit',
           'Spiritualist',
-          'Troll',
           'Undead',
           'Unknown',
           'Vastayan',
@@ -342,11 +335,6 @@ export default {
         return acc
       }, {})
 
-      // const rangeMinMax = this.$refs.releaseYear.getRangeMinMax()
-
-      // filters.releaseyearmin = parseInt(rangeMinMax.min, 10)
-      // filters.releaseyearmax = parseInt(rangeMinMax.max, 10)
-
       return filters
     },
     udpateSelect(filterName) {
@@ -359,7 +347,6 @@ export default {
       } else {
         this.currentFilterTypes.push(type)
       }
-      console.log(this.getSelectedFiltersTypes())
     },
     isSelected(type) {
       return this.currentFilterTypes.includes(type)

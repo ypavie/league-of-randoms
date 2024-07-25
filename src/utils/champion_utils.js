@@ -174,15 +174,12 @@ export function getChampionNamesFromFilters(filters) {
 
 export function getRandomChampion(searchText, filters) {
   let championsList = Object.keys(champions)
-  console.log(championsList)
 
   if (searchText !== '') {
     championsList = championsList.filter((key) =>
       champions[key].name.toLowerCase().includes(searchText)
     )
   }
-
-  console.log(filters)
 
   if (filters !== undefined) {
     if (filters.gender !== undefined && filters.gender !== '') {
@@ -222,10 +219,8 @@ export function getRandomChampion(searchText, filters) {
     }
 
     const randomIndex = Math.floor(Math.random() * championsList.length)
-    console.log(championsList)
     return champions[championsList[randomIndex]]
   }
-  console.log(championsList)
   if (championsList.length === 0) {
     const randomIndex = Math.floor(Math.random() * Object.keys(champions).length)
     return champions[Object.keys(champions)[randomIndex]]

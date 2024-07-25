@@ -70,7 +70,7 @@ export default {
 
 <template>
   <!-- RANDOM CHAMPION -->
-  <div class="flex flex-wrap justify-center" v-if="currentChampion.name">
+  <div class="flex flex-wrap justify-center items-center gap-16" v-if="currentChampion.name">
     <!-- ICONS-->
     <div class="flex-wrap">
       <!-- Container for the main row -->
