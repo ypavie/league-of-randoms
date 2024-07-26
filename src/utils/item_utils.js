@@ -118,7 +118,6 @@ export function generateItemBuild(championName, role) {
     itemsBuild.push(getRandomBoot())
   }
 
-  // if support, get support item
   if (role === 'support') {
     itemsBuild.push(getRandomSupportItem())
   }

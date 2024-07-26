@@ -1,11 +1,11 @@
 <template>
   <div class="container mt-2">
     <div class="content flex items-center">
-      <label class="w-32 dark:text-gray-400 text-gray-700 font-bold text-right flex-shrink-0"
-        >Release Year :</label
-      >
+      <label class="w-32 dark:text-gray-400 text-gray-700 font-bold text-right flex-shrink-0">
+        Release Year :
+      </label>
       <div class="relative flex-grow mx-2">
-        <div class="range-slider">
+        <div class="range-slider" @click="onSliderClick">
           <span
             class="range-selected"
             :style="{ left: minPercent + '%', right: 100 - maxPercent + '%' }"
@@ -14,7 +14,7 @@
         <div class="range-input">
           <input
             type="range"
-            class="min"
+            class="min cursor-pointer"
             :min="minYear"
             :max="maxYear"
             v-model.number="currentMinYear"
@@ -22,7 +22,7 @@
           />
           <input
             type="range"
-            class="max"
+            class="max cursor-pointer"
             :min="minYear"
             :max="maxYear"
             v-model.number="currentMaxYear"
@@ -140,6 +140,24 @@ export default {
     },
     emitUpdateFilter() {
       this.$emit('update-filter')
+    },
+    onSliderClick(event) {
+      const slider = this.$el.querySelector('.range-slider')
+      const rect = slider.getBoundingClientRect()
+      const clickX = event.clientX - rect.left
+      const clickPercent = (clickX / rect.width) * 100
+      const clickYear = Math.round(
+        this.minYear + (clickPercent / 100) * (this.maxYear - this.minYear)
+      )
+
+      const minDiff = Math.abs(clickYear - this.currentMinYear)
+      const maxDiff = Math.abs(clickYear - this.currentMaxYear)
+
+      if (minDiff < maxDiff) {
+        this.currentMinYear = clickYear
+      } else {
+        this.currentMaxYear = clickYear
+      }
     }
   }
 }
