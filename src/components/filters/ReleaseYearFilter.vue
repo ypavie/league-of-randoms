@@ -5,29 +5,33 @@
         Release Year :
       </label>
       <div class="relative flex-grow mx-2">
-        <div class="range-slider" @click="onSliderClick">
-          <span
-            class="range-selected"
-            :style="{ left: minPercent + '%', right: 100 - maxPercent + '%' }"
-          ></span>
-        </div>
-        <div class="range-input">
-          <input
-            type="range"
-            class="min cursor-pointer"
-            :min="minYear"
-            :max="maxYear"
-            v-model.number="currentMinYear"
-            step="1"
-          />
-          <input
-            type="range"
-            class="max cursor-pointer"
-            :min="minYear"
-            :max="maxYear"
-            v-model.number="currentMaxYear"
-            step="1"
-          />
+        <div v-if="!isSmallScreen">
+          <div class="range-slider" @click="onSliderClick">
+            <span
+              class="range-selected"
+              :style="{ left: minPercent + '%', right: 100 - maxPercent + '%' }"
+            ></span>
+          </div>
+          <div class="range-input">
+            <input
+              type="range"
+              class="min cursor-pointer"
+              :min="minYear"
+              :max="maxYear"
+              v-model.number="currentMinYear"
+              step="1"
+              @input="updateMinYear"
+            />
+            <input
+              type="range"
+              class="max cursor-pointer"
+              :min="minYear"
+              :max="maxYear"
+              v-model.number="currentMaxYear"
+              step="1"
+              @input="updateMaxYear"
+            />
+          </div>
         </div>
         <div class="range-price">
           <label for="min" class="text-gray-700 dark:text-gray-400">Min</label>
@@ -82,7 +86,8 @@ export default {
       minYear: 2009,
       maxYear: 2024,
       currentMinYear: 2009,
-      currentMaxYear: 2024
+      currentMaxYear: 2024,
+      isSmallScreen: false
     }
   },
   computed: {
@@ -94,11 +99,11 @@ export default {
     }
   },
   watch: {
-    currentMinYear(newVal) {
+    currentMinYear() {
       this.adjustRange()
       this.emitUpdateFilter()
     },
-    currentMaxYear(newVal) {
+    currentMaxYear() {
       this.adjustRange()
       this.emitUpdateFilter()
     }
@@ -158,7 +163,25 @@ export default {
       } else {
         this.currentMaxYear = clickYear
       }
+    },
+    checkScreenSize() {
+      this.isSmallScreen = window.innerWidth < 768
+    },
+    updateMinYear() {
+      this.adjustRange()
+      this.emitUpdateFilter()
+    },
+    updateMaxYear() {
+      this.adjustRange()
+      this.emitUpdateFilter()
     }
+  },
+  mounted() {
+    this.checkScreenSize()
+    window.addEventListener('resize', this.checkScreenSize)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.checkScreenSize)
   }
 }
 </script>
