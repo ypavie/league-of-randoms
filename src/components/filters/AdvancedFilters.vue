@@ -77,7 +77,6 @@ export default {
       acc[filterName] = ''
       return acc
     }, {})
-    // order asc every filter
     Object.keys(this.filters).forEach((filterName) => {
       this.filters[filterName].sort()
     })
