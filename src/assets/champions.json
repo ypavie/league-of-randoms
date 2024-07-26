@@ -439,7 +439,7 @@
       "Arcane",
       "Cops and",
       "Headhunter",
-      "arcticops"
+      "Arcticops"
     ]
   },
   "Camille": {
@@ -939,7 +939,7 @@
       "Crime City",
       "Vandal",
       "Soccer Cup",
-      "arcticops"
+      "Arcticops"
     ]
   },
   "Graves": {
@@ -1465,7 +1465,7 @@
       "World Champions",
       "Infernal",
       "Astronauts",
-      "arcticops"
+      "Arcticops"
     ]
   },
   "Khazix": {
@@ -2951,7 +2951,7 @@
       "Bilgewater: Burning",
       "Otherroads",
       "Winterblessed",
-      "arcticops"
+      "Arcticops"
     ]
   },
   "Sylas": {
@@ -3318,7 +3318,7 @@
       "Infernal",
       "Arclight",
       "Empyrean",
-      "arcticops"
+      "Arcticops"
     ]
   },
   "Vayne": {
@@ -3518,7 +3518,7 @@
     "mana": "Mana",
     "name": "Volibear",
     "tags": ["Fighter", "Tank"],
-    "skinlines": ["Inkshadow", "Dragonmancers", "Otherroads", "Cops and", "Coven", "arcticops"]
+    "skinlines": ["Inkshadow", "Dragonmancers", "Otherroads", "Cops and", "Coven", "Arcticops"]
   },
   "Warwick": {
     "id": "Warwick",

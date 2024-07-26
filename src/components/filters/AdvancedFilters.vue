@@ -69,7 +69,7 @@ export default {
       showFilters: false,
       currentFilters: {},
       currentFilterTypes: ['summs', 'roles', 'runes', 'items'],
-      filters: filters // Directly assigning imported filters
+      filters: filters
     }
   },
   mounted() {
@@ -77,6 +77,10 @@ export default {
       acc[filterName] = ''
       return acc
     }, {})
+    // order asc every filter
+    Object.keys(this.filters).forEach((filterName) => {
+      this.filters[filterName].sort()
+    })
   },
   methods: {
     toggleFilters() {
