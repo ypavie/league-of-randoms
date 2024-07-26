@@ -75,6 +75,8 @@
 
 <script>
 export default {
+  name: 'ReleaseYearFilter',
+  emits: ['update-filter'],
   data() {
     return {
       minYear: 2009,
@@ -94,12 +96,20 @@ export default {
   watch: {
     currentMinYear(newVal) {
       this.adjustRange()
+      this.emitUpdateFilter()
     },
     currentMaxYear(newVal) {
       this.adjustRange()
+      this.emitUpdateFilter()
     }
   },
   methods: {
+    getReleaseYear() {
+      return {
+        releaseYearMin: this.currentMinYear,
+        releaseYearMax: this.currentMaxYear
+      }
+    },
     adjustRange() {
       if (this.currentMinYear > this.currentMaxYear) {
         ;[this.currentMinYear, this.currentMaxYear] = [this.currentMaxYear, this.currentMinYear]
@@ -112,6 +122,7 @@ export default {
       if (this.currentMinYear > this.currentMaxYear) {
         this.currentMinYear = this.currentMaxYear
       }
+      this.emitUpdateFilter()
     },
     validateMaxYear() {
       if (this.currentMaxYear > this.maxYear) {
@@ -120,14 +131,20 @@ export default {
       if (this.currentMaxYear < this.currentMinYear) {
         this.currentMaxYear = this.currentMinYear
       }
+      this.emitUpdateFilter()
     },
     reset() {
       this.currentMinYear = this.minYear
       this.currentMaxYear = this.maxYear
+      this.emitUpdateFilter()
+    },
+    emitUpdateFilter() {
+      this.$emit('update-filter')
     }
   }
 }
 </script>
+
 <style scoped>
 .range-slider {
   height: 5px;

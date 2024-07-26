@@ -124,8 +124,6 @@ function getRole(roles) {
 }
 
 function getSpellToMax(spells) {
-  // const spell = spells?.[0] || 'defaultSpell'
-  // random from 0 to 2
   const randomIndex = Math.floor(Math.random() * 3)
   return [
     randomIndex,
@@ -146,6 +144,7 @@ function getStarterItem(role) {
 }
 
 export function getChampionNamesFromFilters(filters) {
+  console.log('GetChampionNamesFromFilters')
   let championsList = Object.keys(champions)
   if (filters !== undefined) {
     if (filters.gender !== '') {
@@ -168,6 +167,19 @@ export function getChampionNamesFromFilters(filters) {
     if (filters.region !== '') {
       championsList = championsList.filter((key) => champions[key].region.includes(filters.region))
     }
+    if (filters.skinlines !== '') {
+      championsList = championsList.filter(
+        (key) => champions[key].skinlines && champions[key].skinlines.includes(filters.skinlines)
+      )
+    }
+    if (filters.releaseYearMin !== '' && filters.releaseYearMax !== '') {
+      championsList = championsList.filter(
+        (key) =>
+          champions[key].year >= filters.releaseYearMin &&
+          champions[key].year <= filters.releaseYearMax
+      )
+    }
+
     return championsList.map((key) => champions[key].name)
   }
 }
@@ -202,16 +214,20 @@ export function getRandomChampion(searchText, filters) {
     if (filters.region !== undefined && filters.region !== '') {
       championsList = championsList.filter((key) => champions[key].region.includes(filters.region))
     }
-    // if (filters.skinlines !== '') {
-    //   championsList = championsList.filter(
-    //     (key) => champions[key].skinlines && champions[key].skinlines.includes(filters.skinlines)
-    //   )
-    // }
-    // championsList = championsList.filter(
-    //   (key) =>
-    //     champions[key].year >= filters.releaseyearmin &&
-    //     champions[key].year <= filters.releaseyearmax
-    // )
+
+    if (filters.skinlines !== undefined && filters.skinlines !== '') {
+      championsList = championsList.filter(
+        (key) => champions[key].skinlines && champions[key].skinlines.includes(filters.skinlines)
+      )
+    }
+
+    if (filters.releaseYearMin !== '' && filters.releaseYearMax !== '') {
+      championsList = championsList.filter(
+        (key) =>
+          champions[key].year >= filters.releaseYearMin &&
+          champions[key].year <= filters.releaseYearMax
+      )
+    }
 
     if (championsList.length === 0) {
       const randomIndex = Math.floor(Math.random() * Object.keys(champions).length)

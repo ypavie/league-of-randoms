@@ -2,1594 +2,1135 @@
   "Aatrox": {
     "id": "Aatrox",
     "key": "266",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "AatroxQ",
-      "AatroxW",
-      "AatroxE",
-      "AatroxR"
-    ],
-    "region": [
-      "Runeterra",
-      "Shurima"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["AatroxQ", "AatroxW", "AatroxE", "AatroxR"],
+    "region": ["Runeterra", "Shurima"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Darkin"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Darkin"],
+    "range": ["Melee"],
     "year": 2013,
     "mana": "Manaless",
     "name": "Aatrox",
-    "tags": [
-      "Fighter"
+    "tags": ["Fighter"],
+    "skinlines": [
+      "World Champions",
+      "Mecha",
+      "Victorious",
+      "Odyssey",
+      "Blood Moon",
+      "Bilgewater: Burning",
+      "Eclipse"
     ]
   },
   "Ahri": {
     "id": "Ahri",
     "key": "103",
-    "class": [
-      "Mage",
-      "Assassin"
-    ],
-    "spells": [
-      "AhriQ",
-      "AhriW",
-      "AhriE",
-      "AhriR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Mage", "Assassin"],
+    "spells": ["AhriQ", "AhriW", "AhriE", "AhriR"],
+    "region": ["Ionia"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Vastayan"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Vastayan"],
+    "range": ["Range"],
     "year": 2011,
     "mana": "Mana",
     "name": "Ahri",
-    "tags": [
-      "Mage",
-      "Assassin"
+    "tags": ["Mage", "Assassin"],
+    "skinlines": [
+      "Snow Moon",
+      "Wonders of",
+      "Legacy",
+      "Arcade: Heroes",
+      "Spirit Blossom",
+      "Arcana",
+      "Star Guardian",
+      "Infernal",
+      "Academy",
+      "Elderwood",
+      "K/DA",
+      "Coven"
     ]
   },
   "Akali": {
     "id": "Akali",
     "key": "84",
-    "class": [
-      "Assassin"
-    ],
-    "spells": [
-      "AkaliQ",
-      "AkaliW",
-      "AkaliE",
-      "AkaliR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Assassin"],
+    "spells": ["AkaliQ", "AkaliW", "AkaliE", "AkaliR"],
+    "region": ["Ionia"],
     "gender": "Female",
-    "positions": [
-      "Middle",
-      "Top"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle", "Top"],
+    "species": ["Human"],
+    "range": ["Melee"],
     "year": 2010,
     "mana": "Manaless",
     "name": "Akali",
-    "tags": [
-      "Assassin"
+    "tags": ["Assassin"],
+    "skinlines": [
+      "Star Guardian",
+      "World Champions",
+      "Legacy",
+      "Empyrean",
+      "Blood Moon",
+      "PROJECT",
+      "Crime City",
+      "Infernal",
+      "True Damage",
+      "Culinary Masters",
+      "K/DA",
+      "Coven",
+      "Headhunter",
+      "Soccer Cup"
     ]
   },
   "Akshan": {
     "id": "Akshan",
     "key": "166",
-    "class": [
-      "Marksman",
-      "Assassin"
-    ],
-    "spells": [
-      "AkshanQ",
-      "AkshanW",
-      "AkshanE",
-      "AkshanR"
-    ],
-    "region": [
-      "Shurima"
-    ],
+    "class": ["Marksman", "Assassin"],
+    "spells": ["AkshanQ", "AkshanW", "AkshanE", "AkshanR"],
+    "region": ["Shurima"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human"],
+    "range": ["Range"],
     "year": 2021,
     "mana": "Mana",
     "name": "Akshan",
-    "tags": [
-      "Marksman",
-      "Assassin"
-    ]
+    "tags": ["Marksman", "Assassin"],
+    "skinlines": []
   },
   "Alistar": {
     "id": "Alistar",
     "key": "12",
-    "class": [
-      "Tank",
-      "Support"
-    ],
-    "spells": [
-      "Pulverize",
-      "Headbutt",
-      "AlistarE",
-      "FerociousHowl"
-    ],
-    "region": [
-      "Runeterra"
-    ],
+    "class": ["Tank", "Support"],
+    "spells": ["Pulverize", "Headbutt", "AlistarE", "FerociousHowl"],
+    "region": ["Runeterra"],
     "gender": "Male",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Minotaur"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Support"],
+    "species": ["Minotaur"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Alistar",
-    "tags": [
-      "Tank",
-      "Support"
+    "tags": ["Tank", "Support"],
+    "skinlines": [
+      "Blackfrost",
+      "Day Job",
+      "World Champions",
+      "Legacy",
+      "Hextech",
+      "High Noon",
+      "Marauder",
+      "Conqueror",
+      "Lunar Beast",
+      "Infernal",
+      "Toy Box",
+      "Soccer Cup"
     ]
   },
   "Amumu": {
     "id": "Amumu",
     "key": "32",
-    "class": [
-      "Tank",
-      "Mage"
-    ],
-    "spells": [
-      "BandageToss",
-      "AuraofDespair",
-      "Tantrum",
-      "CurseoftheSadMummy"
-    ],
-    "region": [
-      "Shurima"
-    ],
+    "class": ["Tank", "Mage"],
+    "spells": ["BandageToss", "AuraofDespair", "Tantrum", "CurseoftheSadMummy"],
+    "region": ["Shurima"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Undead",
-      "Yordle"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Undead", "Yordle"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Amumu",
-    "tags": [
-      "Tank",
-      "Support"
+    "tags": ["Tank", "Support"],
+    "skinlines": [
+      "Day Job",
+      "Hextech",
+      "Snowdown Showdown",
+      "Medieval",
+      "Infernal",
+      "Trick-or-Treat",
+      "Porcelain",
+      "Winter Sports"
     ]
   },
   "Anivia": {
     "id": "Anivia",
     "key": "34",
-    "class": [
-      "Mage",
-      "Support"
-    ],
-    "spells": [
-      "FlashFrost",
-      "Crystallize",
-      "Frostbite",
-      "GlacialStorm"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Mage", "Support"],
+    "spells": ["FlashFrost", "Crystallize", "Frostbite", "GlacialStorm"],
+    "region": ["Freljord"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "God",
-      "Spirit"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["God", "Spirit"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Anivia",
-    "tags": [
-      "Mage"
+    "tags": ["Mage"],
+    "skinlines": [
+      "Prehistoric Hunters",
+      "Blackfrost",
+      "Wonders of",
+      "Legacy",
+      "Hextech",
+      "Victorious",
+      "Cosmic",
+      "Bewitching",
+      "Winter Sports"
     ]
   },
   "Annie": {
     "id": "Annie",
     "key": "1",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "AnnieQ",
-      "AnnieW",
-      "AnnieE",
-      "AnnieR"
-    ],
-    "region": [
-      "Noxus",
-      "Runeterra"
-    ],
+    "class": ["Mage"],
+    "spells": ["AnnieQ", "AnnieW", "AnnieE", "AnnieR"],
+    "region": ["Noxus", "Runeterra"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Annie",
-    "tags": [
-      "Mage",
-      "Support"
+    "tags": ["Mage", "Support"],
+    "skinlines": [
+      "Heartbreakers",
+      "Day Job",
+      "Legacy",
+      "Hextech",
+      "Storybook",
+      "Fright Night",
+      "Winter Wonder",
+      "Lunar Beast",
+      "Super Galaxy",
+      "Lunar Revel",
+      "Trick-or-Treat",
+      "Cafe Cuties",
+      "Winterblessed"
     ]
   },
   "Aphelios": {
     "id": "Aphelios",
     "key": "523",
-    "class": [
-      "Marksman"
-    ],
+    "class": ["Marksman"],
     "spells": [
       "ApheliosQ_ClientTooltipWrapper",
       "ApheliosW",
       "ApheliosE_ClientTooltipWrapper",
       "ApheliosR"
     ],
-    "region": [
-      "Targon"
-    ],
+    "region": ["Targon"],
     "gender": "Male",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human",
-      "Spiritualist"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human", "Spiritualist"],
+    "range": ["Range"],
     "year": 2019,
     "mana": "Mana",
     "name": "Aphelios",
-    "tags": [
-      "Marksman"
+    "tags": ["Marksman"],
+    "skinlines": [
+      "Nightbringer and",
+      "HEARTSTEEL",
+      "Spirit Blossom",
+      "Lunar Beast",
+      "World Champions"
     ]
   },
   "Ashe": {
     "id": "Ashe",
     "key": "22",
-    "class": [
-      "Marksman",
-      "Support"
-    ],
-    "spells": [
-      "AsheQ",
-      "Volley",
-      "AsheSpiritOfTheHawk",
-      "EnchantedCrystalArrow"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Marksman", "Support"],
+    "spells": ["AsheQ", "Volley", "AsheSpiritOfTheHawk", "EnchantedCrystalArrow"],
+    "region": ["Freljord"],
     "gender": "Female",
-    "positions": [
-      "Bottom",
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Iceborn"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom", "Support"],
+    "species": ["Human", "Iceborn"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Ashe",
-    "tags": [
-      "Marksman",
-      "Support"
+    "tags": ["Marksman", "Support"],
+    "skinlines": [
+      "Freljord",
+      "World Champions",
+      "Heartbreakers",
+      "Woad",
+      "Legacy",
+      "High Noon",
+      "Dragonmancers",
+      "Cosmic",
+      "Marauder",
+      "Medieval",
+      "PROJECT",
+      "Infernal",
+      "Lunar Revel",
+      "Coven",
+      "Ocean Song"
     ]
   },
   "AurelionSol": {
     "id": "AurelionSol",
     "key": "136",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "AurelionSolQ",
-      "AurelionSolW",
-      "AurelionSolE",
-      "AurelionSolR"
-    ],
+    "class": ["Mage"],
+    "spells": ["AurelionSolQ", "AurelionSolW", "AurelionSolE", "AurelionSolR"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Celestial",
-      "Dragon"
-    ],
-    "range": [
-      "Range"
-    ],
-    "region": [
-      "Runeterra",
-      "Targon"
-    ],
+    "positions": ["Middle"],
+    "species": ["Celestial", "Dragon"],
+    "range": ["Range"],
+    "region": ["Runeterra", "Targon"],
     "year": 2016,
     "mana": "Mana",
     "name": "Aurelion Sol",
-    "tags": [
-      "Mage"
-    ]
+    "tags": ["Mage"],
+    "skinlines": []
   },
   "Azir": {
     "id": "Azir",
     "key": "268",
-    "class": [
-      "Mage",
-      "Marksman"
-    ],
-    "spells": [
-      "AzirQWrapper",
-      "AzirW",
-      "AzirEWrapper",
-      "AzirR"
-    ],
-    "region": [
-      "Shurima"
-    ],
+    "class": ["Mage", "Marksman"],
+    "spells": ["AzirQWrapper", "AzirW", "AzirEWrapper", "AzirR"],
+    "region": ["Shurima"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "God-Warrior"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["God-Warrior"],
+    "range": ["Range"],
     "year": 2014,
     "mana": "Mana",
     "name": "Azir",
-    "tags": [
-      "Mage",
-      "Marksman"
-    ]
+    "tags": ["Mage", "Marksman"],
+    "skinlines": ["World Champions", "Lunar Revel", "Death Sworn", "Elderwood"]
   },
   "Bard": {
     "id": "Bard",
     "key": "432",
-    "class": [
-      "Support",
-      "Mage"
-    ],
-    "spells": [
-      "BardQ",
-      "BardW",
-      "BardE",
-      "BardR"
-    ],
-    "region": [
-      "Runeterra"
-    ],
+    "class": ["Support", "Mage"],
+    "spells": ["BardQ", "BardW", "BardE", "BardR"],
+    "region": ["Runeterra"],
     "gender": "Male",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Celestial"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Celestial"],
+    "range": ["Range"],
     "year": 2015,
     "mana": "Mana",
     "name": "Bard",
-    "tags": [
-      "Support",
-      "Mage"
-    ]
+    "tags": ["Support", "Mage"],
+    "skinlines": ["Rift Quest", "Shan Hai", "Snow Day", "Cafe Cuties", "Elderwood", "Astronauts"]
   },
   "Belveth": {
     "id": "Belveth",
     "key": "200",
-    "class": [
-      "Fighter"
-    ],
-    "spells": [
-      "BelvethQ",
-      "BelvethW",
-      "BelvethE",
-      "BelvethR"
-    ],
+    "class": ["Fighter"],
+    "spells": ["BelvethQ", "BelvethW", "BelvethE", "BelvethR"],
     "gender": "Female",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Void-Being"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Void"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Void-Being"],
+    "range": ["Melee"],
+    "region": ["Void"],
     "year": 2022,
     "mana": "Manaless",
     "name": "Bel'Veth",
-    "tags": [
-      "Fighter"
-    ]
+    "tags": ["Fighter"],
+    "skinlines": []
   },
   "Blitzcrank": {
     "id": "Blitzcrank",
     "key": "53",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
-    "spells": [
-      "RocketGrab",
-      "Overdrive",
-      "PowerFist",
-      "StaticField"
-    ],
-    "region": [
-      "Zaun"
-    ],
+    "class": ["Tank", "Fighter"],
+    "spells": ["RocketGrab", "Overdrive", "PowerFist", "StaticField"],
+    "region": ["Zaun"],
     "gender": "Other",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Golem"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Support"],
+    "species": ["Golem"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Blitzcrank",
-    "tags": [
-      "Tank",
-      "Support"
+    "tags": ["Tank", "Support"],
+    "skinlines": [
+      "Day Job",
+      "Definitely Not",
+      "Riot",
+      "Legacy",
+      "Victorious",
+      "Arcade: Battle",
+      "Bees!",
+      "Space Groove",
+      "Program",
+      "Trick-or-Treat",
+      "Soccer Cup"
     ]
   },
   "Brand": {
     "id": "Brand",
     "key": "63",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "BrandQ",
-      "BrandW",
-      "BrandE",
-      "BrandR"
-    ],
-    "region": [
-      "Freljord",
-      "Runeterra"
-    ],
+    "class": ["Mage"],
+    "spells": ["BrandQ", "BrandW", "BrandE", "BrandR"],
+    "region": ["Freljord", "Runeterra"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Jungle", "Support"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Range"],
     "year": 2011,
     "mana": "Mana",
     "name": "Brand",
-    "tags": [
-      "Mage",
-      "Support"
+    "tags": ["Mage", "Support"],
+    "skinlines": [
+      "Street Demons",
+      "Road Warrior",
+      "Dragonmancers",
+      "Arcade: Battle",
+      "Silver Age",
+      "Debonair",
+      "Arclight",
+      "Zombies VS",
+      "Empyrean",
+      "Vandal",
+      "Worldbreaker"
     ]
   },
   "Braum": {
     "id": "Braum",
     "key": "201",
-    "class": [
-      "Support",
-      "Tank"
-    ],
-    "spells": [
-      "BraumQ",
-      "BraumW",
-      "BraumE",
-      "BraumRWrapper"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Support", "Tank"],
+    "spells": ["BraumQ", "BraumW", "BraumE", "BraumRWrapper"],
+    "region": ["Freljord"],
     "gender": "Male",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Iceborn"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Support"],
+    "species": ["Human", "Iceborn"],
+    "range": ["Melee"],
     "year": 2014,
     "mana": "Mana",
     "name": "Braum",
-    "tags": [
-      "Tank",
-      "Support"
+    "tags": ["Tank", "Support"],
+    "skinlines": [
+      "Rift Quest",
+      "Dragon World",
+      "Pool Party",
+      "Snowdown Showdown",
+      "Crime City",
+      "Sugar Rush"
     ]
   },
   "Caitlyn": {
     "id": "Caitlyn",
     "key": "51",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "CaitlynQ",
-      "CaitlynW",
-      "CaitlynE",
-      "CaitlynR"
-    ],
-    "region": [
-      "Piltover"
-    ],
+    "class": ["Marksman"],
+    "spells": ["CaitlynQ", "CaitlynW", "CaitlynE", "CaitlynR"],
+    "region": ["Piltover"],
     "gender": "Female",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human"],
+    "range": ["Range"],
     "year": 2011,
     "mana": "Mana",
     "name": "Caitlyn",
-    "tags": [
-      "Marksman"
+    "tags": ["Marksman"],
+    "skinlines": [
+      "Snow Moon",
+      "World Champions",
+      "Pulsefire",
+      "High Noon",
+      "Legacy",
+      "Arcade: Heroes",
+      "Pool Party",
+      "Battle Academia",
+      "Battlecast",
+      "Lunar Revel",
+      "Arcane",
+      "Cops and",
+      "Headhunter",
+      "arcticops"
     ]
   },
   "Camille": {
     "id": "Camille",
     "key": "164",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "CamilleQ",
-      "CamilleW",
-      "CamilleE",
-      "CamilleR"
-    ],
-    "region": [
-      "Piltover"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["CamilleQ", "CamilleW", "CamilleE", "CamilleR"],
+    "region": ["Piltover"],
     "gender": "Female",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Cyborg",
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Cyborg", "Human"],
+    "range": ["Melee"],
     "year": 2016,
     "mana": "Mana",
     "name": "Camille",
-    "tags": [
-      "Fighter",
-      "Assassin"
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": [
+      "Steel Valkyries",
+      "World Champions",
+      "Program",
+      "Arcana",
+      "Winterblessed",
+      "Coven"
     ]
   },
   "Cassiopeia": {
     "id": "Cassiopeia",
     "key": "69",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "CassiopeiaQ",
-      "CassiopeiaW",
-      "CassiopeiaE",
-      "CassiopeiaR"
-    ],
-    "region": [
-      "Noxus",
-      "Shurima"
-    ],
+    "class": ["Mage"],
+    "spells": ["CassiopeiaQ", "CassiopeiaW", "CassiopeiaE", "CassiopeiaR"],
+    "region": ["Noxus", "Shurima"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Range"],
     "year": 2010,
     "mana": "Mana",
     "name": "Cassiopeia",
-    "tags": [
-      "Mage"
-    ]
+    "tags": ["Mage"],
+    "skinlines": ["High Noon", "Fables", "Spirit Blossom", "Bewitching", "Lunar Revel", "Coven"]
   },
   "Chogath": {
     "id": "Chogath",
     "key": "31",
-    "class": [
-      "Tank",
-      "Mage"
-    ],
-    "spells": [
-      "Rupture",
-      "FeralScream",
-      "VorpalSpikes",
-      "Feast"
-    ],
+    "class": ["Tank", "Mage"],
+    "spells": ["Rupture", "FeralScream", "VorpalSpikes", "Feast"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Void-Being"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Void"
-    ],
+    "positions": ["Top"],
+    "species": ["Void-Being"],
+    "range": ["Melee"],
+    "region": ["Void"],
     "year": 2009,
     "mana": "Mana",
     "name": "Cho'Gath",
-    "tags": [
-      "Tank",
-      "Mage"
-    ]
+    "tags": ["Tank", "Mage"],
+    "skinlines": []
   },
   "Corki": {
     "id": "Corki",
     "key": "42",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "PhosphorusBomb",
-      "CarpetBomb",
-      "GGun",
-      "MissileBarrage"
-    ],
-    "region": [
-      "Bandle City",
-      "Piltover"
-    ],
+    "class": ["Marksman"],
+    "spells": ["PhosphorusBomb", "CarpetBomb", "GGun", "MissileBarrage"],
+    "region": ["Bandle City", "Piltover"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Yordle"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Corki",
-    "tags": [
-      "Marksman",
-      "Mage"
+    "tags": ["Marksman", "Mage"],
+    "skinlines": [
+      "World Champions",
+      "Cats Versus",
+      "Legacy",
+      "Arcade: Heroes",
+      "Lunar Revel",
+      "Winter Sports",
+      "Astronauts"
     ]
   },
   "Darius": {
     "id": "Darius",
     "key": "122",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "DariusCleave",
-      "DariusNoxianTacticsONH",
-      "DariusAxeGrabCone",
-      "DariusExecute"
-    ],
-    "region": [
-      "Noxus"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["DariusCleave", "DariusNoxianTacticsONH", "DariusAxeGrabCone", "DariusExecute"],
+    "region": ["Noxus"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human"],
+    "range": ["Melee"],
     "year": 2012,
     "mana": "Mana",
     "name": "Darius",
-    "tags": [
-      "Fighter",
-      "Tank"
+    "tags": ["Fighter", "Tank"],
+    "skinlines": [
+      "Woad",
+      "Rift Quest",
+      "High Noon",
+      "Spirit Blossom",
+      "Silver Age",
+      "Lunar Beast",
+      "Crime City",
+      "Academy",
+      "Porcelain"
     ]
   },
   "Diana": {
     "id": "Diana",
     "key": "131",
-    "class": [
-      "Fighter",
-      "Mage"
-    ],
-    "spells": [
-      "DianaQ",
-      "DianaOrbs",
-      "DianaTeleport",
-      "DianaR"
-    ],
-    "region": [
-      "Targon"
-    ],
+    "class": ["Fighter", "Mage"],
+    "spells": ["DianaQ", "DianaOrbs", "DianaTeleport", "DianaR"],
+    "region": ["Targon"],
     "gender": "Female",
-    "positions": [
-      "Jungle",
-      "Middle"
-    ],
-    "species": [
-      "Aspect",
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Middle"],
+    "species": ["Aspect", "Human"],
+    "range": ["Melee"],
     "year": 2012,
     "mana": "Mana",
     "name": "Diana",
-    "tags": [
-      "Fighter",
-      "Assassin"
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": [
+      "Fables",
+      "Battle Queens",
+      "Heavenscale",
+      "Blood Moon",
+      "Dragon World",
+      "Sentinels of",
+      "Infernal",
+      "Lunar Revel",
+      "Winterblessed"
     ]
   },
   "Draven": {
     "id": "Draven",
     "key": "119",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "DravenSpinning",
-      "DravenFury",
-      "DravenDoubleShot",
-      "DravenRCast"
-    ],
-    "region": [
-      "Noxus"
-    ],
+    "class": ["Marksman"],
+    "spells": ["DravenSpinning", "DravenFury", "DravenDoubleShot", "DravenRCast"],
+    "region": ["Noxus"],
     "gender": "Male",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human"],
+    "range": ["Range"],
     "year": 2012,
     "mana": "Mana",
     "name": "Draven",
-    "tags": [
-      "Marksman"
+    "tags": ["Marksman"],
+    "skinlines": [
+      "Prehistoric Hunters",
+      "Day Job",
+      "Definitely Not",
+      "La Ilusión",
+      "Legacy",
+      "Ruined",
+      "Fright Night",
+      "Pool Party",
+      "Snowdown Showdown",
+      "Debonair",
+      "Death Sworn",
+      "Mecha"
     ]
   },
   "DrMundo": {
     "id": "DrMundo",
     "key": "36",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "DrMundoQ",
-      "DrMundoW",
-      "DrMundoE",
-      "DrMundoR"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["DrMundoQ", "DrMundoW", "DrMundoE", "DrMundoR"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Chemically Altered",
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Zaun"
-    ],
+    "positions": ["Top"],
+    "species": ["Chemically Altered", "Human"],
+    "range": ["Melee"],
+    "region": ["Zaun"],
     "year": 2009,
     "mana": "Manaless",
     "name": "Dr. Mundo",
-    "tags": [
-      "Tank",
-      "Fighter"
-    ]
+    "tags": ["Tank", "Fighter"],
+    "skinlines": []
   },
   "Ekko": {
     "id": "Ekko",
     "key": "245",
-    "class": [
-      "Assassin",
-      "Fighter"
-    ],
-    "spells": [
-      "EkkoQ",
-      "EkkoW",
-      "EkkoE",
-      "EkkoR"
-    ],
-    "region": [
-      "Zaun"
-    ],
+    "class": ["Assassin", "Fighter"],
+    "spells": ["EkkoQ", "EkkoW", "EkkoE", "EkkoR"],
+    "region": ["Zaun"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Middle"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Middle"],
+    "species": ["Human"],
+    "range": ["Melee"],
     "year": 2015,
     "mana": "Mana",
     "name": "Ekko",
-    "tags": [
-      "Assassin",
-      "Mage"
+    "tags": ["Assassin", "Mage"],
+    "skinlines": [
+      "Star Guardian",
+      "Guardian of",
+      "Pulsefire",
+      "World Champions",
+      "PROJECT",
+      "Academy",
+      "Trick-or-Treat",
+      "True Damage",
+      "Arcane"
     ]
   },
   "Elise": {
     "id": "Elise",
     "key": "60",
-    "class": [
-      "Mage",
-      "Fighter"
-    ],
-    "spells": [
-      "EliseHumanQ",
-      "EliseHumanW",
-      "EliseHumanE",
-      "EliseR"
-    ],
-    "region": [
-      "Noxus",
-      "Shadow Isles"
-    ],
+    "class": ["Mage", "Fighter"],
+    "spells": ["EliseHumanQ", "EliseHumanW", "EliseHumanE", "EliseR"],
+    "region": ["Noxus", "Shadow Isles"],
     "gender": "Female",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Melee",
-      "Range"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Melee", "Range"],
     "year": 2012,
     "mana": "Mana",
     "name": "Elise",
-    "tags": [
-      "Assassin",
-      "Mage"
+    "tags": ["Assassin", "Mage"],
+    "skinlines": [
+      "World Champions",
+      "Victorious",
+      "Blood Moon",
+      "Bewitching",
+      "Super Galaxy",
+      "Coven"
     ]
   },
   "Evelynn": {
     "id": "Evelynn",
     "key": "28",
-    "class": [
-      "Assassin",
-      "Mage"
-    ],
-    "spells": [
-      "EvelynnQ",
-      "EvelynnW",
-      "EvelynnE",
-      "EvelynnR"
-    ],
-    "region": [
-      "Runeterra"
-    ],
+    "class": ["Assassin", "Mage"],
+    "spells": ["EvelynnQ", "EvelynnW", "EvelynnE", "EvelynnR"],
+    "region": ["Runeterra"],
     "gender": "Female",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Demon",
-      "Spirit"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Demon", "Spirit"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Evelynn",
-    "tags": [
-      "Assassin",
-      "Mage"
+    "tags": ["Assassin", "Mage"],
+    "skinlines": [
+      "Soul Fighter",
+      "High Society",
+      "High Noon",
+      "Legacy",
+      "Spirit Blossom",
+      "Blood Moon",
+      "Death Sworn",
+      "Cops and",
+      "K/DA",
+      "Coven",
+      "Sugar Rush"
     ]
   },
   "Ezreal": {
     "id": "Ezreal",
     "key": "81",
-    "class": [
-      "Marksman",
-      "Mage"
-    ],
-    "spells": [
-      "EzrealQ",
-      "EzrealW",
-      "EzrealE",
-      "EzrealR"
-    ],
-    "region": [
-      "Piltover"
-    ],
+    "class": ["Marksman", "Mage"],
+    "spells": ["EzrealQ", "EzrealW", "EzrealE", "EzrealR"],
+    "region": ["Piltover"],
     "gender": "Male",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Range"],
     "year": 2010,
     "mana": "Mana",
     "name": "Ezreal",
-    "tags": [
-      "Marksman",
-      "Mage"
+    "tags": ["Marksman", "Mage"],
+    "skinlines": [
+      "Freljord",
+      "World Champions",
+      "Pulsefire",
+      "PsyOps",
+      "Legacy",
+      "HEARTSTEEL",
+      "Highstakes",
+      "Arcade: Heroes",
+      "Heavenscale",
+      "Battle Academia",
+      "Star Guardian",
+      "Debonair",
+      "Porcelain",
+      "Soccer Cup",
+      "Faerie Court"
     ]
   },
   "Fiddlesticks": {
     "id": "Fiddlesticks",
     "key": "9",
-    "class": [
-      "Mage",
-      "Support"
-    ],
-    "spells": [
-      "FiddleSticksQ",
-      "FiddleSticksW",
-      "FiddleSticksE",
-      "FiddleSticksR"
-    ],
-    "region": [
-      "Runeterra"
-    ],
+    "class": ["Mage", "Support"],
+    "spells": ["FiddleSticksQ", "FiddleSticksW", "FiddleSticksE", "FiddleSticksR"],
+    "region": ["Runeterra"],
     "gender": "Other",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Demon",
-      "Spirit"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Demon", "Spirit"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Fiddlesticks",
-    "tags": [
-      "Mage",
-      "Support"
+    "tags": ["Mage", "Support"],
+    "skinlines": [
+      "Star Guardian",
+      "Guardian of",
+      "High Noon",
+      "Blood Moon",
+      "Omen of",
+      "Bilgewater: Burning",
+      "Trick-or-Treat",
+      "Sugar Rush",
+      "Winter Sports"
     ]
   },
   "Fiora": {
     "id": "Fiora",
     "key": "114",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "FioraQ",
-      "FioraW",
-      "FioraE",
-      "FioraR"
-    ],
-    "region": [
-      "Demacia"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["FioraQ", "FioraW", "FioraE", "FioraR"],
+    "region": ["Demacia"],
     "gender": "Female",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human"],
+    "range": ["Melee"],
     "year": 2012,
     "mana": "Mana",
     "name": "Fiora",
-    "tags": [
-      "Fighter",
-      "Assassin"
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": [
+      "Heartbreakers",
+      "Pulsefire",
+      "Dragonmancers",
+      "Fables",
+      "World Champions",
+      "Bewitching",
+      "Lunar Beast",
+      "Pool Party",
+      "Immortal Journey",
+      "PROJECT",
+      "Academy",
+      "Bloodstone",
+      "Faerie Court"
     ]
   },
   "Fizz": {
     "id": "Fizz",
     "key": "105",
-    "class": [
-      "Assassin",
-      "Fighter"
-    ],
-    "spells": [
-      "FizzQ",
-      "FizzW",
-      "FizzE",
-      "FizzR"
-    ],
-    "region": [
-      "Bilgewater"
-    ],
+    "class": ["Assassin", "Fighter"],
+    "spells": ["FizzQ", "FizzW", "FizzE", "FizzR"],
+    "region": ["Bilgewater"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle"],
+    "species": ["Yordle"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Mana",
     "name": "Fizz",
-    "tags": [
-      "Assassin",
-      "Fighter"
+    "tags": ["Assassin", "Fighter"],
+    "skinlines": [
+      "Cats Versus",
+      "Day Job",
+      "Legacy",
+      "Forgotten Depths",
+      "Omega Squad",
+      "Demonic",
+      "Super Galaxy",
+      "Astronauts"
     ]
   },
   "Galio": {
     "id": "Galio",
     "key": "3",
-    "class": [
-      "Tank",
-      "Mage"
-    ],
-    "spells": [
-      "GalioQ",
-      "GalioW",
-      "GalioE",
-      "GalioR"
-    ],
-    "region": [
-      "Demacia"
-    ],
+    "class": ["Tank", "Mage"],
+    "spells": ["GalioQ", "GalioW", "GalioE", "GalioR"],
+    "region": ["Demacia"],
     "gender": "Male",
-    "positions": [
-      "Middle",
-      "Support"
-    ],
-    "species": [
-      "Golem"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle", "Support"],
+    "species": ["Golem"],
+    "range": ["Melee"],
     "year": 2010,
     "mana": "Mana",
     "name": "Galio",
-    "tags": [
-      "Tank",
-      "Mage"
+    "tags": ["Tank", "Mage"],
+    "skinlines": [
+      "Legacy",
+      "Hextech",
+      "Commando",
+      "Dragon World",
+      "Demonic",
+      "Infernal",
+      "Debonair",
+      "Culinary Masters",
+      "Mythmaker"
     ]
   },
   "Gangplank": {
     "id": "Gangplank",
     "key": "41",
-    "class": [
-      "Fighter"
-    ],
-    "spells": [
-      "GangplankQWrapper",
-      "GangplankW",
-      "GangplankE",
-      "GangplankR"
-    ],
-    "region": [
-      "Bilgewater"
-    ],
+    "class": ["Fighter"],
+    "spells": ["GangplankQWrapper", "GangplankW", "GangplankE", "GangplankR"],
+    "region": ["Bilgewater"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Gangplank",
-    "tags": [
-      "Fighter"
+    "tags": ["Fighter"],
+    "skinlines": [
+      "World Champions",
+      "Wonders of",
+      "Day Job",
+      "Legacy",
+      "Commando",
+      "Ruined",
+      "Pool Party",
+      "Bilgewater: Burning",
+      "PROJECT",
+      "Trick-or-Treat",
+      "Toy Box"
     ]
   },
   "Garen": {
     "id": "Garen",
     "key": "86",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "GarenQ",
-      "GarenW",
-      "GarenE",
-      "GarenR"
-    ],
-    "region": [
-      "Demacia"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["GarenQ", "GarenW", "GarenE", "GarenR"],
+    "region": ["Demacia"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human"],
+    "range": ["Melee"],
     "year": 2010,
     "mana": "Manaless",
     "name": "Garen",
-    "tags": [
-      "Fighter",
-      "Tank"
+    "tags": ["Fighter", "Tank"],
+    "skinlines": [
+      "Rift Quest",
+      "Legacy",
+      "Commando",
+      "Bilgewater: Burning",
+      "Battle Academia",
+      "Lunar Revel",
+      "Mythmaker",
+      "Mecha"
     ]
   },
   "Gnar": {
     "id": "Gnar",
     "key": "150",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "GnarQ",
-      "GnarW",
-      "GnarE",
-      "GnarR"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["GnarQ", "GnarW", "GnarE", "GnarR"],
+    "region": ["Freljord"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Melee",
-      "Range"
-    ],
+    "positions": ["Top"],
+    "species": ["Yordle"],
+    "range": ["Melee", "Range"],
     "year": 2014,
     "mana": "Manaless",
     "name": "Gnar",
-    "tags": [
-      "Fighter",
-      "Tank"
+    "tags": ["Fighter", "Tank"],
+    "skinlines": [
+      "High Society",
+      "La Ilusión",
+      "World Champions",
+      "Snow Day",
+      "Super Galaxy",
+      "Elderwood",
+      "Toy Box",
+      "Astronauts"
     ]
   },
   "Gragas": {
     "id": "Gragas",
     "key": "79",
-    "class": [
-      "Fighter",
-      "Mage"
-    ],
-    "spells": [
-      "GragasQ",
-      "GragasW",
-      "GragasE",
-      "GragasR"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Fighter", "Mage"],
+    "spells": ["GragasQ", "GragasW", "GragasE", "GragasR"],
+    "region": ["Freljord"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Top"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Top"],
+    "species": ["Human"],
+    "range": ["Melee"],
     "year": 2010,
     "mana": "Mana",
     "name": "Gragas",
-    "tags": [
-      "Fighter",
-      "Mage"
+    "tags": ["Fighter", "Mage"],
+    "skinlines": [
+      "World Champions",
+      "Wonders of",
+      "Day Job",
+      "Rift Quest",
+      "Legacy",
+      "High Noon",
+      "Snowdown Showdown",
+      "Space Groove",
+      "Warden",
+      "Crime City",
+      "Vandal",
+      "Soccer Cup",
+      "arcticops"
     ]
   },
   "Graves": {
     "id": "Graves",
     "key": "104",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "GravesQLineSpell",
-      "GravesSmokeGrenade",
-      "GravesMove",
-      "GravesChargeShot"
-    ],
-    "region": [
-      "Bilgewater"
-    ],
+    "class": ["Marksman"],
+    "spells": ["GravesQLineSpell", "GravesSmokeGrenade", "GravesMove", "GravesChargeShot"],
+    "region": ["Bilgewater"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Human"],
+    "range": ["Range"],
     "year": 2011,
     "mana": "Mana",
     "name": "Graves",
-    "tags": [
-      "Marksman"
+    "tags": ["Marksman"],
+    "skinlines": [
+      "Riot",
+      "Victorious",
+      "Legacy",
+      "Porcelain",
+      "Snow Day",
+      "Pool Party",
+      "Bilgewater: Burning",
+      "Battle Academia",
+      "Crime City",
+      "Sentinels of",
+      "Vandal",
+      "World Champions"
     ]
   },
   "Gwen": {
     "id": "Gwen",
     "key": "887",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "GwenQ",
-      "GwenW",
-      "GwenE",
-      "GwenR"
-    ],
-    "region": [
-      "Camavor",
-      "Shadow Isles"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["GwenQ", "GwenW", "GwenE", "GwenR"],
+    "region": ["Camavor", "Shadow Isles"],
     "gender": "Female",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Melee"],
     "year": 2021,
     "mana": "Mana",
     "name": "Gwen",
-    "tags": [
-      "Fighter"
-    ]
+    "tags": ["Fighter"],
+    "skinlines": ["Space Groove", "Cafe Cuties", "Soul Fighter"]
   },
   "Hecarim": {
     "id": "Hecarim",
     "key": "120",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "HecarimRapidSlash",
-      "HecarimW",
-      "HecarimRamp",
-      "HecarimUlt"
-    ],
-    "region": [
-      "Camavor",
-      "Shadow Isles"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["HecarimRapidSlash", "HecarimW", "HecarimRamp", "HecarimUlt"],
+    "region": ["Camavor", "Shadow Isles"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Undead"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Undead"],
+    "range": ["Melee"],
     "year": 2012,
     "mana": "Mana",
     "name": "Hecarim",
-    "tags": [
-      "Fighter",
-      "Tank"
+    "tags": ["Fighter", "Tank"],
+    "skinlines": [
+      "High Noon",
+      "Arcade: Heroes",
+      "Cosmic",
+      "Arcana",
+      "Death Sworn",
+      "Trick-or-Treat",
+      "Elderwood",
+      "Winterblessed",
+      "Worldbreaker",
+      "Bloodstone"
     ]
   },
   "Heimerdinger": {
     "id": "Heimerdinger",
     "key": "74",
-    "class": [
-      "Mage",
-      "Support"
-    ],
-    "spells": [
-      "HeimerdingerQ",
-      "HeimerdingerW",
-      "HeimerdingerE",
-      "HeimerdingerR"
-    ],
-    "region": [
-      "Piltover"
-    ],
+    "class": ["Mage", "Support"],
+    "spells": ["HeimerdingerQ", "HeimerdingerW", "HeimerdingerE", "HeimerdingerR"],
+    "region": ["Piltover"],
     "gender": "Male",
-    "positions": [
-      "Middle",
-      "Support",
-      "Top"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle", "Support", "Top"],
+    "species": ["Yordle"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Heimerdinger",
-    "tags": [
-      "Mage",
-      "Support"
+    "tags": ["Mage", "Support"],
+    "skinlines": [
+      "Day Job",
+      "Road Warrior",
+      "Dragon World",
+      "Pool Party",
+      "Snowdown Showdown",
+      "Bees!"
     ]
   },
   "Illaoi": {
     "id": "Illaoi",
     "key": "420",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "IllaoiQ",
-      "IllaoiW",
-      "IllaoiE",
-      "IllaoiR"
-    ],
-    "region": [
-      "Bilgewater"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["IllaoiQ", "IllaoiW", "IllaoiE", "IllaoiR"],
+    "region": ["Bilgewater"],
     "gender": "Female",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human",
-      "Spiritualist"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human", "Spiritualist"],
+    "range": ["Melee"],
     "year": 2015,
     "mana": "Mana",
     "name": "Illaoi",
-    "tags": [
-      "Fighter",
-      "Tank"
-    ]
+    "tags": ["Fighter", "Tank"],
+    "skinlines": ["Snow Moon", "Battlecast", "Cosmic"]
   },
   "Irelia": {
     "id": "Irelia",
     "key": "39",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "IreliaQ",
-      "IreliaW",
-      "IreliaE",
-      "IreliaR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["IreliaQ", "IreliaW", "IreliaE", "IreliaR"],
+    "region": ["Ionia"],
     "gender": "Female",
-    "positions": [
-      "Middle",
-      "Top"
-    ],
-    "species": [
-      "Human",
-      "Spiritualist"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle", "Top"],
+    "species": ["Human", "Spiritualist"],
+    "range": ["Melee"],
     "year": 2010,
     "mana": "Mana",
     "name": "Irelia",
-    "tags": [
-      "Fighter",
-      "Assassin"
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": [
+      "Day Job",
+      "Legacy",
+      "High Noon",
+      "World Champions",
+      "Winter Wonder",
+      "Silver Age",
+      "Immortal Journey",
+      "PROJECT",
+      "Sentinels of",
+      "Porcelain",
+      "Mythmaker"
     ]
   },
   "Ivern": {
     "id": "Ivern",
     "key": "427",
-    "class": [
-      "Support",
-      "Mage"
-    ],
-    "spells": [
-      "IvernQ",
-      "IvernW",
-      "IvernE",
-      "IvernR"
-    ],
-    "region": [
-      "Freljord",
-      "Ionia"
-    ],
+    "class": ["Support", "Mage"],
+    "spells": ["IvernQ", "IvernW", "IvernE", "IvernR"],
+    "region": ["Freljord", "Ionia"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Range"],
     "year": 2016,
     "mana": "Mana",
     "name": "Ivern",
-    "tags": [
-      "Support",
-      "Mage"
-    ]
+    "tags": ["Support", "Mage"],
+    "skinlines": ["Sugar Rush", "Coven", "Astronauts"]
   },
   "Janna": {
     "id": "Janna",
     "key": "40",
-    "class": [
-      "Support",
-      "Mage"
-    ],
-    "spells": [
-      "HowlingGale",
-      "SowTheWind",
-      "EyeOfTheStorm",
-      "ReapTheWhirlwind"
-    ],
-    "region": [
-      "Shurima",
-      "Zaun"
-    ],
+    "class": ["Support", "Mage"],
+    "spells": ["HowlingGale", "SowTheWind", "EyeOfTheStorm", "ReapTheWhirlwind"],
+    "region": ["Shurima", "Zaun"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "God",
-      "Spirit"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["God", "Spirit"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Janna",
-    "tags": [
-      "Support",
-      "Mage"
+    "tags": ["Support", "Mage"],
+    "skinlines": [
+      "Freljord",
+      "World Champions",
+      "Guardian of",
+      "Steel Valkyries",
+      "Day Job",
+      "Victorious",
+      "Hextech",
+      "Legacy",
+      "Battle Queens",
+      "Heavenscale",
+      "Bewitching",
+      "Immortal Journey",
+      "Star Guardian"
     ]
   },
   "JarvanIV": {
     "id": "JarvanIV",
     "key": "59",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
+    "class": ["Tank", "Fighter"],
     "spells": [
       "JarvanIVDragonStrike",
       "JarvanIVGoldenAegis",
@@ -1597,455 +1138,311 @@
       "JarvanIVCataclysm"
     ],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Demacia"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Human"],
+    "range": ["Melee"],
+    "region": ["Demacia"],
     "year": 2011,
     "mana": "Mana",
     "name": "Jarvan IV",
-    "tags": [
-      "Fighter",
-      "Tank"
-    ]
+    "tags": ["Fighter", "Tank"],
+    "skinlines": []
   },
   "Jax": {
     "id": "Jax",
     "key": "24",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "JaxQ",
-      "JaxW",
-      "JaxE",
-      "JaxR"
-    ],
-    "region": [
-      "Runeterra",
-      "Shurima"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["JaxQ", "JaxW", "JaxE", "JaxR"],
+    "region": ["Runeterra", "Shurima"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Top"
-    ],
-    "species": [
-      "Unknown"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Top"],
+    "species": ["Unknown"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Jax",
-    "tags": [
-      "Fighter"
+    "tags": ["Fighter"],
+    "skinlines": [
+      "World Champions",
+      "Day Job",
+      "Legacy",
+      "Conqueror",
+      "Immortal Journey",
+      "Warden",
+      "PROJECT",
+      "Empyrean",
+      "Vandal",
+      "Winter Sports",
+      "Mecha"
     ]
   },
   "Jayce": {
     "id": "Jayce",
     "key": "126",
-    "class": [
-      "Fighter",
-      "Marksman"
-    ],
-    "spells": [
-      "JayceToTheSkies",
-      "JayceStaticField",
-      "JayceThunderingBlow",
-      "JayceStanceHtG"
-    ],
-    "region": [
-      "Piltover"
-    ],
+    "class": ["Fighter", "Marksman"],
+    "spells": ["JayceToTheSkies", "JayceStaticField", "JayceThunderingBlow", "JayceStanceHtG"],
+    "region": ["Piltover"],
     "gender": "Male",
-    "positions": [
-      "Middle",
-      "Top"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee",
-      "Range"
-    ],
+    "positions": ["Middle", "Top"],
+    "species": ["Human"],
+    "range": ["Melee", "Range"],
     "year": 2012,
     "mana": "Mana",
     "name": "Jayce",
-    "tags": [
-      "Marksman",
-      "Fighter"
+    "tags": ["Marksman", "Fighter"],
+    "skinlines": [
+      "Rift Quest",
+      "Legacy",
+      "Battle Academia",
+      "Heavy Metal",
+      "Debonair",
+      "Arcane",
+      "Battlecast"
     ]
   },
   "Jhin": {
     "id": "Jhin",
     "key": "202",
-    "class": [
-      "Marksman",
-      "Mage"
-    ],
-    "spells": [
-      "JhinQ",
-      "JhinW",
-      "JhinE",
-      "JhinR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Marksman", "Mage"],
+    "spells": ["JhinQ", "JhinW", "JhinE", "JhinR"],
+    "region": ["Ionia"],
     "gender": "Male",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human",
-      "Spiritualist"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human", "Spiritualist"],
+    "range": ["Range"],
     "year": 2016,
     "mana": "Mana",
     "name": "Jhin",
-    "tags": [
-      "Marksman",
-      "Mage"
+    "tags": ["Marksman", "Mage"],
+    "skinlines": [
+      "Soul Fighter",
+      "World Champions",
+      "High Noon",
+      "Shan Hai",
+      "Blood Moon",
+      "Dark Star",
+      "PROJECT",
+      "Empyrean"
     ]
   },
   "Jinx": {
     "id": "Jinx",
     "key": "222",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "JinxQ",
-      "JinxW",
-      "JinxE",
-      "JinxR"
-    ],
-    "region": [
-      "Zaun"
-    ],
+    "class": ["Marksman"],
+    "spells": ["JinxQ", "JinxW", "JinxE", "JinxR"],
+    "region": ["Zaun"],
     "gender": "Female",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Chemically Altered",
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Chemically Altered", "Human"],
+    "range": ["Range"],
     "year": 2013,
     "mana": "Mana",
     "name": "Jinx",
-    "tags": [
-      "Marksman"
+    "tags": ["Marksman"],
+    "skinlines": [
+      "Heartbreakers",
+      "Cafe Cuties",
+      "Odyssey",
+      "Snowdown Showdown",
+      "PROJECT",
+      "Crime City",
+      "Star Guardian",
+      "Lunar Revel",
+      "Arcane",
+      "Zombies VS",
+      "Anima Squad"
     ]
   },
   "Kaisa": {
     "id": "Kaisa",
     "key": "145",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "KaisaQ",
-      "KaisaW",
-      "KaisaE",
-      "KaisaR"
-    ],
+    "class": ["Marksman"],
+    "spells": ["KaisaQ", "KaisaW", "KaisaE", "KaisaR"],
     "gender": "Female",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human",
-      "Void-Being"
-    ],
-    "range": [
-      "Range"
-    ],
-    "region": [
-      "Shurima",
-      "Void"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human", "Void-Being"],
+    "range": ["Range"],
+    "region": ["Shurima", "Void"],
     "year": 2018,
     "mana": "Mana",
     "name": "Kai'Sa",
-    "tags": [
-      "Marksman",
-      "Mage"
-    ]
+    "tags": ["Marksman", "Mage"],
+    "skinlines": []
   },
   "Kalista": {
     "id": "Kalista",
     "key": "429",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "KalistaMysticShot",
-      "KalistaW",
-      "KalistaExpungeWrapper",
-      "KalistaRx"
-    ],
-    "region": [
-      "Camavor",
-      "Shadow Isles"
-    ],
+    "class": ["Marksman"],
+    "spells": ["KalistaMysticShot", "KalistaW", "KalistaExpungeWrapper", "KalistaRx"],
+    "region": ["Camavor", "Shadow Isles"],
     "gender": "Female",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Undead"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Undead"],
+    "range": ["Range"],
     "year": 2014,
     "mana": "Mana",
     "name": "Kalista",
-    "tags": [
-      "Marksman"
-    ]
+    "tags": ["Marksman"],
+    "skinlines": ["World Champions", "Blood Moon", "Marauder", "Faerie Court"]
   },
   "Karma": {
     "id": "Karma",
     "key": "43",
-    "class": [
-      "Mage",
-      "Support"
-    ],
-    "spells": [
-      "KarmaQ",
-      "KarmaSpiritBind",
-      "KarmaSolKimShield",
-      "KarmaMantra"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Mage", "Support"],
+    "spells": ["KarmaQ", "KarmaSpiritBind", "KarmaSolKimShield", "KarmaMantra"],
+    "region": ["Ionia"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Spiritualist"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Human", "Spiritualist"],
+    "range": ["Range"],
     "year": 2011,
     "mana": "Mana",
     "name": "Karma",
-    "tags": [
-      "Mage",
-      "Support"
+    "tags": ["Mage", "Support"],
+    "skinlines": [
+      "Nightbringer and",
+      "Legacy",
+      "Dragonmancers",
+      "Odyssey",
+      "Ruined",
+      "Dark Star",
+      "Conqueror",
+      "Winter Wonder",
+      "Warden",
+      "Infernal",
+      "Worldbreaker",
+      "Faerie Court"
     ]
   },
   "Karthus": {
     "id": "Karthus",
     "key": "30",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "KarthusLayWasteA1",
-      "KarthusWallOfPain",
-      "KarthusDefile",
-      "KarthusFallenOne"
-    ],
-    "region": [
-      "Noxus",
-      "Shadow Isles"
-    ],
+    "class": ["Mage"],
+    "spells": ["KarthusLayWasteA1", "KarthusWallOfPain", "KarthusDefile", "KarthusFallenOne"],
+    "region": ["Noxus", "Shadow Isles"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Undead"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Undead"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Karthus",
-    "tags": [
-      "Mage"
+    "tags": ["Mage"],
+    "skinlines": [
+      "World Champions",
+      "Wonders of",
+      "Rift Quest",
+      "Legacy",
+      "Pentakill",
+      "Infernal",
+      "Trick-or-Treat",
+      "Elderwood"
     ]
   },
   "Kassadin": {
     "id": "Kassadin",
     "key": "38",
-    "class": [
-      "Assassin",
-      "Mage"
-    ],
-    "spells": [
-      "NullLance",
-      "NetherBlade",
-      "ForcePulse",
-      "RiftWalk"
-    ],
-    "region": [
-      "Shurima",
-      "Void"
-    ],
+    "class": ["Assassin", "Mage"],
+    "spells": ["NullLance", "NetherBlade", "ForcePulse", "RiftWalk"],
+    "region": ["Shurima", "Void"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Void-Being"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Void-Being"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Kassadin",
-    "tags": [
-      "Assassin",
-      "Mage"
+    "tags": ["Assassin", "Mage"],
+    "skinlines": [
+      "Legacy",
+      "Hextech",
+      "Dragonmancers",
+      "Cosmic",
+      "Forgotten Depths",
+      "Trick-or-Treat",
+      "Winter Sports"
     ]
   },
   "Katarina": {
     "id": "Katarina",
     "key": "55",
-    "class": [
-      "Assassin",
-      "Mage"
-    ],
-    "spells": [
-      "KatarinaQ",
-      "KatarinaW",
-      "KatarinaEWrapper",
-      "KatarinaR"
-    ],
-    "region": [
-      "Noxus"
-    ],
+    "class": ["Assassin", "Mage"],
+    "spells": ["KatarinaQ", "KatarinaW", "KatarinaEWrapper", "KatarinaR"],
+    "region": ["Noxus"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Manaless",
     "name": "Katarina",
-    "tags": [
-      "Assassin",
-      "Mage"
+    "tags": ["Assassin", "Mage"],
+    "skinlines": [
+      "Guardian of",
+      "Legacy",
+      "High Noon",
+      "Battle Queens",
+      "Blood Moon",
+      "Snowdown Showdown",
+      "Bilgewater: Burning",
+      "PROJECT",
+      "Battle Academia",
+      "Lunar Revel",
+      "Death Sworn",
+      "Trick-or-Treat",
+      "Soccer Cup",
+      "Faerie Court"
     ]
   },
   "Kayle": {
     "id": "Kayle",
     "key": "10",
-    "class": [
-      "Fighter",
-      "Support"
-    ],
-    "spells": [
-      "KayleQ",
-      "KayleW",
-      "KayleE",
-      "KayleR"
-    ],
-    "region": [
-      "Demacia",
-      "Targon"
-    ],
+    "class": ["Fighter", "Support"],
+    "spells": ["KayleQ", "KayleW", "KayleE", "KayleR"],
+    "region": ["Demacia", "Targon"],
     "gender": "Female",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Aspect",
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Melee",
-      "Range"
-    ],
+    "positions": ["Top"],
+    "species": ["Aspect", "Human", "Magically Altered"],
+    "range": ["Melee", "Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Kayle",
-    "tags": [
-      "Mage",
-      "Marksman"
+    "tags": ["Mage", "Marksman"],
+    "skinlines": [
+      "Steel Valkyries",
+      "Woad",
+      "Riot",
+      "Black Rose",
+      "Legacy",
+      "Dragon World",
+      "Omen of",
+      "Pentakill",
+      "Immortal Journey",
+      "Otherroads",
+      "Empyrean",
+      "Eclipse"
     ]
   },
   "Kayn": {
     "id": "Kayn",
     "key": "141",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "KaynQ",
-      "KaynW",
-      "KaynE",
-      "KaynR"
-    ],
-    "region": [
-      "Ionia",
-      "Noxus",
-      "Runeterra",
-      "Shurima"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["KaynQ", "KaynW", "KaynE", "KaynR"],
+    "region": ["Ionia", "Noxus", "Runeterra", "Shurima"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Darkin",
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Darkin", "Human", "Magically Altered"],
+    "range": ["Melee"],
     "year": 2017,
     "mana": "Mana",
     "name": "Kayn",
-    "tags": [
-      "Fighter",
-      "Assassin"
-    ]
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": ["Snow Moon", "Nightbringer and", "HEARTSTEEL", "Odyssey"]
   },
   "Kennen": {
     "id": "Kennen",
     "key": "85",
-    "class": [
-      "Mage",
-      "Marksman"
-    ],
+    "class": ["Mage", "Marksman"],
     "spells": [
       "KennenShurikenHurlMissile1",
       "KennenBringTheLight",
@@ -2053,647 +1450,414 @@
       "KennenShurikenStorm"
     ],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Range"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "positions": ["Top"],
+    "species": ["Yordle"],
+    "range": ["Range"],
+    "region": ["Ionia"],
     "year": 2010,
     "mana": "Manaless",
     "name": "Kennen",
-    "tags": [
-      "Mage"
+    "tags": ["Mage"],
+    "skinlines": [
+      "Legacy",
+      "Blood Moon",
+      "Silver Age",
+      "World Champions",
+      "Infernal",
+      "Astronauts",
+      "arcticops"
     ]
   },
   "Khazix": {
     "id": "Khazix",
     "key": "121",
-    "class": [
-      "Assassin"
-    ],
-    "spells": [
-      "KhazixQ",
-      "KhazixW",
-      "KhazixE",
-      "KhazixR"
-    ],
+    "class": ["Assassin"],
+    "spells": ["KhazixQ", "KhazixW", "KhazixE", "KhazixR"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Void-Being"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Void"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Void-Being"],
+    "range": ["Melee"],
+    "region": ["Void"],
     "year": 2012,
     "mana": "Mana",
     "name": "Kha'Zix",
-    "tags": [
-      "Assassin"
-    ]
+    "tags": ["Assassin"],
+    "skinlines": []
   },
   "Kindred": {
     "id": "Kindred",
     "key": "203",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "KindredQ",
-      "KindredW",
-      "KindredEWrapper",
-      "KindredR"
-    ],
-    "region": [
-      "Runeterra"
-    ],
+    "class": ["Marksman"],
+    "spells": ["KindredQ", "KindredW", "KindredEWrapper", "KindredR"],
+    "region": ["Runeterra"],
     "gender": "Other",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "God",
-      "Spirit"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Jungle"],
+    "species": ["God", "Spirit"],
+    "range": ["Range"],
     "year": 2015,
     "mana": "Mana",
     "name": "Kindred",
-    "tags": [
-      "Marksman"
+    "tags": ["Marksman"],
+    "skinlines": [
+      "World Champions",
+      "Cats Versus",
+      "Spirit Blossom",
+      "Super Galaxy",
+      "Infernal",
+      "Porcelain"
     ]
   },
   "Kled": {
     "id": "Kled",
     "key": "240",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "KledQ",
-      "KledW",
-      "KledE",
-      "KledR"
-    ],
-    "region": [
-      "Noxus"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["KledQ", "KledW", "KledE", "KledR"],
+    "region": ["Noxus"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Yordle"],
+    "range": ["Melee"],
     "year": 2016,
     "mana": "Manaless",
     "name": "Kled",
-    "tags": [
-      "Fighter"
-    ]
+    "tags": ["Fighter"],
+    "skinlines": ["Trick-or-Treat", "Medieval", "Marauder", "Cats Versus"]
   },
   "KogMaw": {
     "id": "KogMaw",
     "key": "96",
-    "class": [
-      "Marksman",
-      "Mage"
-    ],
-    "spells": [
-      "KogMawQ",
-      "KogMawBioArcaneBarrage",
-      "KogMawVoidOoze",
-      "KogMawLivingArtillery"
-    ],
+    "class": ["Marksman", "Mage"],
+    "spells": ["KogMawQ", "KogMawBioArcaneBarrage", "KogMawVoidOoze", "KogMawLivingArtillery"],
     "gender": "Male",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Void-Being"
-    ],
-    "range": [
-      "Range"
-    ],
-    "region": [
-      "Void"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Void-Being"],
+    "range": ["Range"],
+    "region": ["Void"],
     "year": 2010,
     "mana": "Mana",
     "name": "Kog'Maw",
-    "tags": [
-      "Marksman",
-      "Mage"
-    ]
+    "tags": ["Marksman", "Mage"],
+    "skinlines": []
   },
   "KSante": {
     "id": "KSante",
     "key": "897",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
-    "spells": [
-      "KSanteQ",
-      "KSanteW",
-      "KSanteE",
-      "KSanteR"
-    ],
+    "class": ["Tank", "Fighter"],
+    "spells": ["KSanteQ", "KSanteW", "KSanteE", "KSanteR"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Shurima"
-    ],
+    "positions": ["Top"],
+    "species": ["Human"],
+    "range": ["Melee"],
+    "region": ["Shurima"],
     "year": 2022,
     "mana": "Mana",
     "name": "K'Sante",
-    "tags": [
-      "Tank",
-      "Fighter"
-    ]
+    "tags": ["Tank", "Fighter"],
+    "skinlines": []
   },
   "Leblanc": {
     "id": "Leblanc",
     "key": "7",
-    "class": [
-      "Assassin",
-      "Mage"
-    ],
-    "spells": [
-      "LeblancQ",
-      "LeblancW",
-      "LeblancE",
-      "LeblancR"
-    ],
-    "region": [
-      "Noxus"
-    ],
+    "class": ["Assassin", "Mage"],
+    "spells": ["LeblancQ", "LeblancW", "LeblancE", "LeblancR"],
+    "region": ["Noxus"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Range"],
     "year": 2010,
     "mana": "Mana",
     "name": "LeBlanc",
-    "tags": [
-      "Assassin",
-      "Mage"
-    ]
+    "tags": ["Assassin", "Mage"],
+    "skinlines": []
   },
   "LeeSin": {
     "id": "LeeSin",
     "key": "64",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "BlindMonkQOne",
-      "BlindMonkWOne",
-      "BlindMonkEOne",
-      "BlindMonkRKick"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["BlindMonkQOne", "BlindMonkWOne", "BlindMonkEOne", "BlindMonkRKick"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Human",
-      "Spiritualist"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Human", "Spiritualist"],
+    "range": ["Melee"],
+    "region": ["Ionia"],
     "year": 2011,
     "mana": "Manaless",
     "name": "Lee Sin",
-    "tags": [
-      "Fighter",
-      "Assassin"
-    ]
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": []
   },
   "Leona": {
     "id": "Leona",
     "key": "89",
-    "class": [
-      "Tank",
-      "Support"
-    ],
-    "spells": [
-      "LeonaShieldOfDaybreak",
-      "LeonaSolarBarrier",
-      "LeonaZenithBlade",
-      "LeonaSolarFlare"
-    ],
-    "region": [
-      "Targon"
-    ],
+    "class": ["Tank", "Support"],
+    "spells": ["LeonaShieldOfDaybreak", "LeonaSolarBarrier", "LeonaZenithBlade", "LeonaSolarFlare"],
+    "region": ["Targon"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Aspect",
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Support"],
+    "species": ["Aspect", "Human"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Mana",
     "name": "Leona",
-    "tags": [
-      "Tank",
-      "Support"
+    "tags": ["Tank", "Support"],
+    "skinlines": [
+      "High Noon",
+      "Fables",
+      "Legacy",
+      "Pool Party",
+      "Battle Academia",
+      "PROJECT",
+      "World Champions",
+      "Debonair",
+      "Culinary Masters",
+      "Eclipse",
+      "Mecha"
     ]
   },
   "Lillia": {
     "id": "Lillia",
     "key": "876",
-    "class": [
-      "Fighter",
-      "Mage"
-    ],
-    "spells": [
-      "LilliaQ",
-      "LilliaW",
-      "LilliaE",
-      "LilliaR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Fighter", "Mage"],
+    "spells": ["LilliaQ", "LilliaW", "LilliaE", "LilliaR"],
+    "region": ["Ionia"],
     "gender": "Female",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Spirit"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Spirit"],
+    "range": ["Melee"],
     "year": 2020,
     "mana": "Mana",
     "name": "Lillia",
-    "tags": [
-      "Fighter",
-      "Mage"
-    ]
+    "tags": ["Fighter", "Mage"],
+    "skinlines": ["Nightbringer and", "Spirit Blossom", "Shan Hai", "Faerie Court"]
   },
   "Lissandra": {
     "id": "Lissandra",
     "key": "127",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "LissandraQ",
-      "LissandraW",
-      "LissandraE",
-      "LissandraR"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Mage"],
+    "spells": ["LissandraQ", "LissandraW", "LissandraE", "LissandraR"],
+    "region": ["Freljord"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Iceborn"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Iceborn"],
+    "range": ["Range"],
     "year": 2013,
     "mana": "Mana",
     "name": "Lissandra",
-    "tags": [
-      "Mage"
+    "tags": ["Mage"],
+    "skinlines": [
+      "Dark Star",
+      "Omen of",
+      "Program",
+      "Space Groove",
+      "Porcelain",
+      "Coven",
+      "Bloodstone"
     ]
   },
   "Lucian": {
     "id": "Lucian",
     "key": "236",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "LucianQ",
-      "LucianW",
-      "LucianE",
-      "LucianR"
-    ],
-    "region": [
-      "Demacia",
-      "Shadow Isles"
-    ],
+    "class": ["Marksman"],
+    "spells": ["LucianQ", "LucianW", "LucianE", "LucianR"],
+    "region": ["Demacia", "Shadow Isles"],
     "gender": "Male",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human"],
+    "range": ["Range"],
     "year": 2013,
     "mana": "Mana",
     "name": "Lucian",
-    "tags": [
-      "Marksman",
-      "Assassin"
+    "tags": ["Marksman", "Assassin"],
+    "skinlines": [
+      "Heartbreakers",
+      "Steel Valkyries",
+      "Pulsefire",
+      "High Noon",
+      "Legacy",
+      "Victorious",
+      "PROJECT",
+      "Arcana",
+      "Winterblessed",
+      "Soccer Cup"
     ]
   },
   "Lulu": {
     "id": "Lulu",
     "key": "117",
-    "class": [
-      "Support",
-      "Mage"
-    ],
-    "spells": [
-      "LuluQ",
-      "LuluW",
-      "LuluE",
-      "LuluR"
-    ],
-    "region": [
-      "Bandle City"
-    ],
+    "class": ["Support", "Mage"],
+    "spells": ["LuluQ", "LuluW", "LuluE", "LuluR"],
+    "region": ["Bandle City"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Yordle"],
+    "range": ["Range"],
     "year": 2012,
     "mana": "Mana",
     "name": "Lulu",
-    "tags": [
-      "Support",
-      "Mage"
+    "tags": ["Support", "Mage"],
+    "skinlines": [
+      "Cafe Cuties",
+      "Cosmic",
+      "Dragon World",
+      "Pool Party",
+      "Space Groove",
+      "Winter Wonder",
+      "Star Guardian",
+      "Trick-or-Treat",
+      "Sugar Rush"
     ]
   },
   "Lux": {
     "id": "Lux",
     "key": "99",
-    "class": [
-      "Mage",
-      "Support"
-    ],
-    "spells": [
-      "LuxLightBinding",
-      "LuxPrismaticWave",
-      "LuxLightStrikeKugel",
-      "LuxR"
-    ],
-    "region": [
-      "Demacia"
-    ],
+    "class": ["Mage", "Support"],
+    "spells": ["LuxLightBinding", "LuxPrismaticWave", "LuxLightStrikeKugel", "LuxR"],
+    "region": ["Demacia"],
     "gender": "Female",
-    "positions": [
-      "Middle",
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle", "Support"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Range"],
     "year": 2010,
     "mana": "Mana",
     "name": "Lux",
-    "tags": [
-      "Mage",
-      "Support"
+    "tags": ["Mage", "Support"],
+    "skinlines": [
+      "Faerie Court",
+      "Soul Fighter",
+      "Legacy",
+      "Commando",
+      "Porcelain",
+      "Cosmic",
+      "Dark Star",
+      "Space Groove",
+      "Battle Academia",
+      "Medieval",
+      "Star Guardian",
+      "Lunar Revel",
+      "Empyrean",
+      "Arcanists"
     ]
   },
   "Malphite": {
     "id": "Malphite",
     "key": "54",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
-    "spells": [
-      "SeismicShard",
-      "Obduracy",
-      "Landslide",
-      "UFSlash"
-    ],
-    "region": [
-      "Ixtal",
-      "Shurima"
-    ],
+    "class": ["Tank", "Fighter"],
+    "spells": ["SeismicShard", "Obduracy", "Landslide", "UFSlash"],
+    "region": ["Ixtal", "Shurima"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Golem"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Golem"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Malphite",
-    "tags": [
-      "Tank",
-      "Mage"
+    "tags": ["Tank", "Mage"],
+    "skinlines": [
+      "World Champions",
+      "Mecha",
+      "Wonders of",
+      "Legacy",
+      "Odyssey",
+      "Forgotten Depths",
+      "Dark Star",
+      "Bilgewater: Burning",
+      "Infernal",
+      "Lunar Revel",
+      "Coven"
     ]
   },
   "Malzahar": {
     "id": "Malzahar",
     "key": "90",
-    "class": [
-      "Mage",
-      "Assassin"
-    ],
-    "spells": [
-      "MalzaharQ",
-      "MalzaharW",
-      "MalzaharE",
-      "MalzaharR"
-    ],
-    "region": [
-      "Shurima",
-      "Void"
-    ],
+    "class": ["Mage", "Assassin"],
+    "spells": ["MalzaharQ", "MalzaharW", "MalzaharE", "MalzaharR"],
+    "region": ["Shurima", "Void"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Void-Being"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Void-Being"],
+    "range": ["Range"],
     "year": 2010,
     "mana": "Mana",
     "name": "Malzahar",
-    "tags": [
-      "Mage"
+    "tags": ["Mage"],
+    "skinlines": [
+      "Wonders of",
+      "Definitely Not",
+      "Legacy",
+      "Fables",
+      "Hextech",
+      "Arcade: Battle",
+      "Snow Day",
+      "Bees!",
+      "Debonair",
+      "Empyrean",
+      "Worldbreaker"
     ]
   },
   "Maokai": {
     "id": "Maokai",
     "key": "57",
-    "class": [
-      "Tank",
-      "Mage"
-    ],
-    "spells": [
-      "MaokaiQ",
-      "MaokaiW",
-      "MaokaiE",
-      "MaokaiR"
-    ],
-    "region": [
-      "Shadow Isles"
-    ],
+    "class": ["Tank", "Mage"],
+    "spells": ["MaokaiQ", "MaokaiW", "MaokaiE", "MaokaiR"],
+    "region": ["Shadow Isles"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Support"
-    ],
-    "species": [
-      "Spirit"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Support"],
+    "species": ["Spirit"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Mana",
     "name": "Maokai",
-    "tags": [
-      "Tank",
-      "Support"
+    "tags": ["Tank", "Support"],
+    "skinlines": [
+      "Cats Versus",
+      "World Champions",
+      "Victorious",
+      "Legacy",
+      "Snowdown Showdown",
+      "Infernal",
+      "Trick-or-Treat",
+      "Worldbreaker",
+      "Astronauts",
+      "Soccer Cup"
     ]
   },
   "MasterYi": {
     "id": "MasterYi",
     "key": "11",
-    "class": [
-      "Assassin",
-      "Fighter"
-    ],
-    "spells": [
-      "AlphaStrike",
-      "Meditate",
-      "WujuStyle",
-      "Highlander"
-    ],
+    "class": ["Assassin", "Fighter"],
+    "spells": ["AlphaStrike", "Meditate", "WujuStyle", "Highlander"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Human",
-      "Spiritualist"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Human", "Spiritualist"],
+    "range": ["Melee"],
+    "region": ["Ionia"],
     "year": 2009,
     "mana": "Mana",
     "name": "Master Yi",
-    "tags": [
-      "Assassin",
-      "Fighter"
-    ]
+    "tags": ["Assassin", "Fighter"],
+    "skinlines": []
   },
   "Milio": {
     "id": "Milio",
     "key": "902",
-    "class": [
-      "Support"
-    ],
-    "spells": [
-      "MilioQ",
-      "MilioW",
-      "MilioE",
-      "MilioR"
-    ],
-    "region": [
-      "Ixtal"
-    ],
+    "class": ["Support"],
+    "spells": ["MilioQ", "MilioW", "MilioE", "MilioR"],
+    "region": ["Ixtal"],
     "gender": "Male",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Range"],
     "year": 2023,
     "mana": "Mana",
     "name": "Milio",
-    "tags": [
-      "Support",
-      "Mage"
-    ]
+    "tags": ["Support", "Mage"],
+    "skinlines": ["Faerie Court"]
   },
   "MissFortune": {
     "id": "MissFortune",
     "key": "21",
-    "class": [
-      "Marksman"
-    ],
+    "class": ["Marksman"],
     "spells": [
       "MissFortuneRicochetShot",
       "MissFortuneViciousStrikes",
@@ -2701,33 +1865,20 @@
       "MissFortuneBulletTime"
     ],
     "gender": "Female",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
-    "region": [
-      "Bilgewater"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human"],
+    "range": ["Range"],
+    "region": ["Bilgewater"],
     "year": 2010,
     "mana": "Mana",
     "name": "Miss Fortune",
-    "tags": [
-      "Marksman",
-      "Mage"
-    ]
+    "tags": ["Marksman", "Mage"],
+    "skinlines": []
   },
   "MonkeyKing": {
     "id": "MonkeyKing",
     "key": "62",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
+    "class": ["Fighter", "Tank"],
     "spells": [
       "MonkeyKingDoubleAttack",
       "MonkeyKingDecoy",
@@ -2735,2939 +1886,1972 @@
       "MonkeyKingSpinToWin"
     ],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Top"
-    ],
-    "species": [
-      "Vastayan"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "positions": ["Jungle", "Top"],
+    "species": ["Vastayan"],
+    "range": ["Melee"],
+    "region": ["Ionia"],
     "year": 2011,
     "mana": "Mana",
     "name": "Wukong",
-    "tags": [
-      "Fighter",
-      "Tank"
-    ]
+    "tags": ["Fighter", "Tank"],
+    "skinlines": []
   },
   "Mordekaiser": {
     "id": "Mordekaiser",
     "key": "82",
-    "class": [
-      "Fighter"
-    ],
-    "spells": [
-      "MordekaiserQ",
-      "MordekaiserW",
-      "MordekaiserE",
-      "MordekaiserR"
-    ],
-    "region": [
-      "Noxus",
-      "Shadow Isles"
-    ],
+    "class": ["Fighter"],
+    "spells": ["MordekaiserQ", "MordekaiserW", "MordekaiserE", "MordekaiserR"],
+    "region": ["Noxus", "Shadow Isles"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Revenant"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Revenant"],
+    "range": ["Melee"],
     "year": 2010,
     "mana": "Manaless",
     "name": "Mordekaiser",
-    "tags": [
-      "Fighter",
-      "Mage"
+    "tags": ["Fighter", "Mage"],
+    "skinlines": [
+      "Rift Quest",
+      "High Noon",
+      "Highstakes",
+      "Dark Star",
+      "Dragon World",
+      "Pentakill",
+      "PROJECT",
+      "Infernal",
+      "Coven",
+      "Ashen Knights"
     ]
   },
   "Morgana": {
     "id": "Morgana",
     "key": "25",
-    "class": [
-      "Mage",
-      "Support"
-    ],
-    "spells": [
-      "MorganaQ",
-      "MorganaW",
-      "MorganaE",
-      "MorganaR"
-    ],
-    "region": [
-      "Demacia",
-      "Targon"
-    ],
+    "class": ["Mage", "Support"],
+    "spells": ["MorganaQ", "MorganaW", "MorganaE", "MorganaR"],
+    "region": ["Demacia", "Targon"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Aspect",
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Aspect", "Human", "Magically Altered"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Morgana",
-    "tags": [
-      "Mage",
-      "Support"
+    "tags": ["Mage", "Support"],
+    "skinlines": [
+      "Snow Moon",
+      "Steel Valkyries",
+      "Star Guardian",
+      "Nightbringer and",
+      "Woad",
+      "Victorious",
+      "Fables",
+      "Porcelain",
+      "Bewitching",
+      "Immortal Journey",
+      "Lunar Revel",
+      "Culinary Masters",
+      "Coven"
     ]
   },
   "Naafiri": {
     "id": "Naafiri",
     "key": "950",
-    "class": [
-      "Assassin"
-    ],
-    "spells": [
-      "NaafiriQ",
-      "NaafiriW",
-      "NaafiriE",
-      "NaafiriR"
-    ],
+    "class": ["Assassin"],
+    "spells": ["NaafiriQ", "NaafiriW", "NaafiriE", "NaafiriR"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Darkin",
-      "Dog"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Shurima"
-    ],
+    "positions": ["Middle"],
+    "species": ["Darkin", "Dog"],
+    "range": ["Melee"],
+    "region": ["Shurima"],
     "year": 2023,
     "mana": "Mana",
     "name": "Naafiri",
-    "tags": [
-      "Assassin",
-      "Fighter"
-    ]
+    "tags": ["Assassin", "Fighter"],
+    "skinlines": ["PROJECT", "Soul Fighter"]
   },
   "Nami": {
     "id": "Nami",
     "key": "267",
-    "class": [
-      "Support",
-      "Mage"
-    ],
-    "spells": [
-      "NamiQ",
-      "NamiW",
-      "NamiE",
-      "NamiR"
-    ],
-    "region": [
-      "Bilgewater",
-      "Runeterra"
-    ],
+    "class": ["Support", "Mage"],
+    "spells": ["NamiQ", "NamiW", "NamiE", "NamiR"],
+    "region": ["Bilgewater", "Runeterra"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Vastayan"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Vastayan"],
+    "range": ["Range"],
     "year": 2012,
     "mana": "Mana",
     "name": "Nami",
-    "tags": [
-      "Support",
-      "Mage"
+    "tags": ["Support", "Mage"],
+    "skinlines": [
+      "World Champions",
+      "Legacy",
+      "Fables",
+      "Cosmic",
+      "Forgotten Depths",
+      "Bewitching",
+      "Space Groove",
+      "Program",
+      "Immortal Journey",
+      "Coven"
     ]
   },
   "Nasus": {
     "id": "Nasus",
     "key": "75",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "NasusQ",
-      "NasusW",
-      "NasusE",
-      "NasusR"
-    ],
-    "region": [
-      "Shurima"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["NasusQ", "NasusW", "NasusE", "NasusR"],
+    "region": ["Shurima"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "God-Warrior"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["God-Warrior"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Nasus",
-    "tags": [
-      "Fighter",
-      "Tank"
+    "tags": ["Fighter", "Tank"],
+    "skinlines": [
+      "Steel Valkyries",
+      "Nightbringer and",
+      "Riot",
+      "High Society",
+      "Space Groove",
+      "Infernal",
+      "Lunar Revel",
+      "Battlecast",
+      "Worldbreaker"
     ]
   },
   "Nautilus": {
     "id": "Nautilus",
     "key": "111",
-    "class": [
-      "Tank",
-      "Support"
-    ],
+    "class": ["Tank", "Support"],
     "spells": [
       "NautilusAnchorDrag",
       "NautilusPiercingGaze",
       "NautilusSplashZone",
       "NautilusGrandLine"
     ],
-    "region": [
-      "Bilgewater"
-    ],
+    "region": ["Bilgewater"],
     "gender": "Male",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Revenant"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Support"],
+    "species": ["Revenant"],
+    "range": ["Melee"],
     "year": 2012,
     "mana": "Mana",
     "name": "Nautilus",
-    "tags": [
-      "Tank",
-      "Support"
+    "tags": ["Tank", "Support"],
+    "skinlines": [
+      "Legacy",
+      "Fright Night",
+      "Shan Hai",
+      "Forgotten Depths",
+      "Conqueror",
+      "Cosmic",
+      "Warden",
+      "Worldbreaker",
+      "Astronauts"
     ]
   },
   "Neeko": {
     "id": "Neeko",
     "key": "518",
-    "class": [
-      "Mage",
-      "Support"
-    ],
-    "spells": [
-      "NeekoQ",
-      "NeekoW",
-      "NeekoE",
-      "NeekoR"
-    ],
-    "region": [
-      "Ixtal"
-    ],
+    "class": ["Mage", "Support"],
+    "spells": ["NeekoQ", "NeekoW", "NeekoE", "NeekoR"],
+    "region": ["Ixtal"],
     "gender": "Female",
-    "positions": [
-      "Middle",
-      "Support"
-    ],
-    "species": [
-      "Vastayan"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle", "Support"],
+    "species": ["Vastayan"],
+    "range": ["Range"],
     "year": 2018,
     "mana": "Mana",
     "name": "Neeko",
-    "tags": [
-      "Mage",
-      "Support"
-    ]
+    "tags": ["Mage", "Support"],
+    "skinlines": ["Street Demons", "Shan Hai", "Bewitching", "Winter Wonder", "Star Guardian"]
   },
   "Nidalee": {
     "id": "Nidalee",
     "key": "76",
-    "class": [
-      "Assassin",
-      "Mage"
-    ],
-    "spells": [
-      "JavelinToss",
-      "Bushwhack",
-      "PrimalSurge",
-      "AspectOfTheCougar"
-    ],
-    "region": [
-      "Ixtal"
-    ],
+    "class": ["Assassin", "Mage"],
+    "spells": ["JavelinToss", "Bushwhack", "PrimalSurge", "AspectOfTheCougar"],
+    "region": ["Ixtal"],
     "gender": "Female",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Human",
-      "Spiritualist"
-    ],
-    "range": [
-      "Melee",
-      "Range"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Human", "Spiritualist"],
+    "range": ["Melee", "Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Nidalee",
-    "tags": [
-      "Assassin",
-      "Mage"
+    "tags": ["Assassin", "Mage"],
+    "skinlines": [
+      "Nightbringer and",
+      "Cats Versus",
+      "Day Job",
+      "La Ilusión",
+      "Legacy",
+      "Cosmic",
+      "Bewitching",
+      "Snowdown Showdown",
+      "World Champions",
+      "Lunar Revel",
+      "Super Galaxy",
+      "Headhunter",
+      "Ocean Song"
     ]
   },
   "Nilah": {
     "id": "Nilah",
     "key": "895",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "NilahQ",
-      "NilahW",
-      "NilahE",
-      "NilahR"
-    ],
-    "region": [
-      "Bilgewater"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["NilahQ", "NilahW", "NilahE", "NilahR"],
+    "region": ["Bilgewater"],
     "gender": "Female",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Melee"],
     "year": 2022,
     "mana": "Mana",
     "name": "Nilah",
-    "tags": [
-      "Fighter",
-      "Assassin"
-    ]
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": ["Star Guardian", "Coven"]
   },
   "Nocturne": {
     "id": "Nocturne",
     "key": "56",
-    "class": [
-      "Assassin",
-      "Fighter"
-    ],
+    "class": ["Assassin", "Fighter"],
     "spells": [
       "NocturneDuskbringer",
       "NocturneShroudofDarkness",
       "NocturneUnspeakableHorror",
       "NocturneParanoia"
     ],
-    "region": [
-      "Runeterra"
-    ],
+    "region": ["Runeterra"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Demon",
-      "Spirit"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Demon", "Spirit"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Mana",
     "name": "Nocturne",
-    "tags": [
-      "Fighter",
-      "Assassin"
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": [
+      "Hextech",
+      "Empyrean",
+      "Silver Age",
+      "Omen of",
+      "Trick-or-Treat",
+      "Elderwood",
+      "Coven"
     ]
   },
   "Nunu": {
     "id": "Nunu",
     "key": "20",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
-    "spells": [
-      "NunuQ",
-      "NunuW",
-      "NunuE",
-      "NunuR"
-    ],
+    "class": ["Tank", "Fighter"],
+    "spells": ["NunuQ", "NunuW", "NunuE", "NunuR"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Human",
-      "Yeti"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Human", "Yeti"],
+    "range": ["Melee"],
+    "region": ["Freljord"],
     "year": 2009,
     "mana": "Mana",
     "name": "Nunu & Willump",
-    "tags": [
-      "Tank",
-      "Mage"
-    ]
+    "tags": ["Tank", "Mage"],
+    "skinlines": []
   },
   "Olaf": {
     "id": "Olaf",
     "key": "2",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "OlafAxeThrowCast",
-      "OlafFrenziedStrikes",
-      "OlafRecklessStrike",
-      "OlafRagnarok"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["OlafAxeThrowCast", "OlafFrenziedStrikes", "OlafRecklessStrike", "OlafRagnarok"],
+    "region": ["Freljord"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human",
-      "Iceborn"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human", "Iceborn"],
+    "range": ["Melee"],
     "year": 2010,
     "mana": "Mana",
     "name": "Olaf",
-    "tags": [
-      "Fighter",
-      "Tank"
+    "tags": ["Fighter", "Tank"],
+    "skinlines": [
+      "Day Job",
+      "World Champions",
+      "Legacy",
+      "Dragon World",
+      "Marauder",
+      "Pentakill",
+      "Sentinels of",
+      "Infernal",
+      "Culinary Masters"
     ]
   },
   "Orianna": {
     "id": "Orianna",
     "key": "61",
-    "class": [
-      "Mage",
-      "Support"
-    ],
+    "class": ["Mage", "Support"],
     "spells": [
       "OrianaIzunaCommand",
       "OrianaDissonanceCommand",
       "OrianaRedactCommand",
       "OrianaDetonateCommand"
     ],
-    "region": [
-      "Piltover"
-    ],
+    "region": ["Piltover"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Golem"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Golem"],
+    "range": ["Range"],
     "year": 2011,
     "mana": "Mana",
     "name": "Orianna",
-    "tags": [
-      "Mage",
-      "Support"
+    "tags": ["Mage", "Support"],
+    "skinlines": [
+      "Heartbreakers",
+      "Star Guardian",
+      "World Champions",
+      "Victorious",
+      "Legacy",
+      "Dark Star",
+      "Winter Wonder",
+      "Pool Party",
+      "Bees!",
+      "Toy Box"
     ]
   },
   "Ornn": {
     "id": "Ornn",
     "key": "516",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
-    "spells": [
-      "OrnnQ",
-      "OrnnW",
-      "OrnnE",
-      "OrnnR"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Tank", "Fighter"],
+    "spells": ["OrnnQ", "OrnnW", "OrnnE", "OrnnR"],
+    "region": ["Freljord"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "God",
-      "Spirit"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["God", "Spirit"],
+    "range": ["Melee"],
     "year": 2017,
     "mana": "Mana",
     "name": "Ornn",
-    "tags": [
-      "Tank"
-    ]
+    "tags": ["Tank"],
+    "skinlines": ["Space Groove", "Elderwood", "Toy Box"]
   },
   "Pantheon": {
     "id": "Pantheon",
     "key": "80",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "PantheonQ",
-      "PantheonW",
-      "PantheonE",
-      "PantheonR"
-    ],
-    "region": [
-      "Targon"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["PantheonQ", "PantheonW", "PantheonE", "PantheonR"],
+    "region": ["Targon"],
     "gender": "Male",
-    "positions": [
-      "Middle",
-      "Support",
-      "Top"
-    ],
-    "species": [
-      "Aspect",
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle", "Support", "Top"],
+    "species": ["Aspect", "Human"],
+    "range": ["Melee"],
     "year": 2010,
     "mana": "Mana",
     "name": "Pantheon",
-    "tags": [
-      "Fighter",
-      "Assassin"
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": [
+      "Wonders of",
+      "Pulsefire",
+      "Road Warrior",
+      "Fables",
+      "Ruined",
+      "Dragon World",
+      "Heavy Metal",
+      "Zombies VS",
+      "Culinary Masters",
+      "Ashen Knights"
     ]
   },
   "Poppy": {
     "id": "Poppy",
     "key": "78",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
-    "spells": [
-      "PoppyQ",
-      "PoppyW",
-      "PoppyE",
-      "PoppyR"
-    ],
-    "region": [
-      "Demacia"
-    ],
+    "class": ["Tank", "Fighter"],
+    "spells": ["PoppyQ", "PoppyW", "PoppyE", "PoppyR"],
+    "region": ["Demacia"],
     "gender": "Female",
-    "positions": [
-      "Jungle",
-      "Top"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Top"],
+    "species": ["Yordle"],
+    "range": ["Melee"],
     "year": 2010,
     "mana": "Mana",
     "name": "Poppy",
-    "tags": [
-      "Tank",
-      "Fighter"
+    "tags": ["Tank", "Fighter"],
+    "skinlines": [
+      "Cafe Cuties",
+      "Legacy",
+      "Hextech",
+      "Bewitching",
+      "Dragon World",
+      "Winter Wonder",
+      "Medieval",
+      "Star Guardian",
+      "Otherroads",
+      "Sugar Rush",
+      "Toy Box",
+      "Astronauts"
     ]
   },
   "Pyke": {
     "id": "Pyke",
     "key": "555",
-    "class": [
-      "Support",
-      "Assassin"
-    ],
-    "spells": [
-      "PykeQ",
-      "PykeW",
-      "PykeE",
-      "PykeR"
-    ],
-    "region": [
-      "Bilgewater"
-    ],
+    "class": ["Support", "Assassin"],
+    "spells": ["PykeQ", "PykeW", "PykeE", "PykeR"],
+    "region": ["Bilgewater"],
     "gender": "Male",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Revenant"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Support"],
+    "species": ["Revenant"],
+    "range": ["Melee"],
     "year": 2018,
     "mana": "Mana",
     "name": "Pyke",
-    "tags": [
-      "Support",
-      "Assassin"
+    "tags": ["Support", "Assassin"],
+    "skinlines": [
+      "Guardian of",
+      "Soul Fighter",
+      "Black Rose",
+      "Blood Moon",
+      "PROJECT",
+      "Sentinels of",
+      "Empyrean",
+      "Ashen Knights"
     ]
   },
   "Qiyana": {
     "id": "Qiyana",
     "key": "246",
-    "class": [
-      "Assassin",
-      "Fighter"
-    ],
-    "spells": [
-      "QiyanaQ",
-      "QiyanaW",
-      "QiyanaE",
-      "QiyanaR"
-    ],
-    "region": [
-      "Ixtal"
-    ],
+    "class": ["Assassin", "Fighter"],
+    "spells": ["QiyanaQ", "QiyanaW", "QiyanaE", "QiyanaR"],
+    "region": ["Ixtal"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Melee"],
     "year": 2019,
     "mana": "Mana",
     "name": "Qiyana",
-    "tags": [
-      "Assassin"
-    ]
+    "tags": ["Assassin"],
+    "skinlines": ["La Ilusión", "Battle Queens", "Arcade: Battle", "Lunar Revel", "True Damage"]
   },
   "Quinn": {
     "id": "Quinn",
     "key": "133",
-    "class": [
-      "Marksman",
-      "Assassin"
-    ],
-    "spells": [
-      "QuinnQ",
-      "QuinnW",
-      "QuinnE",
-      "QuinnR"
-    ],
-    "region": [
-      "Demacia"
-    ],
+    "class": ["Marksman", "Assassin"],
+    "spells": ["QuinnQ", "QuinnW", "QuinnE", "QuinnR"],
+    "region": ["Demacia"],
     "gender": "Female",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Top"],
+    "species": ["Human"],
+    "range": ["Range"],
     "year": 2013,
     "mana": "Mana",
     "name": "Quinn",
-    "tags": [
-      "Marksman",
-      "Assassin"
+    "tags": ["Marksman", "Assassin"],
+    "skinlines": [
+      "Heartbreakers",
+      "Star Guardian",
+      "Woad",
+      "Silver Age",
+      "Bilgewater: Burning",
+      "Warden"
     ]
   },
   "Rakan": {
     "id": "Rakan",
     "key": "497",
-    "class": [
-      "Support"
-    ],
-    "spells": [
-      "RakanQ",
-      "RakanW",
-      "RakanE",
-      "RakanR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Support"],
+    "spells": ["RakanQ", "RakanW", "RakanE", "RakanR"],
+    "region": ["Ionia"],
     "gender": "Male",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Vastayan"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Support"],
+    "species": ["Vastayan"],
+    "range": ["Melee"],
     "year": 2017,
     "mana": "Mana",
     "name": "Rakan",
-    "tags": [
-      "Support"
+    "tags": ["Support"],
+    "skinlines": [
+      "Heartbreakers",
+      "Star Guardian",
+      "Dragonmancers",
+      "World Champions",
+      "Cosmic",
+      "Arcana",
+      "Elderwood",
+      "Coven"
     ]
   },
   "Rammus": {
     "id": "Rammus",
     "key": "33",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
-    "spells": [
-      "PowerBall",
-      "DefensiveBallCurl",
-      "PuncturingTaunt",
-      "Tremors2"
-    ],
-    "region": [
-      "Shurima"
-    ],
+    "class": ["Tank", "Fighter"],
+    "spells": ["PowerBall", "DefensiveBallCurl", "PuncturingTaunt", "Tremors2"],
+    "region": ["Shurima"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Unknown"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Unknown"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Rammus",
-    "tags": [
-      "Tank"
+    "tags": ["Tank"],
+    "skinlines": [
+      "Freljord",
+      "Guardian of",
+      "Legacy",
+      "Hextech",
+      "Infernal",
+      "Heavy Metal",
+      "Astronauts",
+      "Soccer Cup"
     ]
   },
   "RekSai": {
     "id": "RekSai",
     "key": "421",
-    "class": [
-      "Fighter"
-    ],
-    "spells": [
-      "RekSaiQ",
-      "RekSaiW",
-      "RekSaiE",
-      "RekSaiRWrapper"
-    ],
+    "class": ["Fighter"],
+    "spells": ["RekSaiQ", "RekSaiW", "RekSaiE", "RekSaiRWrapper"],
     "gender": "Female",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Void-Being"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Shurima",
-      "Void"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Void-Being"],
+    "range": ["Melee"],
+    "region": ["Shurima", "Void"],
     "year": 2014,
     "mana": "Manaless",
     "name": "Rek'Sai",
-    "tags": [
-      "Fighter",
-      "Tank"
-    ]
+    "tags": ["Fighter", "Tank"],
+    "skinlines": []
   },
   "Rell": {
     "id": "Rell",
     "key": "526",
-    "class": [
-      "Tank",
-      "Support"
-    ],
-    "spells": [
-      "RellQ",
-      "RellW_Dismount",
-      "RellE",
-      "RellR"
-    ],
-    "region": [
-      "Noxus"
-    ],
+    "class": ["Tank", "Support"],
+    "spells": ["RellQ", "RellW_Dismount", "RellE", "RellR"],
+    "region": ["Noxus"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered",
-      "Magicborn"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Support"],
+    "species": ["Human", "Magically Altered", "Magicborn"],
+    "range": ["Melee"],
     "year": 2020,
     "mana": "Mana",
     "name": "Rell",
-    "tags": [
-      "Tank",
-      "Support"
-    ]
+    "tags": ["Tank", "Support"],
+    "skinlines": ["Battle Queens", "Star Guardian", "High Noon"]
   },
   "Renata": {
     "id": "Renata",
     "key": "888",
-    "class": [
-      "Support",
-      "Mage"
-    ],
-    "spells": [
-      "RenataQ",
-      "RenataW",
-      "RenataE",
-      "RenataR"
-    ],
+    "class": ["Support", "Mage"],
+    "spells": ["RenataQ", "RenataW", "RenataE", "RenataR"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Chemically Altered",
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
-    "region": [
-      "Zaun"
-    ],
+    "positions": ["Support"],
+    "species": ["Chemically Altered", "Human"],
+    "range": ["Range"],
+    "region": ["Zaun"],
     "year": 2022,
     "mana": "Mana",
     "name": "Renata Glasc",
-    "tags": [
-      "Support",
-      "Mage"
-    ]
+    "tags": ["Support", "Mage"],
+    "skinlines": []
   },
   "Renekton": {
     "id": "Renekton",
     "key": "58",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
+    "class": ["Fighter", "Tank"],
     "spells": [
       "RenektonCleave",
       "RenektonPreExecute",
       "RenektonSliceAndDice",
       "RenektonReignOfTheTyrant"
     ],
-    "region": [
-      "Shurima"
-    ],
+    "region": ["Shurima"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "God-Warrior"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["God-Warrior"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Manaless",
     "name": "Renekton",
-    "tags": [
-      "Fighter",
-      "Tank"
+    "tags": ["Fighter", "Tank"],
+    "skinlines": [
+      "Prehistoric Hunters",
+      "Blackfrost",
+      "Nightbringer and",
+      "Wonders of",
+      "World Champions",
+      "Hextech",
+      "Pool Party",
+      "PROJECT",
+      "Otherroads",
+      "Infernal",
+      "Toy Box",
+      "Bloodstone"
     ]
   },
   "Rengar": {
     "id": "Rengar",
     "key": "107",
-    "class": [
-      "Assassin",
-      "Fighter"
-    ],
-    "spells": [
-      "RengarQ",
-      "RengarW",
-      "RengarE",
-      "RengarR"
-    ],
-    "region": [
-      "Ixtal",
-      "Shurima"
-    ],
+    "class": ["Assassin", "Fighter"],
+    "spells": ["RengarQ", "RengarW", "RengarE", "RengarR"],
+    "region": ["Ixtal", "Shurima"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Vastayan"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Vastayan"],
+    "range": ["Melee"],
     "year": 2012,
     "mana": "Manaless",
     "name": "Rengar",
-    "tags": [
-      "Assassin",
-      "Fighter"
+    "tags": ["Assassin", "Fighter"],
+    "skinlines": [
+      "Cats Versus",
+      "Mecha",
+      "World Champions",
+      "Guardian of",
+      "Street Demons",
+      "Legacy",
+      "Sentinels of",
+      "Headhunter"
     ]
   },
   "Riven": {
     "id": "Riven",
     "key": "92",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "RivenTriCleave",
-      "RivenMartyr",
-      "RivenFeint",
-      "RivenFengShuiEngine"
-    ],
-    "region": [
-      "Ionia",
-      "Noxus"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["RivenTriCleave", "RivenMartyr", "RivenFeint", "RivenFengShuiEngine"],
+    "region": ["Ionia", "Noxus"],
     "gender": "Female",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Manaless",
     "name": "Riven",
-    "tags": [
-      "Fighter",
-      "Assassin"
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": [
+      "Nightbringer and",
+      "Day Job",
+      "Pulsefire",
+      "World Champions",
+      "Arcade: Heroes",
+      "Spirit Blossom",
+      "Immortal Journey",
+      "Sentinels of",
+      "Otherroads",
+      "Lunar Revel",
+      "Anima Squad",
+      "Coven"
     ]
   },
   "Rumble": {
     "id": "Rumble",
     "key": "68",
-    "class": [
-      "Fighter",
-      "Mage"
-    ],
-    "spells": [
-      "RumbleFlameThrower",
-      "RumbleShield",
-      "RumbleGrenade",
-      "RumbleCarpetBomb"
-    ],
-    "region": [
-      "Bandle City"
-    ],
+    "class": ["Fighter", "Mage"],
+    "spells": ["RumbleFlameThrower", "RumbleShield", "RumbleGrenade", "RumbleCarpetBomb"],
+    "region": ["Bandle City"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Yordle"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Manaless",
     "name": "Rumble",
-    "tags": [
-      "Fighter",
-      "Mage"
+    "tags": ["Fighter", "Mage"],
+    "skinlines": [
+      "Road Warrior",
+      "Legacy",
+      "Space Groove",
+      "Bilgewater: Burning",
+      "Super Galaxy",
+      "Cafe Cuties"
     ]
   },
   "Ryze": {
     "id": "Ryze",
     "key": "13",
-    "class": [
-      "Mage",
-      "Fighter"
-    ],
-    "spells": [
-      "RyzeQWrapper",
-      "RyzeW",
-      "RyzeE",
-      "RyzeR"
-    ],
-    "region": [
-      "Runeterra"
-    ],
+    "class": ["Mage", "Fighter"],
+    "spells": ["RyzeQWrapper", "RyzeW", "RyzeE", "RyzeR"],
+    "region": ["Runeterra"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Ryze",
-    "tags": [
-      "Mage"
+    "tags": ["Mage"],
+    "skinlines": [
+      "Prehistoric Hunters",
+      "Guardian of",
+      "Wonders of",
+      "World Champions",
+      "Rift Quest",
+      "Bilgewater: Burning",
+      "Arcana",
+      "Academy",
+      "Zombies VS",
+      "Bloodstone"
     ]
   },
   "Samira": {
     "id": "Samira",
     "key": "360",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "SamiraQ",
-      "SamiraW",
-      "SamiraE",
-      "SamiraR"
-    ],
-    "region": [
-      "Noxus",
-      "Shurima"
-    ],
+    "class": ["Marksman"],
+    "spells": ["SamiraQ", "SamiraW", "SamiraE", "SamiraR"],
+    "region": ["Noxus", "Shurima"],
     "gender": "Female",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human"],
+    "range": ["Range"],
     "year": 2020,
     "mana": "Mana",
     "name": "Samira",
-    "tags": [
-      "Marksman",
-      "Assassin"
-    ]
+    "tags": ["Marksman", "Assassin"],
+    "skinlines": ["Space Groove", "Soul Fighter", "Black Rose", "High Noon"]
   },
   "Sejuani": {
     "id": "Sejuani",
     "key": "113",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
-    "spells": [
-      "SejuaniQ",
-      "SejuaniW",
-      "SejuaniE",
-      "SejuaniR"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Tank", "Fighter"],
+    "spells": ["SejuaniQ", "SejuaniW", "SejuaniE", "SejuaniR"],
+    "region": ["Freljord"],
     "gender": "Female",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Human",
-      "Iceborn"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Human", "Iceborn"],
+    "range": ["Melee"],
     "year": 2012,
     "mana": "Mana",
     "name": "Sejuani",
-    "tags": [
-      "Tank"
+    "tags": ["Tank"],
+    "skinlines": [
+      "Prehistoric Hunters",
+      "Wonders of",
+      "Rift Quest",
+      "Victorious",
+      "Hextech",
+      "Winter Wonder",
+      "PROJECT",
+      "Lunar Revel",
+      "Death Sworn",
+      "Eclipse"
     ]
   },
   "Senna": {
     "id": "Senna",
     "key": "235",
-    "class": [
-      "Marksman",
-      "Support"
-    ],
-    "spells": [
-      "SennaQ",
-      "SennaW",
-      "SennaE",
-      "SennaR"
-    ],
-    "region": [
-      "Shadow Isles"
-    ],
+    "class": ["Marksman", "Support"],
+    "spells": ["SennaQ", "SennaW", "SennaE", "SennaR"],
+    "region": ["Shadow Isles"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Undead"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Human", "Undead"],
+    "range": ["Range"],
     "year": 2019,
     "mana": "Mana",
     "name": "Senna",
-    "tags": [
-      "Support",
-      "Marksman"
+    "tags": ["Support", "Marksman"],
+    "skinlines": [
+      "Star Guardian",
+      "High Noon",
+      "Bewitching",
+      "PROJECT",
+      "True Damage",
+      "Winterblessed",
+      "Eclipse"
     ]
   },
   "Seraphine": {
     "id": "Seraphine",
     "key": "147",
-    "class": [
-      "Mage",
-      "Support"
-    ],
-    "spells": [
-      "SeraphineQ",
-      "SeraphineW",
-      "SeraphineE",
-      "SeraphineR"
-    ],
-    "region": [
-      "Piltover",
-      "Zaun"
-    ],
+    "class": ["Mage", "Support"],
+    "spells": ["SeraphineQ", "SeraphineW", "SeraphineE", "SeraphineR"],
+    "region": ["Piltover", "Zaun"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Range"],
     "year": 2020,
     "mana": "Mana",
     "name": "Seraphine",
-    "tags": [
-      "Support",
-      "Mage"
-    ]
+    "tags": ["Support", "Mage"],
+    "skinlines": ["Star Guardian", "Faerie Court", "K/DA", "Anima Squad", "Ocean Song"]
   },
   "Sett": {
     "id": "Sett",
     "key": "875",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "SettQ",
-      "SettW",
-      "SettE",
-      "SettR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["SettQ", "SettW", "SettE", "SettR"],
+    "region": ["Ionia"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human",
-      "Vastayan"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human", "Vastayan"],
+    "range": ["Melee"],
     "year": 2020,
     "mana": "Manaless",
     "name": "Sett",
-    "tags": [
-      "Fighter",
-      "Tank"
+    "tags": ["Fighter", "Tank"],
+    "skinlines": [
+      "Soul Fighter",
+      "Dragonmancers",
+      "HEARTSTEEL",
+      "Spirit Blossom",
+      "Pool Party",
+      "Lunar Revel",
+      "Mecha"
     ]
   },
   "Shaco": {
     "id": "Shaco",
     "key": "35",
-    "class": [
-      "Assassin"
-    ],
-    "spells": [
-      "Deceive",
-      "JackInTheBox",
-      "TwoShivPoison",
-      "HallucinateFull"
-    ],
-    "region": [
-      "Runeterra"
-    ],
+    "class": ["Assassin"],
+    "spells": ["Deceive", "JackInTheBox", "TwoShivPoison", "HallucinateFull"],
+    "region": ["Runeterra"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Support"
-    ],
-    "species": [
-      "Spirit"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Support"],
+    "species": ["Spirit"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Shaco",
-    "tags": [
-      "Assassin"
+    "tags": ["Assassin"],
+    "skinlines": [
+      "Wonders of",
+      "Soul Fighter",
+      "Storybook",
+      "Legacy",
+      "Highstakes",
+      "Dark Star",
+      "Snowdown Showdown",
+      "Crime City",
+      "Winterblessed",
+      "Arcanists"
     ]
   },
   "Shen": {
     "id": "Shen",
     "key": "98",
-    "class": [
-      "Tank"
-    ],
-    "spells": [
-      "ShenQ",
-      "ShenW",
-      "ShenE",
-      "ShenR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Tank"],
+    "spells": ["ShenQ", "ShenW", "ShenE", "ShenR"],
+    "region": ["Ionia"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human",
-      "Spiritualist"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human", "Spiritualist"],
+    "range": ["Melee"],
     "year": 2010,
     "mana": "Manaless",
     "name": "Shen",
-    "tags": [
-      "Tank"
+    "tags": ["Tank"],
+    "skinlines": [
+      "World Champions",
+      "Pulsefire",
+      "PsyOps",
+      "Legacy",
+      "Blood Moon",
+      "Infernal",
+      "Ashen Knights"
     ]
   },
   "Shyvana": {
     "id": "Shyvana",
     "key": "102",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
+    "class": ["Fighter", "Tank"],
     "spells": [
       "ShyvanaDoubleAttack",
       "ShyvanaImmolationAura",
       "ShyvanaFireball",
       "ShyvanaTransformCast"
     ],
-    "region": [
-      "Demacia"
-    ],
+    "region": ["Demacia"],
     "gender": "Female",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Dragon",
-      "Magically Altered"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Dragon", "Magically Altered"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Manaless",
     "name": "Shyvana",
-    "tags": [
-      "Fighter",
-      "Mage"
+    "tags": ["Fighter", "Mage"],
+    "skinlines": [
+      "Prehistoric Hunters",
+      "Blackfrost",
+      "Legacy",
+      "World Champions",
+      "Ruined",
+      "Immortal Journey",
+      "Super Galaxy"
     ]
   },
   "Singed": {
     "id": "Singed",
     "key": "27",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
-    "spells": [
-      "PoisonTrail",
-      "MegaAdhesive",
-      "Fling",
-      "InsanityPotion"
-    ],
-    "region": [
-      "Piltover",
-      "Zaun"
-    ],
+    "class": ["Tank", "Fighter"],
+    "spells": ["PoisonTrail", "MegaAdhesive", "Fling", "InsanityPotion"],
+    "region": ["Piltover", "Zaun"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Chemically Altered",
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Chemically Altered", "Human"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Singed",
-    "tags": [
-      "Tank",
-      "Mage"
+    "tags": ["Tank", "Mage"],
+    "skinlines": [
+      "World Champions",
+      "Riot",
+      "Hextech",
+      "Snow Day",
+      "Pool Party",
+      "Silver Age",
+      "Omen of",
+      "Bees!",
+      "Battlecast",
+      "Astronauts"
     ]
   },
   "Sion": {
     "id": "Sion",
     "key": "14",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
-    "spells": [
-      "SionQ",
-      "SionW",
-      "SionE",
-      "SionR"
-    ],
-    "region": [
-      "Noxus"
-    ],
+    "class": ["Tank", "Fighter"],
+    "spells": ["SionQ", "SionW", "SionE", "SionR"],
+    "region": ["Noxus"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Revenant"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Revenant"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Sion",
-    "tags": [
-      "Tank",
-      "Fighter"
+    "tags": ["Tank", "Fighter"],
+    "skinlines": [
+      "Blackfrost",
+      "Mecha",
+      "Day Job",
+      "Rift Quest",
+      "Legacy",
+      "Hextech",
+      "High Noon",
+      "Cosmic",
+      "Worldbreaker"
     ]
   },
   "Sivir": {
     "id": "Sivir",
     "key": "15",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "SivirQ",
-      "SivirW",
-      "SivirE",
-      "SivirR"
-    ],
-    "region": [
-      "Shurima"
-    ],
+    "class": ["Marksman"],
+    "spells": ["SivirQ", "SivirW", "SivirE", "SivirR"],
+    "region": ["Shurima"],
     "gender": "Female",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Sivir",
-    "tags": [
-      "Marksman"
+    "tags": ["Marksman"],
+    "skinlines": [
+      "Prehistoric Hunters",
+      "Victorious",
+      "Legacy",
+      "Odyssey",
+      "Blood Moon",
+      "Winter Wonder",
+      "Warden",
+      "Cafe Cuties",
+      "Culinary Masters",
+      "Mythmaker",
+      "Eclipse"
     ]
   },
   "Skarner": {
     "id": "Skarner",
     "key": "72",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "SkarnerVirulentSlash",
-      "SkarnerExoskeleton",
-      "SkarnerFracture",
-      "SkarnerImpale"
-    ],
-    "region": [
-      "Shurima"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["SkarnerVirulentSlash", "SkarnerExoskeleton", "SkarnerFracture", "SkarnerImpale"],
+    "region": ["Shurima"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Brackern"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Brackern"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Mana",
     "name": "Skarner",
-    "tags": [
-      "Tank",
-      "Fighter"
-    ]
+    "tags": ["Tank", "Fighter"],
+    "skinlines": ["Battlecast", "Guardian of", "Cosmic", "High Noon"]
   },
   "Sona": {
     "id": "Sona",
     "key": "37",
-    "class": [
-      "Support",
-      "Mage"
-    ],
-    "spells": [
-      "SonaQ",
-      "SonaW",
-      "SonaE",
-      "SonaR"
-    ],
-    "region": [
-      "Demacia",
-      "Ionia"
-    ],
+    "class": ["Support", "Mage"],
+    "spells": ["SonaQ", "SonaW", "SonaE", "SonaR"],
+    "region": ["Demacia", "Ionia"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Range"],
     "year": 2010,
     "mana": "Mana",
     "name": "Sona",
-    "tags": [
-      "Support",
-      "Mage"
+    "tags": ["Support", "Mage"],
+    "skinlines": [
+      "Heartbreakers",
+      "Star Guardian",
+      "PsyOps",
+      "Fables",
+      "Odyssey",
+      "Arcade: Heroes",
+      "Pentakill",
+      "Snowdown Showdown",
+      "Immortal Journey",
+      "Lunar Revel"
     ]
   },
   "Soraka": {
     "id": "Soraka",
     "key": "16",
-    "class": [
-      "Support",
-      "Mage"
-    ],
-    "spells": [
-      "SorakaQ",
-      "SorakaW",
-      "SorakaE",
-      "SorakaR"
-    ],
-    "region": [
-      "Ionia",
-      "Targon"
-    ],
+    "class": ["Support", "Mage"],
+    "spells": ["SorakaQ", "SorakaW", "SorakaE", "SorakaR"],
+    "region": ["Ionia", "Targon"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Celestial"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Celestial"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Soraka",
-    "tags": [
-      "Support",
-      "Mage"
+    "tags": ["Support", "Mage"],
+    "skinlines": [
+      "Nightbringer and",
+      "Rift Quest",
+      "High Society",
+      "Spirit Blossom",
+      "Winter Wonder",
+      "Program",
+      "Immortal Journey",
+      "Otherroads",
+      "Star Guardian",
+      "Death Sworn",
+      "Cafe Cuties",
+      "Elderwood",
+      "Faerie Court"
     ]
   },
   "Swain": {
     "id": "Swain",
     "key": "50",
-    "class": [
-      "Mage",
-      "Fighter"
-    ],
-    "spells": [
-      "SwainQ",
-      "SwainW",
-      "SwainE",
-      "SwainR"
-    ],
-    "region": [
-      "Noxus"
-    ],
+    "class": ["Mage", "Fighter"],
+    "spells": ["SwainQ", "SwainW", "SwainE", "SwainR"],
+    "region": ["Noxus"],
     "gender": "Male",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Range"],
     "year": 2010,
     "mana": "Mana",
     "name": "Swain",
-    "tags": [
-      "Mage",
-      "Support"
+    "tags": ["Mage", "Support"],
+    "skinlines": [
+      "Hextech",
+      "Dragon World",
+      "Bilgewater: Burning",
+      "Otherroads",
+      "Winterblessed",
+      "arcticops"
     ]
   },
   "Sylas": {
     "id": "Sylas",
     "key": "517",
-    "class": [
-      "Mage",
-      "Assassin"
-    ],
-    "spells": [
-      "SylasQ",
-      "SylasW",
-      "SylasE",
-      "SylasR"
-    ],
-    "region": [
-      "Demacia",
-      "Freljord"
-    ],
+    "class": ["Mage", "Assassin"],
+    "spells": ["SylasQ", "SylasW", "SylasE", "SylasR"],
+    "region": ["Demacia", "Freljord"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Melee"],
     "year": 2019,
     "mana": "Mana",
     "name": "Sylas",
-    "tags": [
-      "Mage",
-      "Assassin"
+    "tags": ["Mage", "Assassin"],
+    "skinlines": [
+      "Freljord",
+      "PROJECT",
+      "Lunar Revel",
+      "Winterblessed",
+      "Anima Squad",
+      "Ashen Knights"
     ]
   },
   "Syndra": {
     "id": "Syndra",
     "key": "134",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "SyndraQ",
-      "SyndraW",
-      "SyndraE",
-      "SyndraR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Mage"],
+    "spells": ["SyndraQ", "SyndraW", "SyndraE", "SyndraR"],
+    "region": ["Ionia"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Range"],
     "year": 2012,
     "mana": "Mana",
     "name": "Syndra",
-    "tags": [
-      "Mage"
+    "tags": ["Mage"],
+    "skinlines": [
+      "Star Guardian",
+      "World Champions",
+      "Highstakes",
+      "Spirit Blossom",
+      "Forgotten Depths",
+      "Snow Day",
+      "Pool Party",
+      "Bewitching",
+      "Coven"
     ]
   },
   "TahmKench": {
     "id": "TahmKench",
     "key": "223",
-    "class": [
-      "Support",
-      "Tank"
-    ],
-    "spells": [
-      "TahmKenchQ",
-      "TahmKenchW",
-      "TahmKenchE",
-      "TahmKenchRWrapper"
-    ],
+    "class": ["Support", "Tank"],
+    "spells": ["TahmKenchQ", "TahmKenchW", "TahmKenchE", "TahmKenchRWrapper"],
     "gender": "Male",
-    "positions": [
-      "Support",
-      "Top"
-    ],
-    "species": [
-      "Demon",
-      "Spirit"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Bilgewater",
-      "Runeterra"
-    ],
+    "positions": ["Support", "Top"],
+    "species": ["Demon", "Spirit"],
+    "range": ["Melee"],
+    "region": ["Bilgewater", "Runeterra"],
     "year": 2015,
     "mana": "Mana",
     "name": "Tahm Kench",
-    "tags": [
-      "Tank",
-      "Support"
-    ]
+    "tags": ["Tank", "Support"],
+    "skinlines": []
   },
   "Taliyah": {
     "id": "Taliyah",
     "key": "163",
-    "class": [
-      "Mage",
-      "Support"
-    ],
-    "spells": [
-      "TaliyahQ",
-      "TaliyahWVC",
-      "TaliyahE",
-      "TaliyahR"
-    ],
-    "region": [
-      "Shurima"
-    ],
+    "class": ["Mage", "Support"],
+    "spells": ["TaliyahQ", "TaliyahWVC", "TaliyahE", "TaliyahR"],
+    "region": ["Shurima"],
     "gender": "Female",
-    "positions": [
-      "Jungle",
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Jungle", "Middle"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Range"],
     "year": 2016,
     "mana": "Mana",
     "name": "Taliyah",
-    "tags": [
-      "Mage",
-      "Support"
-    ]
+    "tags": ["Mage", "Support"],
+    "skinlines": ["Freljord", "Star Guardian", "World Champions", "Pool Party"]
   },
   "Talon": {
     "id": "Talon",
     "key": "91",
-    "class": [
-      "Assassin"
-    ],
-    "spells": [
-      "TalonQ",
-      "TalonW",
-      "TalonE",
-      "TalonR"
-    ],
-    "region": [
-      "Noxus"
-    ],
+    "class": ["Assassin"],
+    "spells": ["TalonQ", "TalonW", "TalonE", "TalonR"],
+    "region": ["Noxus"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Middle"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Middle"],
+    "species": ["Human"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Mana",
     "name": "Talon",
-    "tags": [
-      "Assassin"
+    "tags": ["Assassin"],
+    "skinlines": [
+      "World Champions",
+      "Rift Quest",
+      "Legacy",
+      "High Noon",
+      "Blood Moon",
+      "Immortal Journey",
+      "Lunar Revel"
     ]
   },
   "Taric": {
     "id": "Taric",
     "key": "44",
-    "class": [
-      "Support",
-      "Fighter"
-    ],
-    "spells": [
-      "TaricQ",
-      "TaricW",
-      "TaricE",
-      "TaricR"
-    ],
-    "region": [
-      "Demacia",
-      "Targon"
-    ],
+    "class": ["Support", "Fighter"],
+    "spells": ["TaricQ", "TaricW", "TaricE", "TaricR"],
+    "region": ["Demacia", "Targon"],
     "gender": "Male",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Aspect",
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Support"],
+    "species": ["Aspect", "Human"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Taric",
-    "tags": [
-      "Support",
-      "Tank"
-    ]
+    "tags": ["Support", "Tank"],
+    "skinlines": ["Rift Quest", "Pool Party", "Space Groove", "Elderwood", "Bloodstone"]
   },
   "Teemo": {
     "id": "Teemo",
     "key": "17",
-    "class": [
-      "Marksman",
-      "Assassin"
-    ],
-    "spells": [
-      "BlindingDart",
-      "MoveQuick",
-      "ToxicShot",
-      "TeemoRCast"
-    ],
-    "region": [
-      "Bandle City"
-    ],
+    "class": ["Marksman", "Assassin"],
+    "spells": ["BlindingDart", "MoveQuick", "ToxicShot", "TeemoRCast"],
+    "region": ["Bandle City"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Top"],
+    "species": ["Yordle"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Teemo",
-    "tags": [
-      "Marksman",
-      "Mage"
+    "tags": ["Marksman", "Mage"],
+    "skinlines": [
+      "Wonders of",
+      "Legacy",
+      "Spirit Blossom",
+      "Omega Squad",
+      "Silver Age",
+      "Snowdown Showdown",
+      "Bees!",
+      "Space Groove",
+      "Demonic",
+      "Lunar Revel",
+      "Astronauts"
     ]
   },
   "Thresh": {
     "id": "Thresh",
     "key": "412",
-    "class": [
-      "Support",
-      "Fighter"
-    ],
-    "spells": [
-      "ThreshQ",
-      "ThreshW",
-      "ThreshE",
-      "ThreshRPenta"
-    ],
-    "region": [
-      "Shadow Isles"
-    ],
+    "class": ["Support", "Fighter"],
+    "spells": ["ThreshQ", "ThreshW", "ThreshE", "ThreshRPenta"],
+    "region": ["Shadow Isles"],
     "gender": "Male",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Undead"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Undead"],
+    "range": ["Range"],
     "year": 2013,
     "mana": "Mana",
     "name": "Thresh",
-    "tags": [
-      "Support",
-      "Tank"
+    "tags": ["Support", "Tank"],
+    "skinlines": [
+      "World Champions",
+      "Pulsefire",
+      "High Noon",
+      "Dragonmancers",
+      "Ruined",
+      "Spirit Blossom",
+      "Forgotten Depths",
+      "Blood Moon",
+      "Dark Star",
+      "Lunar Revel",
+      "Winterblessed"
     ]
   },
   "Tristana": {
     "id": "Tristana",
     "key": "18",
-    "class": [
-      "Marksman",
-      "Assassin"
-    ],
-    "spells": [
-      "TristanaQ",
-      "TristanaW",
-      "TristanaE",
-      "TristanaR"
-    ],
-    "region": [
-      "Bandle City"
-    ],
+    "class": ["Marksman", "Assassin"],
+    "spells": ["TristanaQ", "TristanaW", "TristanaE", "TristanaR"],
+    "region": ["Bandle City"],
     "gender": "Female",
-    "positions": [
-      "Bottom",
-      "Middle"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom", "Middle"],
+    "species": ["Yordle"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Tristana",
-    "tags": [
-      "Marksman",
-      "Assassin"
+    "tags": ["Marksman", "Assassin"],
+    "skinlines": [
+      "Day Job",
+      "Riot",
+      "Definitely Not",
+      "Commando",
+      "Hextech",
+      "Spirit Blossom",
+      "Bewitching",
+      "Dragon World",
+      "Omega Squad",
+      "Silver Age",
+      "Snowdown Showdown",
+      "Bilgewater: Burning",
+      "Demonic",
+      "Lunar Revel",
+      "Faerie Court"
     ]
   },
   "Trundle": {
     "id": "Trundle",
     "key": "48",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "TrundleTrollSmash",
-      "trundledesecrate",
-      "TrundleCircle",
-      "TrundlePain"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["TrundleTrollSmash", "trundledesecrate", "TrundleCircle", "TrundlePain"],
+    "region": ["Freljord"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Top"
-    ],
-    "species": [
-      "Iceborn",
-      "Troll"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Top"],
+    "species": ["Iceborn", "Troll"],
+    "range": ["Melee"],
     "year": 2010,
     "mana": "Mana",
     "name": "Trundle",
-    "tags": [
-      "Fighter",
-      "Tank"
+    "tags": ["Fighter", "Tank"],
+    "skinlines": [
+      "Day Job",
+      "Road Warrior",
+      "Fright Night",
+      "Dragon World",
+      "Cops and",
+      "Worldbreaker"
     ]
   },
   "Tryndamere": {
     "id": "Tryndamere",
     "key": "23",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "TryndamereQ",
-      "TryndamereW",
-      "TryndamereE",
-      "UndyingRage"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["TryndamereQ", "TryndamereW", "TryndamereE", "UndyingRage"],
+    "region": ["Freljord"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Manaless",
     "name": "Tryndamere",
-    "tags": [
-      "Fighter",
-      "Assassin"
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": [
+      "Prehistoric Hunters",
+      "Nightbringer and",
+      "Wonders of",
+      "Legacy",
+      "Victorious",
+      "Blood Moon",
+      "Silver Age",
+      "Medieval",
+      "Otherroads",
+      "Lunar Revel",
+      "Trick-or-Treat"
     ]
   },
   "TwistedFate": {
     "id": "TwistedFate",
     "key": "4",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "WildCards",
-      "PickACard",
-      "CardmasterStack",
-      "Destiny"
-    ],
+    "class": ["Mage"],
+    "spells": ["WildCards", "PickACard", "CardmasterStack", "Destiny"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Range"
-    ],
-    "region": [
-      "Bilgewater"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Range"],
+    "region": ["Bilgewater"],
     "year": 2009,
     "mana": "Mana",
     "name": "Twisted Fate",
-    "tags": [
-      "Mage",
-      "Marksman"
-    ]
+    "tags": ["Mage", "Marksman"],
+    "skinlines": []
   },
   "Twitch": {
     "id": "Twitch",
     "key": "29",
-    "class": [
-      "Marksman",
-      "Assassin"
-    ],
-    "spells": [
-      "TwitchHideInShadows",
-      "TwitchVenomCask",
-      "TwitchExpunge",
-      "TwitchFullAutomatic"
-    ],
-    "region": [
-      "Zaun"
-    ],
+    "class": ["Marksman", "Assassin"],
+    "spells": ["TwitchHideInShadows", "TwitchVenomCask", "TwitchExpunge", "TwitchFullAutomatic"],
+    "region": ["Zaun"],
     "gender": "Male",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Chemically Altered",
-      "Rat"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Chemically Altered", "Rat"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Twitch",
-    "tags": [
-      "Marksman",
-      "Assassin"
+    "tags": ["Marksman", "Assassin"],
+    "skinlines": [
+      "World Champions",
+      "Rift Quest",
+      "High Noon",
+      "Dragon World",
+      "Omega Squad",
+      "Winter Wonder",
+      "Bilgewater: Burning",
+      "Medieval",
+      "Crime City",
+      "Cops and",
+      "Vandal",
+      "Winter Sports"
     ]
   },
   "Udyr": {
     "id": "Udyr",
     "key": "77",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "UdyrQ",
-      "UdyrW",
-      "UdyrE",
-      "UdyrR"
-    ],
-    "region": [
-      "Freljord",
-      "Ionia"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["UdyrQ", "UdyrW", "UdyrE", "UdyrR"],
+    "region": ["Freljord", "Ionia"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Top"
-    ],
-    "species": [
-      "Human",
-      "Spiritualist"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Top"],
+    "species": ["Human", "Spiritualist"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Udyr",
-    "tags": [
-      "Fighter",
-      "Tank"
-    ]
+    "tags": ["Fighter", "Tank"],
+    "skinlines": ["Prehistoric Hunters", "Inkshadow", "Day Job", "Definitely Not", "Dragon World"]
   },
   "Urgot": {
     "id": "Urgot",
     "key": "6",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "UrgotQ",
-      "UrgotW",
-      "UrgotE",
-      "UrgotR"
-    ],
-    "region": [
-      "Noxus",
-      "Zaun"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["UrgotQ", "UrgotW", "UrgotE", "UrgotR"],
+    "region": ["Noxus", "Zaun"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Chemically Altered",
-      "Cyborg",
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Top"],
+    "species": ["Chemically Altered", "Cyborg", "Human"],
+    "range": ["Range"],
     "year": 2010,
     "mana": "Mana",
     "name": "Urgot",
-    "tags": [
-      "Fighter",
-      "Tank"
-    ]
+    "tags": ["Fighter", "Tank"],
+    "skinlines": ["Definitely Not", "High Noon", "Fright Night", "Trick-or-Treat", "Battlecast"]
   },
   "Varus": {
     "id": "Varus",
     "key": "110",
-    "class": [
-      "Marksman",
-      "Mage"
-    ],
-    "spells": [
-      "VarusQ",
-      "VarusW",
-      "VarusE",
-      "VarusR"
-    ],
-    "region": [
-      "Ionia",
-      "Runeterra",
-      "Shurima"
-    ],
+    "class": ["Marksman", "Mage"],
+    "spells": ["VarusQ", "VarusW", "VarusE", "VarusR"],
+    "region": ["Ionia", "Runeterra", "Shurima"],
     "gender": "Male",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Darkin",
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Darkin", "Human"],
+    "range": ["Range"],
     "year": 2012,
     "mana": "Mana",
     "name": "Varus",
-    "tags": [
-      "Marksman",
-      "Mage"
+    "tags": ["Marksman", "Mage"],
+    "skinlines": [
+      "Heartbreakers",
+      "Snow Moon",
+      "Rift Quest",
+      "Legacy",
+      "High Noon",
+      "Cosmic",
+      "Dark Star",
+      "Conqueror",
+      "PROJECT",
+      "Infernal",
+      "Arclight",
+      "Empyrean",
+      "arcticops"
     ]
   },
   "Vayne": {
     "id": "Vayne",
     "key": "67",
-    "class": [
-      "Marksman",
-      "Assassin"
-    ],
-    "spells": [
-      "VayneTumble",
-      "VayneSilveredBolts",
-      "VayneCondemn",
-      "VayneInquisition"
-    ],
-    "region": [
-      "Demacia"
-    ],
+    "class": ["Marksman", "Assassin"],
+    "spells": ["VayneTumble", "VayneSilveredBolts", "VayneCondemn", "VayneInquisition"],
+    "region": ["Demacia"],
     "gender": "Female",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human"],
+    "range": ["Range"],
     "year": 2011,
     "mana": "Mana",
     "name": "Vayne",
-    "tags": [
-      "Marksman",
-      "Assassin"
+    "tags": ["Marksman", "Assassin"],
+    "skinlines": [
+      "Heartbreakers",
+      "Nightbringer and",
+      "World Champions",
+      "High Society",
+      "Dragonmancers",
+      "Spirit Blossom",
+      "Dragon World",
+      "PROJECT",
+      "Sentinels of",
+      "Lunar Revel",
+      "Trick-or-Treat",
+      "Arclight",
+      "Anima Squad"
     ]
   },
   "Veigar": {
     "id": "Veigar",
     "key": "45",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "VeigarBalefulStrike",
-      "VeigarDarkMatter",
-      "VeigarEventHorizon",
-      "VeigarR"
-    ],
-    "region": [
-      "Bandle City",
-      "Runeterra",
-      "Shadow Isles"
-    ],
+    "class": ["Mage"],
+    "spells": ["VeigarBalefulStrike", "VeigarDarkMatter", "VeigarEventHorizon", "VeigarR"],
+    "region": ["Bandle City", "Runeterra", "Shadow Isles"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Yordle"],
+    "range": ["Range"],
     "year": 2009,
     "mana": "Mana",
     "name": "Veigar",
-    "tags": [
-      "Mage"
+    "tags": ["Mage"],
+    "skinlines": [
+      "Definitely Not",
+      "Rift Quest",
+      "Road Warrior",
+      "Fables",
+      "Arcade: Battle",
+      "Omega Squad",
+      "Silver Age",
+      "Snowdown Showdown",
+      "Bees!",
+      "Medieval",
+      "Elderwood",
+      "Winter Sports",
+      "Astronauts"
     ]
   },
   "Velkoz": {
     "id": "Velkoz",
     "key": "161",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "VelkozQ",
-      "VelkozW",
-      "VelkozE",
-      "VelkozR"
-    ],
+    "class": ["Mage"],
+    "spells": ["VelkozQ", "VelkozW", "VelkozE", "VelkozR"],
     "gender": "Male",
-    "positions": [
-      "Middle",
-      "Support"
-    ],
-    "species": [
-      "Void-Being"
-    ],
-    "range": [
-      "Range"
-    ],
-    "region": [
-      "Void"
-    ],
+    "positions": ["Middle", "Support"],
+    "species": ["Void-Being"],
+    "range": ["Range"],
+    "region": ["Void"],
     "year": 2014,
     "mana": "Mana",
     "name": "Vel'Koz",
-    "tags": [
-      "Mage",
-      "Support"
-    ]
+    "tags": ["Mage", "Support"],
+    "skinlines": []
   },
   "Vex": {
     "id": "Vex",
     "key": "711",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "VexQ",
-      "VexW",
-      "VexE",
-      "VexR"
-    ],
-    "region": [
-      "Bandle City",
-      "Shadow Isles"
-    ],
+    "class": ["Mage"],
+    "spells": ["VexQ", "VexW", "VexE", "VexR"],
+    "region": ["Bandle City", "Shadow Isles"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Yordle"],
+    "range": ["Range"],
     "year": 2021,
     "mana": "Mana",
     "name": "Vex",
-    "tags": [
-      "Mage"
-    ]
+    "tags": ["Mage"],
+    "skinlines": ["Nightbringer and", "Empyrean"]
   },
   "Vi": {
     "id": "Vi",
     "key": "254",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "ViQ",
-      "ViW",
-      "ViE",
-      "ViR"
-    ],
-    "region": [
-      "Piltover",
-      "Zaun"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["ViQ", "ViW", "ViE", "ViR"],
+    "region": ["Piltover", "Zaun"],
     "gender": "Female",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Human"],
+    "range": ["Melee"],
     "year": 2012,
     "mana": "Mana",
     "name": "Vi",
-    "tags": [
-      "Fighter",
-      "Assassin"
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": [
+      "Heartbreakers",
+      "PsyOps",
+      "PROJECT",
+      "Demonic",
+      "Lunar Revel",
+      "Debonair",
+      "Arcane",
+      "Cops and"
     ]
   },
   "Viego": {
     "id": "Viego",
     "key": "234",
-    "class": [
-      "Assassin",
-      "Fighter"
-    ],
-    "spells": [
-      "ViegoQ",
-      "ViegoW",
-      "ViegoE",
-      "ViegoR"
-    ],
-    "region": [
-      "Camavor",
-      "Shadow Isles"
-    ],
+    "class": ["Assassin", "Fighter"],
+    "spells": ["ViegoQ", "ViegoW", "ViegoE", "ViegoR"],
+    "region": ["Camavor", "Shadow Isles"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Undead"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Undead"],
+    "range": ["Melee"],
     "year": 2021,
     "mana": "Manaless",
     "name": "Viego",
-    "tags": [
-      "Fighter",
-      "Assassin"
-    ]
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": ["Soul Fighter", "Lunar Beast", "Pentakill", "World Champions"]
   },
   "Viktor": {
     "id": "Viktor",
     "key": "112",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "ViktorPowerTransfer",
-      "ViktorGravitonField",
-      "ViktorDeathRay",
-      "ViktorChaosStorm"
-    ],
-    "region": [
-      "Piltover",
-      "Zaun"
-    ],
+    "class": ["Mage"],
+    "spells": ["ViktorPowerTransfer", "ViktorGravitonField", "ViktorDeathRay", "ViktorChaosStorm"],
+    "region": ["Piltover", "Zaun"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Cyborg",
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Cyborg", "Human"],
+    "range": ["Range"],
     "year": 2011,
     "mana": "Mana",
     "name": "Viktor",
-    "tags": [
-      "Mage"
+    "tags": ["Mage"],
+    "skinlines": [
+      "Black Rose",
+      "High Noon",
+      "Otherroads",
+      "Heavy Metal",
+      "Death Sworn",
+      "Battlecast"
     ]
   },
   "Vladimir": {
     "id": "Vladimir",
     "key": "8",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "VladimirQ",
-      "VladimirSanguinePool",
-      "VladimirE",
-      "VladimirHemoplague"
-    ],
-    "region": [
-      "Camavor",
-      "Noxus",
-      "Shadow Isles"
-    ],
+    "class": ["Mage"],
+    "spells": ["VladimirQ", "VladimirSanguinePool", "VladimirE", "VladimirHemoplague"],
+    "region": ["Camavor", "Noxus", "Shadow Isles"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Range"],
     "year": 2010,
     "mana": "Manaless",
     "name": "Vladimir",
-    "tags": [
-      "Mage",
-      "Fighter"
+    "tags": ["Mage", "Fighter"],
+    "skinlines": [
+      "Nightbringer and",
+      "High Society",
+      "Storybook",
+      "Cosmic",
+      "Academy",
+      "Trick-or-Treat",
+      "Cafe Cuties",
+      "Vandal",
+      "Coven",
+      "Bloodstone"
     ]
   },
   "Volibear": {
     "id": "Volibear",
     "key": "106",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "VolibearQ",
-      "VolibearW",
-      "VolibearE",
-      "VolibearR"
-    ],
-    "region": [
-      "Freljord"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["VolibearQ", "VolibearW", "VolibearE", "VolibearR"],
+    "region": ["Freljord"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Top"
-    ],
-    "species": [
-      "God",
-      "Spirit"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Top"],
+    "species": ["God", "Spirit"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Mana",
     "name": "Volibear",
-    "tags": [
-      "Fighter",
-      "Tank"
-    ]
+    "tags": ["Fighter", "Tank"],
+    "skinlines": ["Inkshadow", "Dragonmancers", "Otherroads", "Cops and", "Coven", "arcticops"]
   },
   "Warwick": {
     "id": "Warwick",
     "key": "19",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "WarwickQ",
-      "WarwickW",
-      "WarwickE",
-      "WarwickR"
-    ],
-    "region": [
-      "Zaun"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["WarwickQ", "WarwickW", "WarwickE", "WarwickR"],
+    "region": ["Zaun"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Top"
-    ],
-    "species": [
-      "Chemically Altered",
-      "Cyborg",
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Top"],
+    "species": ["Chemically Altered", "Cyborg", "Human"],
+    "range": ["Melee"],
     "year": 2009,
     "mana": "Mana",
     "name": "Warwick",
-    "tags": [
-      "Fighter",
-      "Tank"
+    "tags": ["Fighter", "Tank"],
+    "skinlines": [
+      "Freljord",
+      "Road Warrior",
+      "Storybook",
+      "Marauder",
+      "Silver Age",
+      "Omen of",
+      "PROJECT",
+      "Infernal",
+      "Lunar Revel",
+      "Winterblessed",
+      "Coven"
     ]
   },
   "Xayah": {
     "id": "Xayah",
     "key": "498",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "XayahQ",
-      "XayahW",
-      "XayahE",
-      "XayahR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Marksman"],
+    "spells": ["XayahQ", "XayahW", "XayahE", "XayahR"],
+    "region": ["Ionia"],
     "gender": "Female",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Vastayan"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Vastayan"],
+    "range": ["Range"],
     "year": 2017,
     "mana": "Mana",
     "name": "Xayah",
-    "tags": [
-      "Marksman"
+    "tags": ["Marksman"],
+    "skinlines": [
+      "Heartbreakers",
+      "Star Guardian",
+      "World Champions",
+      "Cosmic",
+      "Arcana",
+      "Elderwood",
+      "Anima Squad",
+      "Coven"
     ]
   },
   "Xerath": {
     "id": "Xerath",
     "key": "101",
-    "class": [
-      "Mage"
-    ],
+    "class": ["Mage"],
     "spells": [
       "XerathArcanopulseChargeUp",
       "XerathArcaneBarrage2",
       "XerathMageSpear",
       "XerathLocusOfPower2"
     ],
-    "region": [
-      "Shurima"
-    ],
+    "region": ["Shurima"],
     "gender": "Male",
-    "positions": [
-      "Middle",
-      "Support"
-    ],
-    "species": [
-      "God-Warrior"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle", "Support"],
+    "species": ["God-Warrior"],
+    "range": ["Range"],
     "year": 2011,
     "mana": "Mana",
     "name": "Xerath",
-    "tags": [
-      "Mage",
-      "Support"
+    "tags": ["Mage", "Support"],
+    "skinlines": [
+      "Guardian of",
+      "Legacy",
+      "Dark Star",
+      "Arcana",
+      "Infernal",
+      "Battlecast",
+      "Astronauts"
     ]
   },
   "XinZhao": {
     "id": "XinZhao",
     "key": "5",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "XinZhaoQ",
-      "XinZhaoW",
-      "XinZhaoE",
-      "XinZhaoR"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["XinZhaoQ", "XinZhaoW", "XinZhaoE", "XinZhaoR"],
     "gender": "Male",
-    "positions": [
-      "Jungle"
-    ],
-    "species": [
-      "Human"
-    ],
-    "range": [
-      "Melee"
-    ],
-    "region": [
-      "Demacia",
-      "Ionia",
-      "Noxus"
-    ],
+    "positions": ["Jungle"],
+    "species": ["Human"],
+    "range": ["Melee"],
+    "region": ["Demacia", "Ionia", "Noxus"],
     "year": 2010,
     "mana": "Mana",
     "name": "Xin Zhao",
-    "tags": [
-      "Fighter",
-      "Tank"
-    ]
+    "tags": ["Fighter", "Tank"],
+    "skinlines": []
   },
   "Yasuo": {
     "id": "Yasuo",
     "key": "157",
-    "class": [
-      "Fighter",
-      "Assassin"
-    ],
-    "spells": [
-      "YasuoQ1Wrapper",
-      "YasuoW",
-      "YasuoE",
-      "YasuoR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Fighter", "Assassin"],
+    "spells": ["YasuoQ1Wrapper", "YasuoW", "YasuoE", "YasuoR"],
+    "region": ["Ionia"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Melee"],
     "year": 2013,
     "mana": "Manaless",
     "name": "Yasuo",
-    "tags": [
-      "Fighter",
-      "Assassin"
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": [
+      "Inkshadow",
+      "Nightbringer and",
+      "High Noon",
+      "Dragonmancers",
+      "Odyssey",
+      "Ruined",
+      "Arcade: Battle",
+      "Blood Moon",
+      "Spirit Blossom",
+      "PROJECT",
+      "Otherroads",
+      "True Damage"
     ]
   },
   "Yone": {
     "id": "Yone",
     "key": "777",
-    "class": [
-      "Assassin",
-      "Fighter"
-    ],
-    "spells": [
-      "YoneQ",
-      "YoneW",
-      "YoneE",
-      "YoneR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Assassin", "Fighter"],
+    "spells": ["YoneQ", "YoneW", "YoneE", "YoneR"],
+    "region": ["Ionia"],
     "gender": "Male",
-    "positions": [
-      "Middle",
-      "Top"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle", "Top"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Melee"],
     "year": 2020,
     "mana": "Manaless",
     "name": "Yone",
-    "tags": [
-      "Fighter",
-      "Assassin"
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": [
+      "Inkshadow",
+      "Nightbringer and",
+      "High Noon",
+      "HEARTSTEEL",
+      "Spirit Blossom",
+      "Battle Academia",
+      "Ocean Song"
     ]
   },
   "Yorick": {
     "id": "Yorick",
     "key": "83",
-    "class": [
-      "Fighter",
-      "Tank"
-    ],
-    "spells": [
-      "YorickQ",
-      "YorickW",
-      "YorickE",
-      "YorickR"
-    ],
-    "region": [
-      "Shadow Isles"
-    ],
+    "class": ["Fighter", "Tank"],
+    "spells": ["YorickQ", "YorickW", "YorickE", "YorickR"],
+    "region": ["Shadow Isles"],
     "gender": "Male",
-    "positions": [
-      "Top"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Top"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Melee"],
     "year": 2011,
     "mana": "Mana",
     "name": "Yorick",
-    "tags": [
-      "Fighter",
-      "Tank"
-    ]
+    "tags": ["Fighter", "Tank"],
+    "skinlines": ["Cats Versus", "Spirit Blossom", "Omen of", "Pentakill", "Arclight", "Battlecast"]
   },
   "Yuumi": {
     "id": "Yuumi",
     "key": "350",
-    "class": [
-      "Support",
-      "Mage"
-    ],
-    "spells": [
-      "YuumiQ",
-      "YuumiW",
-      "YuumiE",
-      "YuumiR"
-    ],
-    "region": [
-      "Bandle City"
-    ],
+    "class": ["Support", "Mage"],
+    "spells": ["YuumiQ", "YuumiW", "YuumiE", "YuumiR"],
+    "region": ["Bandle City"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Cat",
-      "Magically Altered"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Cat", "Magically Altered"],
+    "range": ["Range"],
     "year": 2019,
     "mana": "Mana",
     "name": "Yuumi",
-    "tags": [
-      "Support",
-      "Mage"
+    "tags": ["Support", "Mage"],
+    "skinlines": [
+      "Heartbreakers",
+      "Cats Versus",
+      "Bewitching",
+      "Bees!",
+      "Battle Academia",
+      "Anima Squad",
+      "World Champions"
     ]
   },
   "Zac": {
     "id": "Zac",
     "key": "154",
-    "class": [
-      "Tank",
-      "Fighter"
-    ],
-    "spells": [
-      "ZacQ",
-      "ZacW",
-      "ZacE",
-      "ZacR"
-    ],
-    "region": [
-      "Zaun"
-    ],
+    "class": ["Tank", "Fighter"],
+    "spells": ["ZacQ", "ZacW", "ZacE", "ZacR"],
+    "region": ["Zaun"],
     "gender": "Male",
-    "positions": [
-      "Jungle",
-      "Top"
-    ],
-    "species": [
-      "Golem"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Jungle", "Top"],
+    "species": ["Golem"],
+    "range": ["Melee"],
     "year": 2013,
     "mana": "Manaless",
     "name": "Zac",
-    "tags": [
-      "Tank",
-      "Fighter"
-    ]
+    "tags": ["Tank", "Fighter"],
+    "skinlines": ["World Champions", "Legacy", "Pool Party", "Battlecast", "Empyrean"]
   },
   "Zed": {
     "id": "Zed",
     "key": "238",
-    "class": [
-      "Assassin"
-    ],
-    "spells": [
-      "ZedQ",
-      "ZedW",
-      "ZedE",
-      "ZedR"
-    ],
-    "region": [
-      "Ionia"
-    ],
+    "class": ["Assassin"],
+    "spells": ["ZedQ", "ZedW", "ZedE", "ZedR"],
+    "region": ["Ionia"],
     "gender": "Male",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Human",
-      "Magically Altered"
-    ],
-    "range": [
-      "Melee"
-    ],
+    "positions": ["Middle"],
+    "species": ["Human", "Magically Altered"],
+    "range": ["Melee"],
     "year": 2012,
     "mana": "Manaless",
     "name": "Zed",
-    "tags": [
-      "Assassin"
+    "tags": ["Assassin"],
+    "skinlines": [
+      "World Champions",
+      "Black Rose",
+      "Odyssey",
+      "Blood Moon",
+      "Immortal Journey",
+      "PROJECT",
+      "Death Sworn",
+      "Debonair",
+      "Empyrean"
     ]
   },
   "Zeri": {
     "id": "Zeri",
     "key": "221",
-    "class": [
-      "Marksman"
-    ],
-    "spells": [
-      "ZeriQ",
-      "ZeriW",
-      "ZeriE",
-      "ZeriR"
-    ],
-    "region": [
-      "Zaun"
-    ],
+    "class": ["Marksman"],
+    "spells": ["ZeriQ", "ZeriW", "ZeriE", "ZeriR"],
+    "region": ["Zaun"],
     "gender": "Female",
-    "positions": [
-      "Bottom"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Range"],
     "year": 2022,
     "mana": "Mana",
     "name": "Zeri",
-    "tags": [
-      "Marksman"
-    ]
+    "tags": ["Marksman"],
+    "skinlines": ["Immortal Journey", "Ocean Song"]
   },
   "Ziggs": {
     "id": "Ziggs",
     "key": "115",
-    "class": [
-      "Mage"
-    ],
-    "spells": [
-      "ZiggsQ",
-      "ZiggsW",
-      "ZiggsE",
-      "ZiggsR"
-    ],
-    "region": [
-      "Zaun"
-    ],
+    "class": ["Mage"],
+    "spells": ["ZiggsQ", "ZiggsW", "ZiggsE", "ZiggsR"],
+    "region": ["Zaun"],
     "gender": "Male",
-    "positions": [
-      "Bottom",
-      "Middle"
-    ],
-    "species": [
-      "Yordle"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Bottom", "Middle"],
+    "species": ["Yordle"],
+    "range": ["Range"],
     "year": 2012,
     "mana": "Mana",
     "name": "Ziggs",
-    "tags": [
-      "Mage"
+    "tags": ["Mage"],
+    "skinlines": [
+      "La Ilusión",
+      "Legacy",
+      "Hextech",
+      "Odyssey",
+      "Arcade: Battle",
+      "Snow Day",
+      "Pool Party",
+      "Bees!",
+      "Sugar Rush",
+      "Arcanists"
     ]
   },
   "Zilean": {
     "id": "Zilean",
     "key": "26",
-    "class": [
-      "Support",
-      "Mage"
-    ],
-    "spells": [
-      "ZileanQ",
-      "ZileanW",
-      "TimeWarp",
-      "ChronoShift"
-    ],
+    "class": ["Support", "Mage"],
+    "spells": ["ZileanQ", "ZileanW", "TimeWarp", "ChronoShift"],
     "gender": "Male",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Human",
-      "Magicborn"
-    ],
-    "range": [
-      "Range"
-    ],
-    "region": [
-      "Runeterra",
-      "Shurima"
-    ],
+    "positions": ["Support"],
+    "species": ["Human", "Magicborn"],
+    "range": ["Range"],
+    "region": ["Runeterra", "Shurima"],
     "year": 2009,
     "mana": "Mana",
     "name": "Zilean",
-    "tags": [
-      "Support",
-      "Mage"
-    ]
+    "tags": ["Support", "Mage"],
+    "skinlines": ["Day Job", "Blood Moon", "Snowdown Showdown", "Sugar Rush", "Winterblessed"]
   },
   "Zoe": {
     "id": "Zoe",
     "key": "142",
-    "class": [
-      "Mage",
-      "Support"
-    ],
-    "spells": [
-      "ZoeQ",
-      "ZoeW",
-      "ZoeE",
-      "ZoeR"
-    ],
-    "region": [
-      "Targon"
-    ],
+    "class": ["Mage", "Support"],
+    "spells": ["ZoeQ", "ZoeW", "ZoeE", "ZoeR"],
+    "region": ["Targon"],
     "gender": "Female",
-    "positions": [
-      "Middle"
-    ],
-    "species": [
-      "Aspect",
-      "Human"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Middle"],
+    "species": ["Aspect", "Human"],
+    "range": ["Range"],
     "year": 2017,
     "mana": "Mana",
     "name": "Zoe",
-    "tags": [
-      "Mage"
-    ]
+    "tags": ["Mage"],
+    "skinlines": ["Pool Party", "Star Guardian", "Winterblessed", "World Champions", "Arcanists"]
   },
   "Zyra": {
     "id": "Zyra",
     "key": "143",
-    "class": [
-      "Mage",
-      "Support"
-    ],
-    "spells": [
-      "ZyraQ",
-      "ZyraW",
-      "ZyraE",
-      "ZyraR"
-    ],
-    "region": [
-      "Ixtal"
-    ],
+    "class": ["Mage", "Support"],
+    "spells": ["ZyraQ", "ZyraW", "ZyraE", "ZyraR"],
+    "region": ["Ixtal"],
     "gender": "Female",
-    "positions": [
-      "Support"
-    ],
-    "species": [
-      "Unknown"
-    ],
-    "range": [
-      "Range"
-    ],
+    "positions": ["Support"],
+    "species": ["Unknown"],
+    "range": ["Range"],
     "year": 2012,
     "mana": "Mana",
     "name": "Zyra",
-    "tags": [
-      "Mage",
-      "Support"
+    "tags": ["Mage", "Support"],
+    "skinlines": [
+      "World Champions",
+      "Street Demons",
+      "Dragon World",
+      "Blood Moon",
+      "Mythmaker",
+      "Crime City",
+      "Infernal",
+      "Trick-or-Treat",
+      "Coven"
     ]
   }
 }
