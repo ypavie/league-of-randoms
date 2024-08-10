@@ -284,6 +284,21 @@
     "tags": ["Mage"],
     "skinlines": []
   },
+  "Aurora": {
+    "id": "Aurora",
+    "key": "893",
+    "class": ["Mage", "Assassin"],
+    "spells": ["AuroraQ", "AuroraW", "AuroraE", "AuroraR"],
+    "region": ["Freljord"],
+    "gender": "Female",
+    "positions": ["Top", "Middle"],
+    "species": ["Vastayan"],
+    "range": ["Range"],
+    "year": 2024,
+    "mana": "Mana",
+    "name": "Aurora",
+    "skinlines": []
+  },
   "Azir": {
     "id": "Azir",
     "key": "268",
