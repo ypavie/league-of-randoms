@@ -21,7 +21,14 @@
       "Blood Moon",
       "Bilgewater: Burning",
       "Eclipse"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Ahri": {
     "id": "Ahri",
@@ -50,7 +57,14 @@
       "Elderwood",
       "K/DA",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Akali": {
     "id": "Akali",
@@ -81,7 +95,14 @@
       "Coven",
       "Headhunter",
       "Soccer Cup"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Akshan": {
     "id": "Akshan",
@@ -97,7 +118,14 @@
     "mana": "Mana",
     "name": "Akshan",
     "tags": ["Marksman", "Assassin"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Alistar": {
     "id": "Alistar",
@@ -126,7 +154,14 @@
       "Infernal",
       "Toy Box",
       "Soccer Cup"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Amumu": {
     "id": "Amumu",
@@ -151,7 +186,14 @@
       "Trick-or-Treat",
       "Porcelain",
       "Winter Sports"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Anivia": {
     "id": "Anivia",
@@ -177,7 +219,14 @@
       "Cosmic",
       "Bewitching",
       "Winter Sports"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Annie": {
     "id": "Annie",
@@ -207,7 +256,14 @@
       "Trick-or-Treat",
       "Cafe Cuties",
       "Winterblessed"
-    ]
+    ],
+    "invocation": true,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Aphelios": {
     "id": "Aphelios",
@@ -234,7 +290,14 @@
       "Spirit Blossom",
       "Lunar Beast",
       "World Champions"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Ashe": {
     "id": "Ashe",
@@ -266,7 +329,14 @@
       "Lunar Revel",
       "Coven",
       "Ocean Song"
-    ]
+    ],
+    "invocation": false,
+    "global": "global",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "AurelionSol": {
     "id": "AurelionSol",
@@ -282,7 +352,14 @@
     "mana": "Mana",
     "name": "Aurelion Sol",
     "tags": ["Mage"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": true,
+    "stealth": false
   },
   "Aurora": {
     "id": "Aurora",
@@ -297,7 +374,14 @@
     "year": 2024,
     "mana": "Mana",
     "name": "Aurora",
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Azir": {
     "id": "Azir",
@@ -313,7 +397,14 @@
     "mana": "Mana",
     "name": "Azir",
     "tags": ["Mage", "Marksman"],
-    "skinlines": ["World Champions", "Lunar Revel", "Death Sworn", "Elderwood"]
+    "skinlines": ["World Champions", "Lunar Revel", "Death Sworn", "Elderwood"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Bard": {
     "id": "Bard",
@@ -329,7 +420,14 @@
     "mana": "Mana",
     "name": "Bard",
     "tags": ["Support", "Mage"],
-    "skinlines": ["Rift Quest", "Shan Hai", "Snow Day", "Cafe Cuties", "Elderwood", "Astronauts"]
+    "skinlines": ["Rift Quest", "Shan Hai", "Snow Day", "Cafe Cuties", "Elderwood", "Astronauts"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": true,
+    "execution": false,
+    "stealth": false
   },
   "Belveth": {
     "id": "Belveth",
@@ -345,7 +443,14 @@
     "mana": "Manaless",
     "name": "Bel'Veth",
     "tags": ["Fighter"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": true,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Blitzcrank": {
     "id": "Blitzcrank",
@@ -373,7 +478,14 @@
       "Program",
       "Trick-or-Treat",
       "Soccer Cup"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Brand": {
     "id": "Brand",
@@ -401,7 +513,14 @@
       "Empyrean",
       "Vandal",
       "Worldbreaker"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Braum": {
     "id": "Braum",
@@ -424,7 +543,14 @@
       "Snowdown Showdown",
       "Crime City",
       "Sugar Rush"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Caitlyn": {
     "id": "Caitlyn",
@@ -455,7 +581,14 @@
       "Cops and",
       "Headhunter",
       "Arcticops"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Camille": {
     "id": "Camille",
@@ -478,7 +611,14 @@
       "Arcana",
       "Winterblessed",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Cassiopeia": {
     "id": "Cassiopeia",
@@ -494,7 +634,14 @@
     "mana": "Mana",
     "name": "Cassiopeia",
     "tags": ["Mage"],
-    "skinlines": ["High Noon", "Fables", "Spirit Blossom", "Bewitching", "Lunar Revel", "Coven"]
+    "skinlines": ["High Noon", "Fables", "Spirit Blossom", "Bewitching", "Lunar Revel", "Coven"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Chogath": {
     "id": "Chogath",
@@ -510,7 +657,14 @@
     "mana": "Mana",
     "name": "Cho'Gath",
     "tags": ["Tank", "Mage"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": true,
+    "execution": true,
+    "stealth": false
   },
   "Corki": {
     "id": "Corki",
@@ -534,7 +688,14 @@
       "Lunar Revel",
       "Winter Sports",
       "Astronauts"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Darius": {
     "id": "Darius",
@@ -560,7 +721,14 @@
       "Crime City",
       "Academy",
       "Porcelain"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": true,
+    "stacks": false,
+    "execution": true,
+    "stealth": false
   },
   "Diana": {
     "id": "Diana",
@@ -586,7 +754,14 @@
       "Infernal",
       "Lunar Revel",
       "Winterblessed"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Draven": {
     "id": "Draven",
@@ -606,7 +781,7 @@
       "Prehistoric Hunters",
       "Day Job",
       "Definitely Not",
-      "La Ilusión",
+      "La Ilusi\u00c3\u00b3n",
       "Legacy",
       "Ruined",
       "Fright Night",
@@ -615,7 +790,14 @@
       "Debonair",
       "Death Sworn",
       "Mecha"
-    ]
+    ],
+    "invocation": false,
+    "global": "global",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": true,
+    "stealth": false
   },
   "DrMundo": {
     "id": "DrMundo",
@@ -631,7 +813,14 @@
     "mana": "Manaless",
     "name": "Dr. Mundo",
     "tags": ["Tank", "Fighter"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Ekko": {
     "id": "Ekko",
@@ -657,7 +846,14 @@
       "Trick-or-Treat",
       "True Damage",
       "Arcane"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Elise": {
     "id": "Elise",
@@ -680,7 +876,14 @@
       "Bewitching",
       "Super Galaxy",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Evelynn": {
     "id": "Evelynn",
@@ -708,7 +911,14 @@
       "K/DA",
       "Coven",
       "Sugar Rush"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Ezreal": {
     "id": "Ezreal",
@@ -740,7 +950,14 @@
       "Porcelain",
       "Soccer Cup",
       "Faerie Court"
-    ]
+    ],
+    "invocation": false,
+    "global": "global",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Fiddlesticks": {
     "id": "Fiddlesticks",
@@ -766,7 +983,14 @@
       "Trick-or-Treat",
       "Sugar Rush",
       "Winter Sports"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Fiora": {
     "id": "Fiora",
@@ -796,7 +1020,14 @@
       "Academy",
       "Bloodstone",
       "Faerie Court"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Fizz": {
     "id": "Fizz",
@@ -821,7 +1052,14 @@
       "Demonic",
       "Super Galaxy",
       "Astronauts"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Galio": {
     "id": "Galio",
@@ -847,7 +1085,14 @@
       "Debonair",
       "Culinary Masters",
       "Mythmaker"
-    ]
+    ],
+    "invocation": false,
+    "global": "semi",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Gangplank": {
     "id": "Gangplank",
@@ -875,7 +1120,14 @@
       "PROJECT",
       "Trick-or-Treat",
       "Toy Box"
-    ]
+    ],
+    "invocation": false,
+    "global": "global",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Garen": {
     "id": "Garen",
@@ -900,7 +1152,14 @@
       "Lunar Revel",
       "Mythmaker",
       "Mecha"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": true,
+    "stealth": false
   },
   "Gnar": {
     "id": "Gnar",
@@ -918,14 +1177,21 @@
     "tags": ["Fighter", "Tank"],
     "skinlines": [
       "High Society",
-      "La Ilusión",
+      "La Ilusi\u00c3\u00b3n",
       "World Champions",
       "Snow Day",
       "Super Galaxy",
       "Elderwood",
       "Toy Box",
       "Astronauts"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Gragas": {
     "id": "Gragas",
@@ -955,7 +1221,14 @@
       "Vandal",
       "Soccer Cup",
       "Arcticops"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Graves": {
     "id": "Graves",
@@ -984,7 +1257,14 @@
       "Sentinels of",
       "Vandal",
       "World Champions"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Gwen": {
     "id": "Gwen",
@@ -1000,7 +1280,14 @@
     "mana": "Mana",
     "name": "Gwen",
     "tags": ["Fighter"],
-    "skinlines": ["Space Groove", "Cafe Cuties", "Soul Fighter"]
+    "skinlines": ["Space Groove", "Cafe Cuties", "Soul Fighter"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Hecarim": {
     "id": "Hecarim",
@@ -1027,7 +1314,14 @@
       "Winterblessed",
       "Worldbreaker",
       "Bloodstone"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Heimerdinger": {
     "id": "Heimerdinger",
@@ -1050,7 +1344,14 @@
       "Pool Party",
       "Snowdown Showdown",
       "Bees!"
-    ]
+    ],
+    "invocation": true,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Illaoi": {
     "id": "Illaoi",
@@ -1066,7 +1367,14 @@
     "mana": "Mana",
     "name": "Illaoi",
     "tags": ["Fighter", "Tank"],
-    "skinlines": ["Snow Moon", "Battlecast", "Cosmic"]
+    "skinlines": ["Snow Moon", "Battlecast", "Cosmic"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Irelia": {
     "id": "Irelia",
@@ -1094,7 +1402,14 @@
       "Sentinels of",
       "Porcelain",
       "Mythmaker"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Ivern": {
     "id": "Ivern",
@@ -1110,7 +1425,14 @@
     "mana": "Mana",
     "name": "Ivern",
     "tags": ["Support", "Mage"],
-    "skinlines": ["Sugar Rush", "Coven", "Astronauts"]
+    "skinlines": ["Sugar Rush", "Coven", "Astronauts"],
+    "invocation": true,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Janna": {
     "id": "Janna",
@@ -1140,7 +1462,14 @@
       "Bewitching",
       "Immortal Journey",
       "Star Guardian"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "JarvanIV": {
     "id": "JarvanIV",
@@ -1161,7 +1490,14 @@
     "mana": "Mana",
     "name": "Jarvan IV",
     "tags": ["Fighter", "Tank"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Jax": {
     "id": "Jax",
@@ -1189,7 +1525,14 @@
       "Vandal",
       "Winter Sports",
       "Mecha"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Jayce": {
     "id": "Jayce",
@@ -1213,7 +1556,14 @@
       "Debonair",
       "Arcane",
       "Battlecast"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Jhin": {
     "id": "Jhin",
@@ -1238,7 +1588,14 @@
       "Dark Star",
       "PROJECT",
       "Empyrean"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Jinx": {
     "id": "Jinx",
@@ -1266,7 +1623,14 @@
       "Arcane",
       "Zombies VS",
       "Anima Squad"
-    ]
+    ],
+    "invocation": false,
+    "global": "global",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Kaisa": {
     "id": "Kaisa",
@@ -1282,7 +1646,14 @@
     "mana": "Mana",
     "name": "Kai'Sa",
     "tags": ["Marksman", "Mage"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Kalista": {
     "id": "Kalista",
@@ -1298,7 +1669,14 @@
     "mana": "Mana",
     "name": "Kalista",
     "tags": ["Marksman"],
-    "skinlines": ["World Champions", "Blood Moon", "Marauder", "Faerie Court"]
+    "skinlines": ["World Champions", "Blood Moon", "Marauder", "Faerie Court"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Karma": {
     "id": "Karma",
@@ -1327,7 +1705,14 @@
       "Infernal",
       "Worldbreaker",
       "Faerie Court"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Karthus": {
     "id": "Karthus",
@@ -1352,7 +1737,14 @@
       "Infernal",
       "Trick-or-Treat",
       "Elderwood"
-    ]
+    ],
+    "invocation": false,
+    "global": "global",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Kassadin": {
     "id": "Kassadin",
@@ -1376,7 +1768,14 @@
       "Forgotten Depths",
       "Trick-or-Treat",
       "Winter Sports"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Katarina": {
     "id": "Katarina",
@@ -1407,7 +1806,14 @@
       "Trick-or-Treat",
       "Soccer Cup",
       "Faerie Court"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Kayle": {
     "id": "Kayle",
@@ -1436,7 +1842,14 @@
       "Otherroads",
       "Empyrean",
       "Eclipse"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Kayn": {
     "id": "Kayn",
@@ -1452,7 +1865,14 @@
     "mana": "Mana",
     "name": "Kayn",
     "tags": ["Fighter", "Assassin"],
-    "skinlines": ["Snow Moon", "Nightbringer and", "HEARTSTEEL", "Odyssey"]
+    "skinlines": ["Snow Moon", "Nightbringer and", "HEARTSTEEL", "Odyssey"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Kennen": {
     "id": "Kennen",
@@ -1481,7 +1901,14 @@
       "Infernal",
       "Astronauts",
       "Arcticops"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Khazix": {
     "id": "Khazix",
@@ -1497,7 +1924,14 @@
     "mana": "Mana",
     "name": "Kha'Zix",
     "tags": ["Assassin"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Kindred": {
     "id": "Kindred",
@@ -1520,7 +1954,14 @@
       "Super Galaxy",
       "Infernal",
       "Porcelain"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": true,
+    "execution": false,
+    "stealth": false
   },
   "Kled": {
     "id": "Kled",
@@ -1536,7 +1977,14 @@
     "mana": "Manaless",
     "name": "Kled",
     "tags": ["Fighter"],
-    "skinlines": ["Trick-or-Treat", "Medieval", "Marauder", "Cats Versus"]
+    "skinlines": ["Trick-or-Treat", "Medieval", "Marauder", "Cats Versus"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "KogMaw": {
     "id": "KogMaw",
@@ -1552,7 +2000,14 @@
     "mana": "Mana",
     "name": "Kog'Maw",
     "tags": ["Marksman", "Mage"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "KSante": {
     "id": "KSante",
@@ -1568,7 +2023,14 @@
     "mana": "Mana",
     "name": "K'Sante",
     "tags": ["Tank", "Fighter"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Leblanc": {
     "id": "Leblanc",
@@ -1584,7 +2046,14 @@
     "mana": "Mana",
     "name": "LeBlanc",
     "tags": ["Assassin", "Mage"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "LeeSin": {
     "id": "LeeSin",
@@ -1600,7 +2069,14 @@
     "mana": "Manaless",
     "name": "Lee Sin",
     "tags": ["Fighter", "Assassin"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Leona": {
     "id": "Leona",
@@ -1628,7 +2104,14 @@
       "Culinary Masters",
       "Eclipse",
       "Mecha"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Lillia": {
     "id": "Lillia",
@@ -1644,7 +2127,14 @@
     "mana": "Mana",
     "name": "Lillia",
     "tags": ["Fighter", "Mage"],
-    "skinlines": ["Nightbringer and", "Spirit Blossom", "Shan Hai", "Faerie Court"]
+    "skinlines": ["Nightbringer and", "Spirit Blossom", "Shan Hai", "Faerie Court"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Lissandra": {
     "id": "Lissandra",
@@ -1668,7 +2158,14 @@
       "Porcelain",
       "Coven",
       "Bloodstone"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Lucian": {
     "id": "Lucian",
@@ -1695,7 +2192,14 @@
       "Arcana",
       "Winterblessed",
       "Soccer Cup"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Lulu": {
     "id": "Lulu",
@@ -1721,7 +2225,14 @@
       "Star Guardian",
       "Trick-or-Treat",
       "Sugar Rush"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Lux": {
     "id": "Lux",
@@ -1752,7 +2263,14 @@
       "Lunar Revel",
       "Empyrean",
       "Arcanists"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Malphite": {
     "id": "Malphite",
@@ -1780,7 +2298,14 @@
       "Infernal",
       "Lunar Revel",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Malzahar": {
     "id": "Malzahar",
@@ -1808,7 +2333,14 @@
       "Debonair",
       "Empyrean",
       "Worldbreaker"
-    ]
+    ],
+    "invocation": true,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Maokai": {
     "id": "Maokai",
@@ -1835,7 +2367,14 @@
       "Worldbreaker",
       "Astronauts",
       "Soccer Cup"
-    ]
+    ],
+    "invocation": true,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "MasterYi": {
     "id": "MasterYi",
@@ -1851,7 +2390,14 @@
     "mana": "Mana",
     "name": "Master Yi",
     "tags": ["Assassin", "Fighter"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Milio": {
     "id": "Milio",
@@ -1867,7 +2413,14 @@
     "mana": "Mana",
     "name": "Milio",
     "tags": ["Support", "Mage"],
-    "skinlines": ["Faerie Court"]
+    "skinlines": ["Faerie Court"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "MissFortune": {
     "id": "MissFortune",
@@ -1888,7 +2441,14 @@
     "mana": "Mana",
     "name": "Miss Fortune",
     "tags": ["Marksman", "Mage"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "MonkeyKing": {
     "id": "MonkeyKing",
@@ -1909,7 +2469,14 @@
     "mana": "Mana",
     "name": "Wukong",
     "tags": ["Fighter", "Tank"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Mordekaiser": {
     "id": "Mordekaiser",
@@ -1936,7 +2503,14 @@
       "Infernal",
       "Coven",
       "Ashen Knights"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Morgana": {
     "id": "Morgana",
@@ -1966,7 +2540,14 @@
       "Lunar Revel",
       "Culinary Masters",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Naafiri": {
     "id": "Naafiri",
@@ -1982,7 +2563,14 @@
     "mana": "Mana",
     "name": "Naafiri",
     "tags": ["Assassin", "Fighter"],
-    "skinlines": ["PROJECT", "Soul Fighter"]
+    "skinlines": ["PROJECT", "Soul Fighter"],
+    "invocation": true,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Nami": {
     "id": "Nami",
@@ -2009,7 +2597,14 @@
       "Program",
       "Immortal Journey",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Nasus": {
     "id": "Nasus",
@@ -2035,7 +2630,14 @@
       "Lunar Revel",
       "Battlecast",
       "Worldbreaker"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": true,
+    "execution": false,
+    "stealth": false
   },
   "Nautilus": {
     "id": "Nautilus",
@@ -2066,7 +2668,14 @@
       "Warden",
       "Worldbreaker",
       "Astronauts"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Neeko": {
     "id": "Neeko",
@@ -2082,7 +2691,14 @@
     "mana": "Mana",
     "name": "Neeko",
     "tags": ["Mage", "Support"],
-    "skinlines": ["Street Demons", "Shan Hai", "Bewitching", "Winter Wonder", "Star Guardian"]
+    "skinlines": ["Street Demons", "Shan Hai", "Bewitching", "Winter Wonder", "Star Guardian"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Nidalee": {
     "id": "Nidalee",
@@ -2102,7 +2718,7 @@
       "Nightbringer and",
       "Cats Versus",
       "Day Job",
-      "La Ilusión",
+      "La Ilusi\u00c3\u00b3n",
       "Legacy",
       "Cosmic",
       "Bewitching",
@@ -2112,7 +2728,14 @@
       "Super Galaxy",
       "Headhunter",
       "Ocean Song"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Nilah": {
     "id": "Nilah",
@@ -2128,7 +2751,14 @@
     "mana": "Mana",
     "name": "Nilah",
     "tags": ["Fighter", "Assassin"],
-    "skinlines": ["Star Guardian", "Coven"]
+    "skinlines": ["Star Guardian", "Coven"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Nocturne": {
     "id": "Nocturne",
@@ -2157,7 +2787,14 @@
       "Trick-or-Treat",
       "Elderwood",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "semi",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Nunu": {
     "id": "Nunu",
@@ -2173,7 +2810,14 @@
     "mana": "Mana",
     "name": "Nunu & Willump",
     "tags": ["Tank", "Mage"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Olaf": {
     "id": "Olaf",
@@ -2199,7 +2843,14 @@
       "Sentinels of",
       "Infernal",
       "Culinary Masters"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Orianna": {
     "id": "Orianna",
@@ -2231,7 +2882,14 @@
       "Pool Party",
       "Bees!",
       "Toy Box"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Ornn": {
     "id": "Ornn",
@@ -2247,7 +2905,14 @@
     "mana": "Mana",
     "name": "Ornn",
     "tags": ["Tank"],
-    "skinlines": ["Space Groove", "Elderwood", "Toy Box"]
+    "skinlines": ["Space Groove", "Elderwood", "Toy Box"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Pantheon": {
     "id": "Pantheon",
@@ -2274,7 +2939,14 @@
       "Zombies VS",
       "Culinary Masters",
       "Ashen Knights"
-    ]
+    ],
+    "invocation": false,
+    "global": "semi",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Poppy": {
     "id": "Poppy",
@@ -2303,7 +2975,14 @@
       "Sugar Rush",
       "Toy Box",
       "Astronauts"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Pyke": {
     "id": "Pyke",
@@ -2328,7 +3007,14 @@
       "Sentinels of",
       "Empyrean",
       "Ashen Knights"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": true,
+    "stealth": true
   },
   "Qiyana": {
     "id": "Qiyana",
@@ -2344,7 +3030,20 @@
     "mana": "Mana",
     "name": "Qiyana",
     "tags": ["Assassin"],
-    "skinlines": ["La Ilusión", "Battle Queens", "Arcade: Battle", "Lunar Revel", "True Damage"]
+    "skinlines": [
+      "La Ilusi\u00c3\u00b3n",
+      "Battle Queens",
+      "Arcade: Battle",
+      "Lunar Revel",
+      "True Damage"
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Quinn": {
     "id": "Quinn",
@@ -2367,7 +3066,14 @@
       "Silver Age",
       "Bilgewater: Burning",
       "Warden"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Rakan": {
     "id": "Rakan",
@@ -2392,7 +3098,14 @@
       "Arcana",
       "Elderwood",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Rammus": {
     "id": "Rammus",
@@ -2417,7 +3130,14 @@
       "Heavy Metal",
       "Astronauts",
       "Soccer Cup"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "RekSai": {
     "id": "RekSai",
@@ -2433,7 +3153,14 @@
     "mana": "Manaless",
     "name": "Rek'Sai",
     "tags": ["Fighter", "Tank"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Rell": {
     "id": "Rell",
@@ -2449,7 +3176,14 @@
     "mana": "Mana",
     "name": "Rell",
     "tags": ["Tank", "Support"],
-    "skinlines": ["Battle Queens", "Star Guardian", "High Noon"]
+    "skinlines": ["Battle Queens", "Star Guardian", "High Noon"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Renata": {
     "id": "Renata",
@@ -2465,7 +3199,14 @@
     "mana": "Mana",
     "name": "Renata Glasc",
     "tags": ["Support", "Mage"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Renekton": {
     "id": "Renekton",
@@ -2499,7 +3240,14 @@
       "Infernal",
       "Toy Box",
       "Bloodstone"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Rengar": {
     "id": "Rengar",
@@ -2524,7 +3272,14 @@
       "Legacy",
       "Sentinels of",
       "Headhunter"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Riven": {
     "id": "Riven",
@@ -2553,7 +3308,14 @@
       "Lunar Revel",
       "Anima Squad",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Rumble": {
     "id": "Rumble",
@@ -2576,7 +3338,14 @@
       "Bilgewater: Burning",
       "Super Galaxy",
       "Cafe Cuties"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Ryze": {
     "id": "Ryze",
@@ -2603,7 +3372,14 @@
       "Academy",
       "Zombies VS",
       "Bloodstone"
-    ]
+    ],
+    "invocation": false,
+    "global": "semi",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Samira": {
     "id": "Samira",
@@ -2619,7 +3395,14 @@
     "mana": "Mana",
     "name": "Samira",
     "tags": ["Marksman", "Assassin"],
-    "skinlines": ["Space Groove", "Soul Fighter", "Black Rose", "High Noon"]
+    "skinlines": ["Space Groove", "Soul Fighter", "Black Rose", "High Noon"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Sejuani": {
     "id": "Sejuani",
@@ -2646,7 +3429,14 @@
       "Lunar Revel",
       "Death Sworn",
       "Eclipse"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Senna": {
     "id": "Senna",
@@ -2670,7 +3460,14 @@
       "True Damage",
       "Winterblessed",
       "Eclipse"
-    ]
+    ],
+    "invocation": false,
+    "global": "global",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": true,
+    "execution": false,
+    "stealth": true
   },
   "Seraphine": {
     "id": "Seraphine",
@@ -2686,7 +3483,14 @@
     "mana": "Mana",
     "name": "Seraphine",
     "tags": ["Support", "Mage"],
-    "skinlines": ["Star Guardian", "Faerie Court", "K/DA", "Anima Squad", "Ocean Song"]
+    "skinlines": ["Star Guardian", "Faerie Court", "K/DA", "Anima Squad", "Ocean Song"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Sett": {
     "id": "Sett",
@@ -2710,7 +3514,14 @@
       "Pool Party",
       "Lunar Revel",
       "Mecha"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Shaco": {
     "id": "Shaco",
@@ -2737,7 +3548,14 @@
       "Crime City",
       "Winterblessed",
       "Arcanists"
-    ]
+    ],
+    "invocation": true,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Shen": {
     "id": "Shen",
@@ -2761,7 +3579,14 @@
       "Blood Moon",
       "Infernal",
       "Ashen Knights"
-    ]
+    ],
+    "invocation": false,
+    "global": "global",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Shyvana": {
     "id": "Shyvana",
@@ -2790,7 +3615,14 @@
       "Ruined",
       "Immortal Journey",
       "Super Galaxy"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Singed": {
     "id": "Singed",
@@ -2817,7 +3649,14 @@
       "Bees!",
       "Battlecast",
       "Astronauts"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Sion": {
     "id": "Sion",
@@ -2843,7 +3682,14 @@
       "High Noon",
       "Cosmic",
       "Worldbreaker"
-    ]
+    ],
+    "invocation": false,
+    "global": "semi",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": true,
+    "execution": false,
+    "stealth": false
   },
   "Sivir": {
     "id": "Sivir",
@@ -2871,7 +3717,14 @@
       "Culinary Masters",
       "Mythmaker",
       "Eclipse"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Skarner": {
     "id": "Skarner",
@@ -2887,7 +3740,14 @@
     "mana": "Mana",
     "name": "Skarner",
     "tags": ["Tank", "Fighter"],
-    "skinlines": ["Battlecast", "Guardian of", "Cosmic", "High Noon"]
+    "skinlines": ["Battlecast", "Guardian of", "Cosmic", "High Noon"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Sona": {
     "id": "Sona",
@@ -2914,7 +3774,14 @@
       "Snowdown Showdown",
       "Immortal Journey",
       "Lunar Revel"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Soraka": {
     "id": "Soraka",
@@ -2944,7 +3811,14 @@
       "Cafe Cuties",
       "Elderwood",
       "Faerie Court"
-    ]
+    ],
+    "invocation": false,
+    "global": "global",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Swain": {
     "id": "Swain",
@@ -2967,7 +3841,14 @@
       "Otherroads",
       "Winterblessed",
       "Arcticops"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": true,
+    "execution": false,
+    "stealth": false
   },
   "Sylas": {
     "id": "Sylas",
@@ -2990,7 +3871,14 @@
       "Winterblessed",
       "Anima Squad",
       "Ashen Knights"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Syndra": {
     "id": "Syndra",
@@ -3016,7 +3904,14 @@
       "Pool Party",
       "Bewitching",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": true,
+    "stealth": false
   },
   "TahmKench": {
     "id": "TahmKench",
@@ -3032,7 +3927,14 @@
     "mana": "Mana",
     "name": "Tahm Kench",
     "tags": ["Tank", "Support"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Taliyah": {
     "id": "Taliyah",
@@ -3048,7 +3950,14 @@
     "mana": "Mana",
     "name": "Taliyah",
     "tags": ["Mage", "Support"],
-    "skinlines": ["Freljord", "Star Guardian", "World Champions", "Pool Party"]
+    "skinlines": ["Freljord", "Star Guardian", "World Champions", "Pool Party"],
+    "invocation": false,
+    "global": "semi",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Talon": {
     "id": "Talon",
@@ -3072,7 +3981,14 @@
       "Blood Moon",
       "Immortal Journey",
       "Lunar Revel"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Taric": {
     "id": "Taric",
@@ -3088,7 +4004,14 @@
     "mana": "Mana",
     "name": "Taric",
     "tags": ["Support", "Tank"],
-    "skinlines": ["Rift Quest", "Pool Party", "Space Groove", "Elderwood", "Bloodstone"]
+    "skinlines": ["Rift Quest", "Pool Party", "Space Groove", "Elderwood", "Bloodstone"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Teemo": {
     "id": "Teemo",
@@ -3116,7 +4039,14 @@
       "Demonic",
       "Lunar Revel",
       "Astronauts"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Thresh": {
     "id": "Thresh",
@@ -3144,7 +4074,14 @@
       "Dark Star",
       "Lunar Revel",
       "Winterblessed"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": true,
+    "execution": false,
+    "stealth": false
   },
   "Tristana": {
     "id": "Tristana",
@@ -3176,7 +4113,14 @@
       "Demonic",
       "Lunar Revel",
       "Faerie Court"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Trundle": {
     "id": "Trundle",
@@ -3199,7 +4143,14 @@
       "Dragon World",
       "Cops and",
       "Worldbreaker"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Tryndamere": {
     "id": "Tryndamere",
@@ -3227,7 +4178,14 @@
       "Otherroads",
       "Lunar Revel",
       "Trick-or-Treat"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "TwistedFate": {
     "id": "TwistedFate",
@@ -3243,7 +4201,14 @@
     "mana": "Mana",
     "name": "Twisted Fate",
     "tags": ["Mage", "Marksman"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Twitch": {
     "id": "Twitch",
@@ -3272,7 +4237,14 @@
       "Cops and",
       "Vandal",
       "Winter Sports"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Udyr": {
     "id": "Udyr",
@@ -3288,7 +4260,14 @@
     "mana": "Mana",
     "name": "Udyr",
     "tags": ["Fighter", "Tank"],
-    "skinlines": ["Prehistoric Hunters", "Inkshadow", "Day Job", "Definitely Not", "Dragon World"]
+    "skinlines": ["Prehistoric Hunters", "Inkshadow", "Day Job", "Definitely Not", "Dragon World"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Urgot": {
     "id": "Urgot",
@@ -3304,7 +4283,14 @@
     "mana": "Mana",
     "name": "Urgot",
     "tags": ["Fighter", "Tank"],
-    "skinlines": ["Definitely Not", "High Noon", "Fright Night", "Trick-or-Treat", "Battlecast"]
+    "skinlines": ["Definitely Not", "High Noon", "Fright Night", "Trick-or-Treat", "Battlecast"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": true,
+    "stealth": false
   },
   "Varus": {
     "id": "Varus",
@@ -3334,7 +4320,14 @@
       "Arclight",
       "Empyrean",
       "Arcticops"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Vayne": {
     "id": "Vayne",
@@ -3364,7 +4357,14 @@
       "Trick-or-Treat",
       "Arclight",
       "Anima Squad"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Veigar": {
     "id": "Veigar",
@@ -3394,7 +4394,14 @@
       "Elderwood",
       "Winter Sports",
       "Astronauts"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": true,
+    "execution": false,
+    "stealth": false
   },
   "Velkoz": {
     "id": "Velkoz",
@@ -3410,7 +4417,14 @@
     "mana": "Mana",
     "name": "Vel'Koz",
     "tags": ["Mage", "Support"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Vex": {
     "id": "Vex",
@@ -3426,7 +4440,14 @@
     "mana": "Mana",
     "name": "Vex",
     "tags": ["Mage"],
-    "skinlines": ["Nightbringer and", "Empyrean"]
+    "skinlines": ["Nightbringer and", "Empyrean"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Vi": {
     "id": "Vi",
@@ -3451,7 +4472,14 @@
       "Debonair",
       "Arcane",
       "Cops and"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Viego": {
     "id": "Viego",
@@ -3467,7 +4495,14 @@
     "mana": "Manaless",
     "name": "Viego",
     "tags": ["Fighter", "Assassin"],
-    "skinlines": ["Soul Fighter", "Lunar Beast", "Pentakill", "World Champions"]
+    "skinlines": ["Soul Fighter", "Lunar Beast", "Pentakill", "World Champions"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": true
   },
   "Viktor": {
     "id": "Viktor",
@@ -3490,7 +4525,14 @@
       "Heavy Metal",
       "Death Sworn",
       "Battlecast"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Vladimir": {
     "id": "Vladimir",
@@ -3517,7 +4559,14 @@
       "Vandal",
       "Coven",
       "Bloodstone"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Volibear": {
     "id": "Volibear",
@@ -3533,7 +4582,14 @@
     "mana": "Mana",
     "name": "Volibear",
     "tags": ["Fighter", "Tank"],
-    "skinlines": ["Inkshadow", "Dragonmancers", "Otherroads", "Cops and", "Coven", "Arcticops"]
+    "skinlines": ["Inkshadow", "Dragonmancers", "Otherroads", "Cops and", "Coven", "Arcticops"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Warwick": {
     "id": "Warwick",
@@ -3561,7 +4617,14 @@
       "Lunar Revel",
       "Winterblessed",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Xayah": {
     "id": "Xayah",
@@ -3586,7 +4649,14 @@
       "Elderwood",
       "Anima Squad",
       "Coven"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Xerath": {
     "id": "Xerath",
@@ -3615,7 +4685,14 @@
       "Infernal",
       "Battlecast",
       "Astronauts"
-    ]
+    ],
+    "invocation": false,
+    "global": "semi",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "XinZhao": {
     "id": "XinZhao",
@@ -3631,7 +4708,14 @@
     "mana": "Mana",
     "name": "Xin Zhao",
     "tags": ["Fighter", "Tank"],
-    "skinlines": []
+    "skinlines": [],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Yasuo": {
     "id": "Yasuo",
@@ -3660,7 +4744,14 @@
       "PROJECT",
       "Otherroads",
       "True Damage"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Yone": {
     "id": "Yone",
@@ -3684,7 +4775,14 @@
       "Spirit Blossom",
       "Battle Academia",
       "Ocean Song"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Yorick": {
     "id": "Yorick",
@@ -3700,7 +4798,21 @@
     "mana": "Mana",
     "name": "Yorick",
     "tags": ["Fighter", "Tank"],
-    "skinlines": ["Cats Versus", "Spirit Blossom", "Omen of", "Pentakill", "Arclight", "Battlecast"]
+    "skinlines": [
+      "Cats Versus",
+      "Spirit Blossom",
+      "Omen of",
+      "Pentakill",
+      "Arclight",
+      "Battlecast"
+    ],
+    "invocation": true,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Yuumi": {
     "id": "Yuumi",
@@ -3724,7 +4836,14 @@
       "Battle Academia",
       "Anima Squad",
       "World Champions"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Zac": {
     "id": "Zac",
@@ -3740,7 +4859,14 @@
     "mana": "Manaless",
     "name": "Zac",
     "tags": ["Tank", "Fighter"],
-    "skinlines": ["World Champions", "Legacy", "Pool Party", "Battlecast", "Empyrean"]
+    "skinlines": ["World Champions", "Legacy", "Pool Party", "Battlecast", "Empyrean"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Zed": {
     "id": "Zed",
@@ -3766,7 +4892,14 @@
       "Death Sworn",
       "Debonair",
       "Empyrean"
-    ]
+    ],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Zeri": {
     "id": "Zeri",
@@ -3782,7 +4915,14 @@
     "mana": "Mana",
     "name": "Zeri",
     "tags": ["Marksman"],
-    "skinlines": ["Immortal Journey", "Ocean Song"]
+    "skinlines": ["Immortal Journey", "Ocean Song"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Ziggs": {
     "id": "Ziggs",
@@ -3799,7 +4939,7 @@
     "name": "Ziggs",
     "tags": ["Mage"],
     "skinlines": [
-      "La Ilusión",
+      "La Ilusi\u00c3\u00b3n",
       "Legacy",
       "Hextech",
       "Odyssey",
@@ -3809,7 +4949,14 @@
       "Bees!",
       "Sugar Rush",
       "Arcanists"
-    ]
+    ],
+    "invocation": false,
+    "global": "semi",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Zilean": {
     "id": "Zilean",
@@ -3825,7 +4972,14 @@
     "mana": "Mana",
     "name": "Zilean",
     "tags": ["Support", "Mage"],
-    "skinlines": ["Day Job", "Blood Moon", "Snowdown Showdown", "Sugar Rush", "Winterblessed"]
+    "skinlines": ["Day Job", "Blood Moon", "Snowdown Showdown", "Sugar Rush", "Winterblessed"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Zoe": {
     "id": "Zoe",
@@ -3841,7 +4995,14 @@
     "mana": "Mana",
     "name": "Zoe",
     "tags": ["Mage"],
-    "skinlines": ["Pool Party", "Star Guardian", "Winterblessed", "World Champions", "Arcanists"]
+    "skinlines": ["Pool Party", "Star Guardian", "Winterblessed", "World Champions", "Arcanists"],
+    "invocation": false,
+    "global": "none",
+    "yasuo_friend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   },
   "Zyra": {
     "id": "Zyra",
@@ -3867,6 +5028,13 @@
       "Infernal",
       "Trick-or-Treat",
       "Coven"
-    ]
+    ],
+    "invocation": true,
+    "global": "none",
+    "yasuo_friend": true,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   }
 }
