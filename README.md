@@ -1,41 +1,16 @@
-# league-of-randoms
+# League random champion API
 
-This template should help get you started developing with Vue 3 in Vite.
+Web page inspired by [Ultimate Bravery](https://ultimate-bravery.net/) to generate random champion builds with filters such as species, region of origin, release year, champions who can stack, and more.
+Currently supporting patch 14.14.1.
 
-## Recommended IDE Setup
+A live version is available at [https://league-of-randoms.vercel.app/](https://league-of-randoms.vercel.app/)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+# License
 
-## Customize configuration
+This project is licensed under the [MIT License](LICENSE).
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+League-random-champion-api is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
 
-## Project Setup
+# Acknowledgements
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+League of Randoms is inspired by the Ultimate Bravery game mode.
