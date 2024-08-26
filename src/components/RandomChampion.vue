@@ -393,7 +393,12 @@
   </div>
   <!-- FILTERS -->
   <div class="mt-8">
-    <DefaultFilters ref="defaultFilters" @generate="generate" @update-filters="updateFilter" />
+    <DefaultFilters
+      ref="defaultFilters"
+      @generate="generate"
+      @update-filters="updateFilter"
+      @select-all="selectAll"
+    />
   </div>
 </template>
 
@@ -403,7 +408,7 @@ export default {
   components: {
     DefaultFilters
   },
-  emits: ['generate', 'update-filters'],
+  emits: ['generate', 'update-filters', 'select-all'],
   data() {
     return {
       currentChampion: {},
@@ -464,6 +469,9 @@ export default {
     },
     getSelectedLanes() {
       return this.$refs.Filters.getSelectedLanes()
+    },
+    selectAll(select) {
+      this.$emit('select-all', select)
     }
   }
 }

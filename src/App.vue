@@ -9,6 +9,7 @@
             ref="randomChampion"
             @generate="generateRandomChampion"
             @update-filters="updateFilters"
+            @select-all="selectAll"
           />
         </div>
         <ChampionList ref="championList" />
@@ -71,9 +72,11 @@ export default {
       const filters = this.$refs.randomChampion.getFilters()
       const disabledChampions = this.$refs.championList.getDisabledChampions()
       this.currentChampion = getChampion(filters, disabledChampions)
-      if (this.$refs.randomChampion && this.currentChampion) {
-        this.$refs.randomChampion.updateCurrentChampion(this.currentChampion)
-        this.$refs.championHistory.addChampion(this.currentChampion)
+      if (this.currentChampion != null) {
+        if (this.$refs.randomChampion && this.currentChampion) {
+          this.$refs.randomChampion.updateCurrentChampion(this.currentChampion)
+          this.$refs.championHistory.addChampion(this.currentChampion)
+        }
       }
     },
     championFromHistory(champion) {
@@ -84,6 +87,9 @@ export default {
       const filters = this.$refs.randomChampion.getFilters()
       const championFromFilters = getChampionNamesFromFilters(filters)
       this.$refs.championList.updateFilteredChampions(championFromFilters)
+    },
+    selectAll(select) {
+      this.$refs.championList.selectAll(select)
     }
   }
 }

@@ -27,20 +27,20 @@
           @input="updateSearchText"
         />
       </div>
-      <!-- <div class="flex space-x-4 order-3 mb-4 md:mb-0">
+      <div class="flex space-x-4 order-3 mb-4 md:mb-0">
         <button
-          @click="selectAll"
+          @click="selectAll(true)"
           class="custom-button bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-white font-bold py-2 px-4 rounded"
         >
           Select All
         </button>
         <button
-          @click="unselectAll"
+          @click="selectAll(false)"
           class="custom-button bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-white font-bold py-2 px-4 rounded"
         >
           Unselect All
         </button>
-      </div> -->
+      </div>
     </div>
     <div class="flex justify-center mt-4">
       <button
@@ -96,7 +96,7 @@ import { ref } from 'vue'
 
 export default {
   name: 'DefaultFilters',
-  emits: ['update-filters', 'generate'],
+  emits: ['update-filters', 'generate', 'select-all'],
   components: {
     ReleaseYearFilter,
     RegionFilter,
@@ -153,8 +153,6 @@ export default {
   },
   methods: {
     generate() {
-      // this.selectAllClicked = false
-      // this.unselectAllClicked = false
       this.$emit('generate')
     },
     emitFilters() {
@@ -165,20 +163,11 @@ export default {
       this.emitFilters()
     },
     updateSearchText(event) {
-      // this.selectAllClicked = false
-      // this.unselectAllClicked = false
       this.searchText = event.target.value
       this.emitFilters()
     },
-    selectAll() {
-      // this.selectAllClicked = true
-      // this.unselectAllClicked = false
-      this.emitFilters()
-    },
-    unselectAll() {
-      // this.unselectAllClicked = true
-      // this.selectAllClicked = false
-      this.emitFilters()
+    selectAll(select) {
+      this.$emit('select-all', select)
     },
     getFilters() {
       let filters = {

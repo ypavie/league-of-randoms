@@ -44,6 +44,14 @@ export default {
     },
     getDisabledChampions() {
       return this.disabledChampions
+    },
+    selectAll(select) {
+      console.log('select', select)
+      if (select) {
+        this.disabledChampions = []
+      } else {
+        this.disabledChampions = this.currentChampions
+      }
     }
   }
 }
