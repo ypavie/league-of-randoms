@@ -30,13 +30,13 @@
       <div class="flex space-x-4 order-3 mb-4 md:mb-0">
         <button
           @click="selectAll(true)"
-          class="custom-button bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-white font-bold py-2 px-4 rounded"
+          class="custom-button bg-gray-200 border dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-white font-bold py-2 px-4 rounded"
         >
           Select All
         </button>
         <button
           @click="selectAll(false)"
-          class="custom-button bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-white font-bold py-2 px-4 rounded"
+          class="custom-button bg-gray-200 border dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-white font-bold py-2 px-4 rounded"
         >
           Unselect All
         </button>
@@ -60,10 +60,30 @@
         </button>
       </div>
       <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4" v-if="showFilters">
-        <RegionFilter @update-filter="updateFilterInput" />
-        <SpeciesFilter @update-filter="updateFilterInput" />
-        <SkinlinesFilter @update-filter="updateFilterInput" />
-        <ClassFilter @update-filter="updateFilterInput" />
+        <SelectFilter
+          label="Region"
+          :options="filters.region"
+          name="region"
+          @update-filter="updateFilterInput"
+        />
+        <SelectFilter
+          label="Species"
+          :options="filters.species"
+          name="species"
+          @update-filter="updateFilterInput"
+        />
+        <SelectFilter
+          label="Skinlines"
+          :options="filters.skinlines"
+          name="skinlines"
+          @update-filter="updateFilterInput"
+        />
+        <SelectFilter
+          label="Class"
+          :options="filters.class"
+          name="class"
+          @update-filter="updateFilterInput"
+        />
 
         <UltimateFilter @update-filter="updateFilterInput" />
         <RadioFilter label="Dots" name="dots" @update-filter="updateFilterInput" />
@@ -82,29 +102,23 @@
 </template>
 
 <script>
+import { ref } from 'vue'
 import filters from '@/assets/filters.json'
 
-import ReleaseYearFilter from './Inputs/ReleaseYearFilter.vue'
 import RadioFilter from './Inputs/RadioFilter.vue'
+import SelectFilter from './Inputs/SelectFilter.vue'
 
-import RegionFilter from './Inputs/RegionFilter.vue'
-import SpeciesFilter from './Inputs/SpeciesFilter.vue'
-import SkinlinesFilter from './Inputs/SkinlinesFilter.vue'
-import ClassFilter from './Inputs/ClassFilter.vue'
 import UltimateFilter from './Inputs/UltimateFilter.vue'
-import { ref } from 'vue'
+import ReleaseYearFilter from './Inputs/ReleaseYearFilter.vue'
 
 export default {
   name: 'DefaultFilters',
   emits: ['update-filters', 'generate', 'select-all'],
   components: {
     ReleaseYearFilter,
-    RegionFilter,
-    SpeciesFilter,
-    SkinlinesFilter,
-    ClassFilter,
     RadioFilter,
-    UltimateFilter
+    UltimateFilter,
+    SelectFilter
   },
   data() {
     return {

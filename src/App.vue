@@ -60,6 +60,7 @@ export default {
   },
   mounted() {
     this.initializeChampions()
+    this.generateRandomChampion()
   },
   methods: {
     initializeChampions() {

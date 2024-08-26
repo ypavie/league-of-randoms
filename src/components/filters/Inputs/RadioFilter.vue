@@ -26,11 +26,12 @@
         />
         <label
           :for="name + '_' + option"
-          class="cursor-pointer block px-4 py-2 border border-gray-300 rounded-md shadow-sm dark:bg-gray-700 dark:border-gray-600 text-gray-700 dark:text-white flex items-center justify-center"
-          :class="{
-            'bg-gray-100 dark:bg-gray-500 text-black dark:text-gray-300': selectedOption === option,
-            'bg-blue-500 text-white': selectedOption !== option
-          }"
+          :class="[
+            'cursor-pointer block px-4 py-2 border rounded-md shadow-sm flex items-center justify-center',
+            selectedOption === option
+              ? 'bg-gray-300 text-gray-700'
+              : 'bg-white text-gray-700 dark:bg-gray-700 dark:text-white'
+          ]"
           @click="updateOption(option)"
         >
           {{ option }}

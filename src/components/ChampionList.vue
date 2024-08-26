@@ -77,6 +77,7 @@ export default {
 
 .champion-icon {
   text-align: center;
+  margin: 2px;
 }
 
 .champion-icon img {
