@@ -4,6 +4,13 @@ import runes from '@/assets/runes.json'
 
 import { generateItemBuild, generateStarterItem } from '@/utils/item_utils'
 
+const easterEggs = {
+  aa: ['Varus', 'Kayn'],
+  mario: ['Sett'],
+  marlito: ['Sett'],
+  rhaast: ['Kayn']
+}
+
 export function getRandomRunes() {
   let random_runes = {}
   const rune_keys = Object.keys(runes)
@@ -152,6 +159,10 @@ export function getChampionNamesFromFilters(filters) {
       championsList = championsList.filter((key) =>
         champions[key].name.toLowerCase().includes(filters.searchText.toLowerCase())
       )
+      const egg = easterEggs[filters.searchText.toLowerCase()]
+      if (egg) {
+        championsList.push(...egg)
+      }
     }
     if (filters.gender !== '' && filters.gender !== undefined) {
       championsList = championsList.filter((key) => champions[key].gender === filters.gender)
