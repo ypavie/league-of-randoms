@@ -1,9 +1,16 @@
 {
-  "Gender": ["Female", "Male", "Other"],
-  "Mana": ["Mana", "Manaless"],
-  "Class": ["Assassin", "Fighter", "Mage", "Marksman", "Support", "Tank"],
-  "Range": ["Melee", "Range"],
-  "Species": [
+  "gender": ["Female", "Male", "Other"],
+  "mana": ["Mana", "Manaless"],
+  "class": ["Assassin", "Fighter", "Mage", "Marksman", "Support", "Tank"],
+  "range": ["Melee", "Range"],
+  "invocation": ["Yes", "No"],
+  "global": ["None", "Semi", "Global"],
+  "yasuofriend": ["Yes", "No"],
+  "dots": ["Yes", "No"],
+  "stacks": ["Yes", "No"],
+  "execution": ["Yes", "No"],
+  "stealth": ["Yes", "No"],
+  "species": [
     "Aspect",
     "Celestial",
     "Chemically Altered",
@@ -26,13 +33,12 @@
     "Void-Being",
     "Yordle"
   ],
-  "Region": [
+  "region": [
     "Bandle City",
     "Bilgewater",
     "Camavor",
     "Demacia",
     "Freljord",
-    "Icathia",
     "Ionia",
     "Ixtal",
     "Noxus",
@@ -44,7 +50,7 @@
     "Void",
     "Zaun"
   ],
-  "Skinlines": [
+  "skinlines": [
     "World Champions",
     "Victorious",
     "World Championship",

@@ -1,14 +1,29 @@
+<template>
+  <div class="min-h-screen flex flex-col">
+    <AppHeader />
+    <div class="flex-1 bg-white dark:bg-gray-800 flex">
+      <div class="flex flex-col md:flex-row flex-1">
+        <ChampionHistory ref="championHistory" @champion-clicked="championFromHistory" />
+        <div class="flex-1 p-4 overflow-y-auto rounded-lg relative">
+          <RandomChampion
+            ref="randomChampion"
+            @generate="generateRandomChampion"
+            @update-filters="updateFilters"
+          />
+        </div>
+        <ChampionList ref="championList" />
+      </div>
+    </div>
+  </div>
+</template>
+
 <script>
 import ChampionList from '@/components/ChampionList.vue'
 import AppHeader from '@/components/AppHeader.vue'
 import RandomChampion from './components/RandomChampion.vue'
 import ChampionHistory from './components/ChampionHistory.vue'
 
-import {
-  getChampions,
-  getChampion_tofix,
-  getChampionNamesFromFilters
-} from './utils/champion_utils'
+import { getChampions, getChampion, getChampionNamesFromFilters } from './utils/champion_utils'
 
 export default {
   components: {
@@ -53,7 +68,9 @@ export default {
       }
     },
     async generateRandomChampion() {
-      this.currentChampion = getChampion_tofix(this.filters)
+      const filters = this.$refs.randomChampion.getFilters()
+      const disabledChampions = this.$refs.championList.getDisabledChampions()
+      this.currentChampion = getChampion(filters, disabledChampions)
       if (this.$refs.randomChampion && this.currentChampion) {
         this.$refs.randomChampion.updateCurrentChampion(this.currentChampion)
         this.$refs.championHistory.addChampion(this.currentChampion)
@@ -63,34 +80,14 @@ export default {
       this.currentChampion = champion
       this.$refs.randomChampion.updateCurrentChampion(champion)
     },
-    updateFilters(filters) {
-      this.filters = filters
-      this.$refs.championList.updateSearchTerm(filters)
+    updateFilters() {
+      const filters = this.$refs.randomChampion.getFilters()
       const championFromFilters = getChampionNamesFromFilters(filters)
       this.$refs.championList.updateFilteredChampions(championFromFilters)
     }
   }
 }
 </script>
-
-<template>
-  <div class="min-h-screen flex flex-col">
-    <AppHeader />
-    <div class="flex-1 bg-white dark:bg-gray-800 flex">
-      <div class="flex flex-col md:flex-row flex-1">
-        <ChampionHistory ref="championHistory" @champion-clicked="championFromHistory" />
-        <div class="flex-1 p-4 overflow-y-auto rounded-lg relative">
-          <RandomChampion
-            ref="randomChampion"
-            @generate="generateRandomChampion"
-            @update-filters="updateFilters"
-          />
-        </div>
-        <ChampionList ref="championList" :champions="champions" />
-      </div>
-    </div>
-  </div>
-</template>
 
 <style scoped>
 .spinner {

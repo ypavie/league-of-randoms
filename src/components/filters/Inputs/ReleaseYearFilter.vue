@@ -111,8 +111,8 @@ export default {
   methods: {
     getReleaseYear() {
       return {
-        releaseYearMin: this.currentMinYear,
-        releaseYearMax: this.currentMaxYear
+        ReleaseYearMin: this.currentMinYear,
+        ReleaseYearMax: this.currentMaxYear
       }
     },
     adjustRange() {
@@ -144,7 +144,7 @@ export default {
       this.emitUpdateFilter()
     },
     emitUpdateFilter() {
-      this.$emit('update-filter')
+      this.$emit('update-filter', this.getReleaseYear())
     },
     onSliderClick(event) {
       const slider = this.$el.querySelector('.range-slider')

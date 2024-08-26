@@ -1,104 +1,10 @@
-<script>
-import { ref, computed, watch } from 'vue'
-
-export default {
-  props: {
-    champions: {
-      type: Object,
-      required: true
-    }
-  },
-  data() {
-    return {
-      searchTerm: '',
-      disabledChampions: [],
-      filteredChampions: [],
-      visibleChampions: {}
-    }
-  },
-  mounted() {
-    this.updateVisibleChampions()
-  },
-  watch: {
-    champions: {
-      handler: 'updateVisibleChampions',
-      deep: true
-    },
-    searchTerm: 'updateVisibleChampions'
-  },
-  methods: {
-    toggleBan(championName) {
-      if (this.disabledChampions.includes(championName)) {
-        this.disabledChampions.splice(this.disabledChampions.indexOf(championName), 1)
-      } else {
-        this.disabledChampions.push(championName)
-      }
-      this.updateVisibleChampions()
-    },
-    updateSearchTerm(filters) {
-      this.searchTerm = filters.searchText
-      if (filters.selectAll) {
-        this.disabledChampions = []
-      }
-      if (filters.unselectAll) {
-        this.disabledChampions = this.getChampionList()
-      }
-      this.updateVisibleChampions()
-    },
-    updateFilteredChampions(champions) {
-      this.visibleChampions = Object.keys(this.visibleChampions)
-        .filter((championName) => champions.includes(championName))
-        .reduce((obj, key) => {
-          obj[key] = this.visibleChampions[key]
-          return obj
-        }, {})
-    },
-    getChampionIconUrl(id) {
-      return `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${id}.png`
-    },
-    updateVisibleChampions() {
-      const filteredChampions = this.getFilteredChampions()
-      this.visibleChampions = Object.fromEntries(
-        Object.entries(filteredChampions).filter(
-          ([championName]) => !this.disabledChampions.includes(championName)
-        )
-      )
-    },
-    getFilteredChampions() {
-      const input = this.searchTerm.trim().toLowerCase()
-      if (input === '') {
-        return this.champions
-      } else {
-        this.filteredChampions = Object.keys(this.champions).filter((championName) =>
-          championName.toLowerCase().includes(input)
-        )
-        return Object.fromEntries(
-          Object.entries(this.champions).filter(([championName]) =>
-            this.filteredChampions.includes(championName)
-          )
-        )
-      }
-    },
-    getChampionList() {
-      return Object.keys(this.getFilteredChampions()).filter(
-        (championName) => !this.disabledChampions.includes(championName)
-      )
-    }
-  }
-}
-</script>
-
 <template>
   <div class="md:w-4/12 bg-white dark:bg-gray-800 overflow-y-auto">
     <div class="champion-list-vue">
       <div class="champion-icons flex flex-wrap justify-center">
-        <div
-          v-for="(champion, championName) in visibleChampions"
-          :key="champion.id"
-          class="champion-icon"
-        >
+        <div v-for="championName in currentChampions" :key="championName" class="champion-icon">
           <img
-            :src="getChampionIconUrl(champion.id)"
+            :src="getChampionIconUrl(championName)"
             @click="toggleBan(championName)"
             :class="{ selected: disabledChampions.includes(championName) }"
             draggable="false"
@@ -108,6 +14,40 @@ export default {
     </div>
   </div>
 </template>
+
+<script>
+import champions from '@/assets/champions.json'
+
+export default {
+  data() {
+    return {
+      searchTerm: '',
+      currentChampions: Object.keys(champions),
+      disabledChampions: []
+    }
+  },
+  methods: {
+    toggleBan(championName) {
+      if (this.disabledChampions.includes(championName)) {
+        this.disabledChampions = this.disabledChampions.filter(
+          (champion) => champion !== championName
+        )
+      } else {
+        this.disabledChampions.push(championName)
+      }
+    },
+    updateFilteredChampions(championList) {
+      this.currentChampions = championList
+    },
+    getChampionIconUrl(championName) {
+      return `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${championName}.png`
+    },
+    getDisabledChampions() {
+      return this.disabledChampions
+    }
+  }
+}
+</script>
 
 <style scoped>
 .champion-list-vue {

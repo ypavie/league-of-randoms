@@ -51,18 +51,60 @@
         GENERATE CHAMPION
       </button>
     </div>
-    <AdvancedFilters ref="advancedFilters" @update-filter="emitFilters" />
+    <div class="pt-4">
+      <div class="text-center">
+        <button
+          @click="toggleFilters"
+          class="text-gray-700 dark:text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-gray-700"
+        >
+          {{ showFilters ? 'Less filters' : 'More filters' }}
+        </button>
+      </div>
+      <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4" v-if="showFilters">
+        <RegionFilter @update-filter="updateFilterInput" />
+        <SpeciesFilter @update-filter="updateFilterInput" />
+        <SkinlinesFilter @update-filter="updateFilterInput" />
+        <ClassFilter @update-filter="updateFilterInput" />
+
+        <UltimateFilter @update-filter="updateFilterInput" />
+        <RadioFilter label="Dots" name="dots" @update-filter="updateFilterInput" />
+        <RadioFilter label="Execution" name="execution" @update-filter="updateFilterInput" />
+        <RadioFilter label="Invocation" name="invocation" @update-filter="updateFilterInput" />
+        <RadioFilter label="Stacks" name="stacks" @update-filter="updateFilterInput" />
+        <RadioFilter label="Stealth" name="stealth" @update-filter="updateFilterInput" />
+        <RadioFilter label="Yasuo Friend" name="yasuofriend" @update-filter="updateFilterInput" />
+      </div>
+
+      <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4" v-if="showFilters">
+        <ReleaseYearFilter @update-filter="updateFilterInputReleaseYear" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import AdvancedFilters from '../filters/AdvancedFilters.vue'
+import filters from '@/assets/filters.json'
+
+import ReleaseYearFilter from './Inputs/ReleaseYearFilter.vue'
+import RadioFilter from './Inputs/RadioFilter.vue'
+
+import RegionFilter from './Inputs/RegionFilter.vue'
+import SpeciesFilter from './Inputs/SpeciesFilter.vue'
+import SkinlinesFilter from './Inputs/SkinlinesFilter.vue'
+import ClassFilter from './Inputs/ClassFilter.vue'
+import UltimateFilter from './Inputs/UltimateFilter.vue'
 
 export default {
   name: 'DefaultFilters',
   emits: ['update-filters', 'generate'],
   components: {
-    AdvancedFilters
+    ReleaseYearFilter,
+    RegionFilter,
+    SpeciesFilter,
+    SkinlinesFilter,
+    ClassFilter,
+    RadioFilter,
+    UltimateFilter
   },
   data() {
     return {
@@ -93,17 +135,30 @@ export default {
           isSelected: true
         }
       ],
-      searchText: ''
+      searchText: '',
+      showFilters: true,
+      currentFilters: {},
+      currentFilterTypes: ['summs', 'roles', 'runes', 'items'],
+      filters: filters
     }
+  },
+  mounted() {
+    this.currentFilters = Object.keys(this.filters).reduce((acc, filterName) => {
+      acc[filterName] = ''
+      return acc
+    }, {})
+    Object.keys(this.filters).forEach((filterName) => {
+      this.filters[filterName].sort()
+    })
   },
   methods: {
     generate() {
       this.selectAllClicked = false
       this.unselectAllClicked = false
-      this.$emit('generate', this.getFilters())
+      this.$emit('generate')
     },
     emitFilters() {
-      this.$emit('update-filters', this.getFilters())
+      this.$emit('update-filters')
     },
     toggleSelectedLane(index) {
       this.roles[index].isSelected = !this.roles[index].isSelected
@@ -125,7 +180,7 @@ export default {
       this.emitFilters()
     },
     getFilters() {
-      const filters = {
+      let filters = {
         lanes: this.getSelectedLanes(),
         searchText: this.searchText,
         selectAll: this.selectAllClicked,
@@ -136,19 +191,59 @@ export default {
         filters[type] = types[type]
       })
 
-      if (this.$refs.advancedFilters.showFilters) {
-        const advancedFilters = this.$refs.advancedFilters.getFilters()
-        Object.keys(advancedFilters).forEach((key) => {
-          filters[key] = advancedFilters[key]
-        })
-      }
-      return filters
+      // if (this.$refs.advancedFilters.showFilters) {
+      //   const advancedFilters = this.$refs.advancedFilters.getFilters()
+      //   Object.keys(advancedFilters).forEach((key) => {
+      //     filters[key] = advancedFilters[key]
+      //   })
+      // }
+      return { ...filters, ...this.currentFilters }
     },
     getSelectedFiltersTypes() {
       return this.$refs.advancedFilters.getSelectedFiltersTypes()
     },
     getSelectedLanes() {
       return this.roles.filter((role) => role.isSelected).map((role) => role.name)
+    },
+    toggleFilters() {
+      this.showFilters = !this.showFilters
+    },
+    resetFilter(filterName) {
+      this.currentFilters[filterName] = ''
+      this.updateFilterInput(filterName)
+    },
+    // getFilters() {
+    //   const releaseYearFilter = this.currentFilters.releaseYear
+    //   return { ...this.currentFilters, releaseYear: releaseYearFilter }
+    // },
+    updateFilterInput(payload) {
+      console.log(payload)
+      this.currentFilters = { ...this.currentFilters, ...payload }
+      this.emitFilters()
+    },
+    updateFilterInputReleaseYear(payload) {
+      this.currentFilters = {
+        ...this.currentFilters,
+        releaseYearMin: payload.ReleaseYearMin,
+        releaseYearMax: payload.ReleaseYearMax
+      }
+      this.emitFilters()
+    },
+    toggleFilterType(type) {
+      if (this.isSelected(type)) {
+        this.currentFilterTypes = this.currentFilterTypes.filter((item) => item !== type)
+      } else {
+        this.currentFilterTypes.push(type)
+      }
+    },
+    isSelected(type) {
+      return this.currentFilterTypes.includes(type)
+    },
+    getSelectedFiltersTypes() {
+      return this.currentFilterTypes.reduce((acc, type) => {
+        acc[type] = this.isSelected(type)
+        return acc
+      }, {})
     }
   },
   watch: {

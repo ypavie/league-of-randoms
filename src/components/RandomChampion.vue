@@ -1,73 +1,3 @@
-<script>
-import DefaultFilters from './filters/DefaultFilters.vue'
-export default {
-  components: {
-    DefaultFilters
-  },
-  emits: ['generate', 'update-filters'],
-  data() {
-    return {
-      currentChampion: {},
-      selectedFiltersTypes: {
-        champion: true,
-        roles: true,
-        runes: true,
-        items: true,
-        summs: true
-      }
-    }
-  },
-  mounted() {},
-  methods: {
-    generate(filters) {
-      this.$emit('generate', filters)
-    },
-    updateCurrentChampion(champion) {
-      this.currentChampion = champion
-    },
-    updateFilter(filters) {
-      this.$emit('update-filters', filters)
-    },
-    getRuneProgress(rune, type) {
-      if (type) {
-        return {
-          height: '150px',
-          background: 'url(#gradient-' + rune.toLowerCase() + ')'
-        }
-      } else {
-        return {
-          height: '50px',
-          background: 'url(#gradient-' + rune.toLowerCase() + ')'
-        }
-      }
-    },
-    parseName(name) {
-      return name.replace(/_/g, ' ').replace(/(?:^|\s)\S/g, function (a) {
-        return a.toUpperCase()
-      })
-    },
-    convertSpellToMax(spell) {
-      switch (spell) {
-        case 0:
-          return 'Q'
-        case 1:
-          return 'W'
-        case 2:
-          return 'E'
-        default:
-          return 'Q'
-      }
-    },
-    isFilterTypeSelected(type) {
-      return this.selectedFiltersTypes[type]
-    },
-    getSelectedLanes() {
-      return this.$refs.Filters.getSelectedLanes()
-    }
-  }
-}
-</script>
-
 <template>
   <!-- RANDOM CHAMPION -->
   <div class="flex flex-wrap justify-center items-center gap-16" v-if="currentChampion.name">
@@ -463,9 +393,81 @@ export default {
   </div>
   <!-- FILTERS -->
   <div class="mt-8">
-    <DefaultFilters @generate="generate" @update-filters="updateFilter" />
+    <DefaultFilters ref="defaultFilters" @generate="generate" @update-filters="updateFilter" />
   </div>
 </template>
+
+<script>
+import DefaultFilters from './filters/DefaultFilters.vue'
+export default {
+  components: {
+    DefaultFilters
+  },
+  emits: ['generate', 'update-filters'],
+  data() {
+    return {
+      currentChampion: {},
+      selectedFiltersTypes: {
+        champion: true,
+        roles: true,
+        runes: true,
+        items: true,
+        summs: true
+      }
+    }
+  },
+  methods: {
+    generate() {
+      this.$emit('generate')
+    },
+    updateCurrentChampion(champion) {
+      this.currentChampion = champion
+    },
+    updateFilter() {
+      this.$emit('update-filters')
+    },
+    getFilters() {
+      return this.$refs.defaultFilters.getFilters()
+    },
+    getRuneProgress(rune, type) {
+      if (type) {
+        return {
+          height: '150px',
+          background: 'url(#gradient-' + rune.toLowerCase() + ')'
+        }
+      } else {
+        return {
+          height: '50px',
+          background: 'url(#gradient-' + rune.toLowerCase() + ')'
+        }
+      }
+    },
+    parseName(name) {
+      return name.replace(/_/g, ' ').replace(/(?:^|\s)\S/g, function (a) {
+        return a.toUpperCase()
+      })
+    },
+    convertSpellToMax(spell) {
+      switch (spell) {
+        case 0:
+          return 'Q'
+        case 1:
+          return 'W'
+        case 2:
+          return 'E'
+        default:
+          return 'Q'
+      }
+    },
+    isFilterTypeSelected(type) {
+      return this.selectedFiltersTypes[type]
+    },
+    getSelectedLanes() {
+      return this.$refs.Filters.getSelectedLanes()
+    }
+  }
+}
+</script>
 
 <style scoped>
 .text-center:hover p {

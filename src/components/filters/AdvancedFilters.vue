@@ -8,65 +8,74 @@
         {{ showFilters ? 'Less filters' : 'More filters' }}
       </button>
     </div>
-    <div v-if="showFilters" class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div
-        v-for="(filterValues, filterName) in filters"
-        :key="filterName"
-        class="flex items-center"
-      >
-        <label
-          :for="filterName"
-          class="w-32 dark:text-gray-400 text-gray-700 font-bold text-right flex-shrink-0"
-        >
-          {{ filterName }} :
-        </label>
-        <select
-          v-model="currentFilters[filterName]"
-          @change="udpateSelect(filterName)"
-          :id="filterName"
-          :name="filterName"
-          class="block w-full mx-2 p-2 border border-gray-300 rounded-md shadow-sm dark:bg-gray-700 dark:border-gray-600 text-gray-700 dark:text-white cursor-pointer flex-grow"
-        >
-          <option value="">Select {{ filterName }}</option>
-          <option v-for="value in filterValues" :key="value" :value="value">{{ value }}</option>
-        </select>
-        <button
-          @click="resetFilter(filterName)"
-          class="p-1 text-red-500 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M5.293 5.293a1 1 0 0 1 1.414 1.414L10 11.414l3.293-3.293a1 1 0 1 1 1.414 1.414L11.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L10 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L8.586 12 5.293 8.707a1 1 0 0 1 0-1.414z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
-      <div class="flex items-center">
-        <ReleaseYearFilter ref="releaseYear" @update-filter="updateReleaseYearFilter()" />
-      </div>
+    <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4" v-if="showFilters">
+      <RegionFilter v-model="currentFilters.region" @update-filter="updateSelect" />
+      <!-- <SpeciesFilter v-model="currentFilters.species" @update-filter="updateSelect('species')" />
+      <SkinlinesFilter
+        v-model="currentFilters.skinlines"
+        @update-filter="updateSelect('skinlines')"
+        />
+      <ClassFilter v-model="currentFilters.class" @update-filter="updateSelect('class')" />
+      <UltimateFilter v-model="currentFilters.ultimate" @update-filter="updateSelect('ultimate')" />
+      <DotsFilter v-model="currentFilters.dots" @update-filter="updateSelect('dots')" />
+      <ExecutionFilter
+        v-model="currentFilters.execution"
+        @update-filter="updateSelect('execution')"
+      />
+      <InvocationFilter
+        v-model="currentFilters.invocation"
+        @update-filter="updateSelect('invocation')"
+      />
+      <StacksFilter v-model="currentFilters.stacks" @update-filter="updateSelect('stacks')" />
+      <StealthFilter v-model="currentFilters.stealth" @update-filter="updateSelect('stealth')" />
+      <YasuoFriendFilter
+        v-model="currentFilters.yasuofriend"
+        @update-filter="updateSelect('yasuofriend')"
+      />
+      <ReleaseYearFilter
+        v-model="currentFilters.releaseYear"
+        @update-filter="updateReleaseYearFilter"
+      /> -->
     </div>
   </div>
 </template>
 
 <script>
-import ReleaseYearFilter from './ReleaseYearFilter.vue'
 import filters from '@/assets/filters.json'
+
+import ReleaseYearFilter from './Inputs/ReleaseYearFilter.vue'
+
+import RegionFilter from './Inputs/RegionFilter.vue'
+import SpeciesFilter from './Inputs/SpeciesFilter.vue'
+import SkinlinesFilter from './Inputs/SkinlinesFilter.vue'
+import DotsFilter from './Inputs/DotsFilter.vue'
+import ExecutionFilter from './Inputs/ExecutionFilter.vue'
+import InvocationFilter from './Inputs/InvocationFilter.vue'
+import StacksFilter from './Inputs/StacksFilter.vue'
+import StealthFilter from './Inputs/StealthFilter.vue'
+import UltimateFilter from './Inputs/UltimateFilter.vue'
+import YasuoFriendFilter from './Inputs/YasuoFriendFilter.vue'
+import ClassFilter from './Inputs/ClassFilter.vue'
 
 export default {
   name: 'AdvancedFilters',
   components: {
-    ReleaseYearFilter
+    ReleaseYearFilter,
+    RegionFilter,
+    SpeciesFilter,
+    SkinlinesFilter,
+    DotsFilter,
+    ExecutionFilter,
+    InvocationFilter,
+    StacksFilter,
+    StealthFilter,
+    UltimateFilter,
+    YasuoFriendFilter,
+    ClassFilter
   },
   data() {
     return {
-      showFilters: false,
+      showFilters: true,
       currentFilters: {},
       currentFilterTypes: ['summs', 'roles', 'runes', 'items'],
       filters: filters
@@ -87,25 +96,18 @@ export default {
     },
     resetFilter(filterName) {
       this.currentFilters[filterName] = ''
-      document.getElementById(filterName).selectedIndex = 0
-      this.udpateSelect(filterName)
+      this.updateSelect(filterName)
     },
     getFilters() {
-      const filters = Object.keys(this.currentFilters).reduce((acc, filterName) => {
-        acc[filterName.toLowerCase()] = this.currentFilters[filterName]
-        return acc
-      }, {})
-
-      const releaseYearFilter = this.$refs.releaseYear.getReleaseYear()
-      return { ...filters, ...releaseYearFilter }
+      const releaseYearFilter = this.currentFilters.releaseYear
+      return { ...filters, releaseYear: releaseYearFilter }
     },
-    udpateSelect(filterName) {
-      this.currentFilters[filterName] = document.getElementById(filterName).value
-      this.$emit('update-filter', this.getFilters())
+    updateSelect(payload) {
+      this.currentFilters[payload] = value
+      this.$emit('update-filter')
     },
     updateReleaseYearFilter() {
-      console.log('Release year filter updated')
-      this.$emit('update-filter', this.getFilters())
+      this.$emit('update-filter')
     },
     toggleFilterType(type) {
       if (this.isSelected(type)) {

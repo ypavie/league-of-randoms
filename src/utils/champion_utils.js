@@ -4,7 +4,7 @@ import runes from '@/assets/runes.json'
 
 import { generateItemBuild, generateStarterItem } from '@/utils/item_utils'
 
-function getRandomRunes() {
+export function getRandomRunes() {
   let random_runes = {}
   const rune_keys = Object.keys(runes)
   const random_main_tree_index = Math.floor(Math.random() * (rune_keys.length - 1))
@@ -76,7 +76,7 @@ function getRandomRunes() {
   return random_runes
 }
 
-function getSummonerSpells(role) {
+export function getSummonerSpells(role) {
   role = role.toLowerCase()
   const summoner_spell_keys = Object.keys(summonerSpells)
   let randomIndex1, randomIndex2
@@ -102,13 +102,14 @@ function getSummonerSpells(role) {
   const summoner_spell_2 = summonerSpells[summoner_spell_keys[randomIndex2]]
 
   const summoner_spells = {
-    summoner_spell_1: [summoner_spell_1.name, summoner_spell_1.icon],
-    summoner_spell_2: [summoner_spell_2.name, summoner_spell_2.icon]
+    summoner_spell_1: [summoner_spell_keys[randomIndex1], summoner_spell_1.icon],
+    summoner_spell_2: [summoner_spell_keys[randomIndex2], summoner_spell_2.icon]
   }
 
   return summoner_spells
 }
-function getRole(roles) {
+
+export function getRole(roles) {
   if (!roles || roles.length === 0) {
     roles = ['top', 'jungle', 'middle', 'bottom', 'support']
   } else {
@@ -123,30 +124,29 @@ function getRole(roles) {
   ]
 }
 
-function getSpellToMax(spells) {
+export function getSpellToMax(spells) {
   const randomIndex = Math.floor(Math.random() * 3)
   return [
     randomIndex,
-    'https://ddragon.leagueoflegends.com/cdn/14.11.1/img/spell/' + spells[randomIndex] + '.png'
+    'https://ddragon.leagueoflegends.com/cdn/14.14.1/img/spell/' + spells[randomIndex] + '.png'
   ]
 }
 
-function getItems(role) {
+export function getItems(role) {
   const build = generateItemBuild('', role) || []
   const baseUrl = 'https://ddragon.leagueoflegends.com/cdn/14.14.1/img/item/'
 
   return build.map((item) => [item?.name || 'defaultItem', `${baseUrl}${item?.id || '0'}.png`])
 }
 
-function getStarterItem(role) {
+export function getStarterItem(role) {
   const item = generateStarterItem(role) || 'defaultItem'
   return [item, `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/item/${item}.png`]
 }
 
 export function getChampionNamesFromFilters(filters) {
-  let championsList = Object.keys(champions)
-
   console.log(filters)
+  let championsList = Object.keys(champions)
   if (filters !== undefined) {
     if (filters.gender !== '' && filters.gender !== undefined) {
       championsList = championsList.filter((key) => champions[key].gender === filters.gender)
@@ -173,97 +173,65 @@ export function getChampionNamesFromFilters(filters) {
         (key) => champions[key].skinlines && champions[key].skinlines.includes(filters.skinlines)
       )
     }
+    if (filters.invocation !== '' && filters.invocation !== undefined) {
+      championsList = championsList.filter(
+        (key) => champions[key].invocation === filters.invocation
+      )
+    }
+    if (filters.ultimate !== '' && filters.ultimate !== undefined) {
+      if (filters.ultimate === 'semi') {
+        championsList = championsList.filter(
+          (key) => champions[key].ultimate === 'semi' || champions[key].ultimate === 'global'
+        )
+      } else {
+        championsList = championsList.filter((key) => champions[key].ultimate === filters.ultimate)
+      }
+    }
+    if (filters.yasuofriend !== '' && filters.yasuofriend !== undefined) {
+      championsList = championsList.filter(
+        (key) => champions[key].yasuofriend === filters.yasuofriend
+      )
+    }
+    if (filters.dots !== '' && filters.dots !== undefined) {
+      championsList = championsList.filter((key) => champions[key].dots === filters.dots)
+    }
+    if (filters.stacks !== '' && filters.stacks !== undefined) {
+      championsList = championsList.filter((key) => champions[key].stacks === filters.stacks)
+    }
+    if (filters.execution !== '' && filters.execution !== undefined) {
+      championsList = championsList.filter((key) => champions[key].execution === filters.execution)
+    }
+    if (filters.stealth !== '' && filters.stealth !== undefined) {
+      championsList = championsList.filter((key) => champions[key].stealth === filters.stealth)
+    }
     if (
       filters.releaseYearMin !== '' &&
       filters.releaseYearMax !== '' &&
       filters.releaseYearMax !== undefined &&
       filters.releaseYearMin !== undefined
     ) {
-      console.log('releaseYear ', filters.releaseYearMin, filters.releaseYearMax)
       championsList = championsList.filter(
         (key) =>
           champions[key].year >= filters.releaseYearMin &&
           champions[key].year <= filters.releaseYearMax
       )
     }
-    console.log(championsList)
-    return championsList.map((key) => champions[key].name)
+    return championsList.map((key) => key)
   }
+  return championsList.map((key) => key)
 }
 
-export function getRandomChampion(searchText, filters) {
-  let championsList = Object.keys(champions)
+export function getChampion(filters, disabledChampions) {
+  let championNames = getChampionNamesFromFilters(filters)
+  championNames = championNames.filter((champion) => !disabledChampions.includes(champion))
+  let randomChampion = championNames[Math.floor(Math.random() * championNames.length)]
+  let champion = Object.values(champions).find((champ) => champ.name === randomChampion)
 
-  if (searchText !== '') {
-    championsList = championsList.filter((key) =>
-      champions[key].name.toLowerCase().includes(searchText)
-    )
-    // Add Sett if search text is 'Mario'
-    // if (searchText.toLowerCase() === 'mario') {
-    //   championsList.push('sett')
-    // }
-  }
-
-  if (filters !== undefined) {
-    if (filters.gender !== undefined && filters.gender !== '') {
-      championsList = championsList.filter((key) => champions[key].gender === filters.gender)
-    }
-    if (filters.mana !== undefined && filters.mana !== '') {
-      championsList = championsList.filter((key) => champions[key].mana === filters.mana)
-    }
-    if (filters.class !== undefined && filters.class !== '') {
-      championsList = championsList.filter((key) => champions[key].class.includes(filters.class))
-    }
-    if (filters.range !== undefined && filters.range !== '') {
-      championsList = championsList.filter((key) => champions[key].range.includes(filters.range))
-    }
-    if (filters.species !== undefined && filters.species !== '') {
-      championsList = championsList.filter((key) =>
-        champions[key].species.includes(filters.species)
-      )
-    }
-    if (filters.region !== undefined && filters.region !== '') {
-      championsList = championsList.filter((key) => champions[key].region.includes(filters.region))
-    }
-
-    if (filters.skinlines !== undefined && filters.skinlines !== '') {
-      championsList = championsList.filter(
-        (key) => champions[key].skinlines && champions[key].skinlines.includes(filters.skinlines)
-      )
-    }
-
-    if (filters.releaseYearMin !== '' && filters.releaseYearMax !== '') {
-      championsList = championsList.filter(
-        (key) =>
-          champions[key].year >= filters.releaseYearMin &&
-          champions[key].year <= filters.releaseYearMax
-      )
-    }
-
-    if (championsList.length === 0) {
-      const randomIndex = Math.floor(Math.random() * Object.keys(champions).length)
-      return champions[Object.keys(champions)[randomIndex]]
-    }
-
-    const randomIndex = Math.floor(Math.random() * championsList.length)
-    return champions[championsList[randomIndex]]
-  }
-  if (championsList.length === 0) {
-    const randomIndex = Math.floor(Math.random() * Object.keys(champions).length)
-    return champions[Object.keys(champions)[randomIndex]]
-  }
-
-  const randomIndex = Math.floor(Math.random() * championsList.length)
-  return champions[championsList[randomIndex]]
-}
-
-export function getChampion_tofix(filters) {
-  let champion = getRandomChampion(filters.searchText, filters)
   champion.runes = getRandomRunes()
   champion.role = getRole(filters.lanes)
   champion.starter_item = getStarterItem(champion.role[0])
   champion.spell_to_max = getSpellToMax(champion.spells)
-  champion.icon = `https://ddragon.leagueoflegends.com/cdn/14.11.1/img/champion/${champion.id}.png`
+  champion.icon = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champion.id}.png`
 
   const summoner_spells = getSummonerSpells(champion.role[0])
   champion.summoner_spell_1 = summoner_spells.summoner_spell_1
