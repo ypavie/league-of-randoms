@@ -218,12 +218,7 @@ export default {
       this.currentFilters[filterName] = ''
       this.updateFilterInput(filterName)
     },
-    // getFilters() {
-    //   const releaseYearFilter = this.currentFilters.releaseYear
-    //   return { ...this.currentFilters, releaseYear: releaseYearFilter }
-    // },
     updateFilterInput(payload) {
-      console.log(payload)
       this.currentFilters = { ...this.currentFilters, ...payload }
       this.emitFilters()
     },

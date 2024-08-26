@@ -247,7 +247,7 @@ export function getChampion(filters, disabledChampions) {
     return null
   }
   let randomChampion = championNames[Math.floor(Math.random() * championNames.length)]
-  let champion = Object.values(champions).find((champ) => champ.name === randomChampion)
+  let champion = Object.values(champions).find((champ) => champ.id === randomChampion)
 
   champion.runes = getRandomRunes()
   champion.role = getRole(filters.lanes)
