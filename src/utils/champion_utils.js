@@ -228,6 +228,9 @@ export function getChampionNamesFromFilters(filters) {
 
 export function getChampion(filters, disabledChampions) {
   let championNames = getChampionNamesFromFilters(filters)
+  if (championNames.length === 0) {
+    championNames = Object.keys(champions)
+  }
   championNames = championNames.filter((champion) => !disabledChampions.includes(champion))
   let randomChampion = championNames[Math.floor(Math.random() * championNames.length)]
   let champion = Object.values(champions).find((champ) => champ.name === randomChampion)
