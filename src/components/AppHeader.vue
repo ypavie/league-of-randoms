@@ -6,7 +6,7 @@
     >
       <div class="flex items-center justify-between">
         <!-- add logo.png from assets folder -->
-        <img src="@/assets/logo.png" alt="logo" class="h-16" />
+        <img src="@/assets/img/logo.png" alt="logo" class="h-16" />
         <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand"
           >League Of Randoms</a
         >

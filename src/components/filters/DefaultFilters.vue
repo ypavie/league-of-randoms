@@ -111,6 +111,12 @@ import SelectFilter from './Inputs/SelectFilter.vue'
 import UltimateFilter from './Inputs/UltimateFilter.vue'
 import ReleaseYearFilter from './Inputs/ReleaseYearFilter.vue'
 
+import topIcon from '@/assets/img/Position_Challenger-Top.png'
+import jungleIcon from '@/assets/img/Position_Challenger-Jungle.png'
+import middleIcon from '@/assets/img/Position_Challenger-Mid.png'
+import bottomIcon from '@/assets/img/Position_Challenger-Bot.png'
+import supportIcon from '@/assets/img/Position_Challenger-Support.png'
+
 export default {
   name: 'DefaultFilters',
   emits: ['update-filters', 'generate', 'select-all'],
@@ -125,27 +131,27 @@ export default {
       roles: [
         {
           name: 'Top',
-          icon: 'https://raw.githubusercontent.com/InFinity54/LoL_DDragon/master/extras/lanes/top.png',
+          icon: topIcon,
           isSelected: true
         },
         {
           name: 'Jungle',
-          icon: 'https://raw.githubusercontent.com/InFinity54/LoL_DDragon/master/extras/lanes/jungle.png',
+          icon: jungleIcon,
           isSelected: true
         },
         {
           name: 'Middle',
-          icon: 'https://raw.githubusercontent.com/InFinity54/LoL_DDragon/master/extras/lanes/middle.png',
+          icon: middleIcon,
           isSelected: true
         },
         {
           name: 'Bottom',
-          icon: 'https://raw.githubusercontent.com/InFinity54/LoL_DDragon/master/extras/lanes/bottom.png',
+          icon: bottomIcon,
           isSelected: true
         },
         {
           name: 'Support',
-          icon: 'https://raw.githubusercontent.com/InFinity54/LoL_DDragon/master/extras/lanes/support.png',
+          icon: supportIcon,
           isSelected: true
         }
       ],

@@ -4,6 +4,12 @@ import runes from '@/assets/runes.json'
 
 import { generateItemBuild, generateStarterItem } from '@/utils/item_utils'
 
+import topIcon from '@/assets/img/Position_Challenger-Top.png'
+import jungleIcon from '@/assets/img/Position_Challenger-Jungle.png'
+import middleIcon from '@/assets/img/Position_Challenger-Mid.png'
+import bottomIcon from '@/assets/img/Position_Challenger-Bot.png'
+import supportIcon from '@/assets/img/Position_Challenger-Support.png'
+
 const easterEggs = {
   aa: ['Varus', 'Kayn'],
   mario: ['Sett'],
@@ -123,12 +129,18 @@ export function getRole(roles) {
     roles = roles.map((role) => role?.toLowerCase())
   }
   const randomIndex = Math.floor(Math.random() * roles.length)
-  return [
-    roles[randomIndex],
-    'https://raw.githubusercontent.com/InFinity54/LoL_DDragon/master/extras/lanes/' +
-      roles[randomIndex] +
-      '.png'
-  ]
+  switch (roles[randomIndex]) {
+    case 'top':
+      return ['top', topIcon]
+    case 'jungle':
+      return ['jungle', jungleIcon]
+    case 'middle':
+      return ['middle', middleIcon]
+    case 'bottom':
+      return ['bottom', bottomIcon]
+    case 'support':
+      return ['support', supportIcon]
+  }
 }
 
 export function getSpellToMax(spells) {
