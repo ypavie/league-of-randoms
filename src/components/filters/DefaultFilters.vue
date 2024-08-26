@@ -24,7 +24,6 @@
           type="text"
           class="border border-gray-300 dark:border-gray-700 rounded-md pl-6 pr-4 py-2 w-full sm:w-64 md:w-auto focus:outline-none focus:border-blue-500 dark:bg-gray-800 dark:text-white"
           placeholder="Champion name..."
-          v-model="searchText"
           @input="updateSearchText"
         />
       </div>
@@ -93,6 +92,7 @@ import SpeciesFilter from './Inputs/SpeciesFilter.vue'
 import SkinlinesFilter from './Inputs/SkinlinesFilter.vue'
 import ClassFilter from './Inputs/ClassFilter.vue'
 import UltimateFilter from './Inputs/UltimateFilter.vue'
+import { ref } from 'vue'
 
 export default {
   name: 'DefaultFilters',
@@ -135,7 +135,7 @@ export default {
           isSelected: true
         }
       ],
-      searchText: '',
+      searchText: ref(''),
       showFilters: true,
       currentFilters: {},
       currentFilterTypes: ['summs', 'roles', 'runes', 'items'],
@@ -153,8 +153,8 @@ export default {
   },
   methods: {
     generate() {
-      this.selectAllClicked = false
-      this.unselectAllClicked = false
+      // this.selectAllClicked = false
+      // this.unselectAllClicked = false
       this.$emit('generate')
     },
     emitFilters() {
@@ -164,19 +164,20 @@ export default {
       this.roles[index].isSelected = !this.roles[index].isSelected
       this.emitFilters()
     },
-    updateSearchText() {
-      this.selectAllClicked = false
-      this.unselectAllClicked = false
+    updateSearchText(event) {
+      // this.selectAllClicked = false
+      // this.unselectAllClicked = false
+      this.searchText = event.target.value
       this.emitFilters()
     },
     selectAll() {
-      this.selectAllClicked = true
-      this.unselectAllClicked = false
+      // this.selectAllClicked = true
+      // this.unselectAllClicked = false
       this.emitFilters()
     },
     unselectAll() {
-      this.unselectAllClicked = true
-      this.selectAllClicked = false
+      // this.unselectAllClicked = true
+      // this.selectAllClicked = false
       this.emitFilters()
     },
     getFilters() {
@@ -186,10 +187,12 @@ export default {
         selectAll: this.selectAllClicked,
         unselectAll: this.unselectAllClicked
       }
-      const types = this.getSelectedFiltersTypes()
+      let types = this.getSelectedFiltersTypes()
       Object.keys(types).forEach((type) => {
         filters[type] = types[type]
       })
+
+      let searchInput = { searchText: this.searchText }
 
       // if (this.$refs.advancedFilters.showFilters) {
       //   const advancedFilters = this.$refs.advancedFilters.getFilters()
@@ -197,7 +200,7 @@ export default {
       //     filters[key] = advancedFilters[key]
       //   })
       // }
-      return { ...filters, ...this.currentFilters }
+      return { ...filters, ...this.currentFilters, ...searchInput }
     },
     getSelectedFiltersTypes() {
       return this.$refs.advancedFilters.getSelectedFiltersTypes()

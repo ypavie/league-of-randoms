@@ -145,9 +145,14 @@ export function getStarterItem(role) {
 }
 
 export function getChampionNamesFromFilters(filters) {
-  console.log(filters)
   let championsList = Object.keys(champions)
+
   if (filters !== undefined) {
+    if (filters.searchText !== '' && filters.searchText !== undefined) {
+      championsList = championsList.filter((key) =>
+        champions[key].name.toLowerCase().includes(filters.searchText.toLowerCase())
+      )
+    }
     if (filters.gender !== '' && filters.gender !== undefined) {
       championsList = championsList.filter((key) => champions[key].gender === filters.gender)
     }
