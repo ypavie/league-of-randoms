@@ -4,8 +4,16 @@
       <label class="w-32 dark:text-gray-400 text-gray-700 font-bold text-right flex-shrink-0">
         Release Year :
       </label>
-      <div class="relative flex-grow mx-2">
-        <div v-if="!isSmallScreen">
+      <div class="flex-grow mx-2 flex items-center">
+        <input
+          type="number"
+          v-model.number="currentMinYear"
+          @input="validateMinYear"
+          :min="minYear"
+          :max="currentMaxYear"
+          class="border border-white rounded-md p-1 w-20 text-center dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+        />
+        <div v-if="!isSmallScreen" class="flex-grow mx-2">
           <div class="range-slider" @click="onSliderClick">
             <span
               class="range-selected"
@@ -33,46 +41,32 @@
             />
           </div>
         </div>
-        <div class="range-price">
-          <label for="min" class="text-gray-700 dark:text-gray-400">Min</label>
-          <input
-            type="number"
-            name="min"
-            v-model.number="currentMinYear"
-            @input="validateMinYear"
-            :min="minYear"
-            :max="currentMaxYear"
-            class="ml-1 p-1 border border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-          />
-          <label for="max" class="text-gray-700 dark:text-gray-400 ml-4">Max</label>
-          <input
-            type="number"
-            name="max"
-            v-model.number="currentMaxYear"
-            @input="validateMaxYear"
-            :min="currentMinYear"
-            :max="maxYear"
-            class="ml-1 p-1 border border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-          />
-        </div>
-      </div>
-      <button
-        @click="reset"
-        class="ml-4 p-1 text-red-500 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4"
-          viewBox="0 0 20 20"
-          fill="currentColor"
+        <input
+          type="number"
+          v-model.number="currentMaxYear"
+          @input="validateMaxYear"
+          :min="currentMinYear"
+          :max="maxYear"
+          class="border border-white rounded-md p-1 w-20 text-center ml-2 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+        />
+        <button
+          @click="reset"
+          class="ml-4 p-1 text-red-500 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
         >
-          <path
-            fill-rule="evenodd"
-            d="M5.293 5.293a1 1 0 0 1 1.414 1.414L10 11.414l3.293-3.293a1 1 0 1 1 1.414 1.414L11.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L10 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L8.586 12 5.293 8.707a1 1 0 0 1 0-1.414z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 5.293a1 1 0 0 1 1.414 1.414L10 11.414l3.293-3.293a1 1 0 1 1 1.414 1.414L11.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L10 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L8.586 12 5.293 8.707a1 1 0 0 1 0-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -192,61 +186,68 @@ export default {
   position: relative;
   background-color: #e1e9f6;
   border-radius: 2px;
+  top: 50%;
+  transform: translateY(50%);
 }
+
 .range-selected {
   height: 100%;
   position: absolute;
   border-radius: 5px;
-  background-color: #1b53c0;
+  border: 3px solid #e1e9f6;
+  background-color: #1f2937;
 }
+
 .range-input {
   position: relative;
   margin-bottom: 0.5rem;
 }
+
 .range-input input {
   position: absolute;
   width: 100%;
   height: 5px;
-  top: -7px;
+  top: 50%;
+  transform: translateY(-50%);
   background: none;
   pointer-events: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-.range-input input::-webkit-slider-thumb {
-  height: 20px;
-  width: 20px;
+
+input::-webkit-slider-thumb {
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
-  border: 3px solid #1b53c0;
-  background-color: #fff;
+  border: 3px solid #a0aec0;
+  background-color: #ffffff;
   pointer-events: auto;
   -webkit-appearance: none;
+  cursor: pointer;
+  margin-bottom: 1px;
 }
-.range-input input::-moz-range-thumb {
-  height: 15px;
-  width: 15px;
+
+input::-moz-range-thumb {
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
-  border: 3px solid #1b53c0;
-  background-color: #fff;
+  border: 3px solid #a0aec0;
+  background-color: #ffffff;
   pointer-events: auto;
   -moz-appearance: none;
+  cursor: pointer;
+  margin-top: 30%;
 }
+
 .range-price {
-  align-items: center;
-  margin-top: 0.5rem;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
 }
-.range-price label {
-  margin-right: 5px;
-}
+
 .range-price input {
-  width: 70px;
+  width: 60px;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
-.range-price input:first-of-type {
-  margin-right: 15px;
 }
 </style>

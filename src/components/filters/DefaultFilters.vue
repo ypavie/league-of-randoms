@@ -92,11 +92,10 @@
         <RadioFilter label="Stacks" name="stacks" @update-filter="updateFilterInput" />
         <RadioFilter label="Stealth" name="stealth" @update-filter="updateFilterInput" />
         <RadioFilter label="Yasuo Friend" name="yasuofriend" @update-filter="updateFilterInput" />
-      </div>
-
-      <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4" v-if="showFilters">
         <ReleaseYearFilter @update-filter="updateFilterInputReleaseYear" />
       </div>
+
+      <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4" v-if="showFilters"></div>
     </div>
   </div>
 </template>
