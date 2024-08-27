@@ -181,7 +181,7 @@ export default {
         }
       ],
       searchText: ref(''),
-      showFilters: true,
+      showFilters: false,
       currentFilters: {},
       currentFilterTypes: ['summs', 'roles', 'runes', 'items'],
       filters: filters
