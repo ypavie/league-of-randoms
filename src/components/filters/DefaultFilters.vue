@@ -60,6 +60,41 @@
         </button>
       </div>
       <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4" v-if="showFilters">
+        <!-- "Malzahar": {
+    "id": "Malzahar",
+    "key": "90",
+    "class": ["Mage", "Assassin"],
+    "spells": ["MalzaharQ", "MalzaharW", "MalzaharE", "MalzaharR"],
+    "region": ["Shurima", "Void"],
+    "gender": "Male",
+    "positions": ["Middle"],
+    "species": ["Human", "Void-Being"],
+    "range": ["Range"],
+    "year": 2010,
+    "mana": "mana",
+    "name": "Malzahar",
+    "tags": ["Mage"],
+    "skinlines": [
+      "Wonders of",
+      "Definitely Not",
+      "Legacy",
+      "Fables",
+      "Hextech",
+      "Arcade: Battle",
+      "Snow Day",
+      "Bees!",
+      "Debonair",
+      "Empyrean",
+      "Worldbreaker"
+    ],
+    "invocation": true,
+    "ultimate": "none",
+    "yasuofriend": false,
+    "dots": true,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
+  }, -->
         <SelectFilter
           label="Region"
           :options="filters.region"
@@ -85,7 +120,37 @@
           @update-filter="updateFilterInput"
         />
 
-        <UltimateFilter @update-filter="updateFilterInput" />
+        <RadioFilter
+          label="Mana"
+          name="mana"
+          :options="[
+            { value: 'mana', label: 'Mana' },
+            { value: 'manaless', label: 'No mana' }
+          ]"
+          @update-filter="updateFilterInput"
+        />
+
+        <RadioFilter
+          label="Range"
+          name="range"
+          :options="[
+            { value: 'melee', label: 'Melee' },
+            { value: 'range', label: 'Range' }
+          ]"
+          @update-filter="updateFilterInput"
+        />
+
+        <RadioFilter
+          label="Ultimate"
+          name="ultimate"
+          :options="[
+            { value: 'none', label: 'Classic' },
+            { value: 'semi', label: 'Semi' },
+            { value: 'global', label: 'Global' }
+          ]"
+          @update-filter="updateFilterInput"
+        />
+
         <RadioFilter label="Dots" name="dots" @update-filter="updateFilterInput" />
         <RadioFilter label="Execution" name="execution" @update-filter="updateFilterInput" />
         <RadioFilter label="Invocation" name="invocation" @update-filter="updateFilterInput" />
@@ -94,8 +159,6 @@
         <RadioFilter label="Yasuo Friend" name="yasuofriend" @update-filter="updateFilterInput" />
         <ReleaseYearFilter @update-filter="updateFilterInputReleaseYear" />
       </div>
-
-      <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4" v-if="showFilters"></div>
     </div>
   </div>
 </template>
@@ -107,7 +170,6 @@ import filters from '@/assets/filters.json'
 import RadioFilter from './Inputs/RadioFilter.vue'
 import SelectFilter from './Inputs/SelectFilter.vue'
 
-import UltimateFilter from './Inputs/UltimateFilter.vue'
 import ReleaseYearFilter from './Inputs/ReleaseYearFilter.vue'
 
 import topIcon from '@/assets/img/Position_Challenger-Top.png'
@@ -122,7 +184,6 @@ export default {
   components: {
     ReleaseYearFilter,
     RadioFilter,
-    UltimateFilter,
     SelectFilter
   },
   data() {

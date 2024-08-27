@@ -9,7 +9,7 @@
     <div class="flex-grow mx-2 flex">
       <div
         v-for="(option, index) in options"
-        :key="option"
+        :key="option.value"
         :class="{
           'grow mr-2': index < options.length - 1,
           grow: index === options.length - 1
@@ -17,24 +17,24 @@
       >
         <input
           type="radio"
-          :id="name + '_' + option"
-          :value="option"
+          :id="name + '_' + option.value"
+          :value="option.value"
           v-model="selectedOption"
-          @change="updateOption(option)"
+          @change="updateOption(option.value)"
           :name="name"
           class="hidden"
         />
         <label
-          :for="name + '_' + option"
+          :for="name + '_' + option.value"
           :class="[
             'cursor-pointer block px-4 py-2 border rounded-md shadow-sm flex items-center justify-center',
-            selectedOption === option
+            selectedOption === option.value
               ? 'bg-gray-300 text-gray-700'
               : 'bg-white text-gray-700 dark:bg-gray-700 dark:text-white'
           ]"
-          @click="updateOption(option)"
+          @click="updateOption(option.value)"
         >
-          {{ option }}
+          {{ option.label }}
         </label>
       </div>
     </div>
@@ -73,27 +73,42 @@ export default {
     modelValue: {
       type: String,
       default: ''
+    },
+    options: {
+      type: Array,
+      default: () => [
+        { value: 'Yes', label: 'Yes' },
+        { value: 'No', label: 'No' }
+      ]
     }
   },
   data() {
     return {
-      options: ['Yes', 'No'],
       selectedOption: this.modelValue
     }
   },
   methods: {
-    updateOption(option) {
-      if (this.selectedOption === option) {
+    updateOption(value) {
+      if (this.selectedOption === value) {
         this.selectedOption = ''
       } else {
-        this.selectedOption = option
+        this.selectedOption = value
       }
-      const value = this.selectedOption === 'Yes' ? true : this.selectedOption === 'No' ? false : ''
-      this.$emit('update-filter', { [this.name]: value })
+
+      let valueToEmit
+      if (this.selectedOption === 'Yes') {
+        valueToEmit = true
+      } else if (this.selectedOption === 'No') {
+        valueToEmit = false
+      } else {
+        valueToEmit = this.selectedOption
+      }
+
+      this.$emit('update-filter', { [this.name]: valueToEmit })
     },
     resetOption() {
       this.selectedOption = ''
-      this.updateOption()
+      this.updateOption('')
     }
   }
 }

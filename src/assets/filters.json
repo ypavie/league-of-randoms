@@ -1,6 +1,6 @@
 {
   "gender": ["Female", "Male", "Other"],
-  "mana": ["Mana", "Manaless"],
+  "mana": ["mana", "manaless"],
   "class": ["Assassin", "Fighter", "Mage", "Marksman", "Support", "Tank"],
   "range": ["Melee", "Range"],
   "invocation": ["Yes", "No"],

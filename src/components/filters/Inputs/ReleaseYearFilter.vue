@@ -183,31 +183,21 @@ export default {
 <style scoped>
 .range-slider {
   height: 5px;
-  position: relative;
-  background-color: #e1e9f6;
-  border-radius: 2px;
-  top: 50%;
   transform: translateY(50%);
 }
 
 .range-selected {
-  height: 100%;
   position: absolute;
-  border-radius: 5px;
   border: 3px solid #e1e9f6;
-  background-color: #1f2937;
 }
 
 .range-input {
   position: relative;
-  margin-bottom: 0.5rem;
 }
 
 .range-input input {
   position: absolute;
   width: 100%;
-  height: 5px;
-  top: 50%;
   transform: translateY(-50%);
   background: none;
   pointer-events: none;
@@ -224,7 +214,6 @@ input::-webkit-slider-thumb {
   pointer-events: auto;
   -webkit-appearance: none;
   cursor: pointer;
-  margin-bottom: 1px;
 }
 
 input::-moz-range-thumb {
@@ -237,17 +226,5 @@ input::-moz-range-thumb {
   -moz-appearance: none;
   cursor: pointer;
   margin-top: 30%;
-}
-
-.range-price {
-  display: flex;
-  align-items: center;
-}
-
-.range-price input {
-  width: 60px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
 </style>

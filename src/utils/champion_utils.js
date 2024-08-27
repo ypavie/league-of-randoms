@@ -165,7 +165,6 @@ export function getStarterItem(role) {
 
 export function getChampionNamesFromFilters(filters) {
   let championsList = Object.keys(champions)
-
   if (filters !== undefined) {
     if (filters.searchText !== '' && filters.searchText !== undefined) {
       championsList = championsList.filter((key) =>
