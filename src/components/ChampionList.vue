@@ -1,5 +1,5 @@
 <template>
-  <div class="md:w-4/12 bg-white dark:bg-gray-800 overflow-y-auto">
+  <div class="md:w-3/12 bg-white dark:bg-gray-800 overflow-y-auto">
     <div class="champion-list-vue">
       <div class="champion-icons flex flex-wrap justify-center">
         <div v-for="championName in currentChampions" :key="championName" class="champion-icon">

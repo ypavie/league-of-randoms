@@ -60,41 +60,6 @@
         </button>
       </div>
       <div class="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4" v-if="showFilters">
-        <!-- "Malzahar": {
-    "id": "Malzahar",
-    "key": "90",
-    "class": ["Mage", "Assassin"],
-    "spells": ["MalzaharQ", "MalzaharW", "MalzaharE", "MalzaharR"],
-    "region": ["Shurima", "Void"],
-    "gender": "Male",
-    "positions": ["Middle"],
-    "species": ["Human", "Void-Being"],
-    "range": ["Range"],
-    "year": 2010,
-    "mana": "mana",
-    "name": "Malzahar",
-    "tags": ["Mage"],
-    "skinlines": [
-      "Wonders of",
-      "Definitely Not",
-      "Legacy",
-      "Fables",
-      "Hextech",
-      "Arcade: Battle",
-      "Snow Day",
-      "Bees!",
-      "Debonair",
-      "Empyrean",
-      "Worldbreaker"
-    ],
-    "invocation": true,
-    "ultimate": "none",
-    "yasuofriend": false,
-    "dots": true,
-    "stacks": false,
-    "execution": false,
-    "stealth": false
-  }, -->
         <SelectFilter
           label="Region"
           :options="filters.region"
