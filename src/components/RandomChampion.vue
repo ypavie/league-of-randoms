@@ -426,7 +426,8 @@ export default {
       this.$emit('generate')
     },
     updateCurrentChampion(champion) {
-      this.currentChampion = champion
+      this.currentChampion = { ...champion }
+      // this.$set(this, 'currentChampion', champion)
     },
     updateFilter() {
       this.$emit('update-filters')

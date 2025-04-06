@@ -75,6 +75,7 @@ export default {
       this.currentChampion = getChampion(filters, disabledChampions)
       if (this.currentChampion != null) {
         if (this.$refs.randomChampion && this.currentChampion) {
+          console.log('Current champion:', this.currentChampion)
           this.$refs.randomChampion.updateCurrentChampion(this.currentChampion)
           this.$refs.championHistory.addChampion(this.currentChampion)
         }
