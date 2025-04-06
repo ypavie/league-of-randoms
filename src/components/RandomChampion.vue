@@ -23,19 +23,6 @@
 
         <div class="w-full flex flex-col sm:flex-row sm:justify-center sm:items-center sm:space-x-6">
           <div class="flex justify-center items-center flex-wrap gap-4 sm:flex-nowrap">
-            <!-- SUMMONER SPELLS -->
-            <div :class="{ 'disabled-img': !isFilterTypeSelected('summs') }" class="flex space-x-4">
-              <img
-                :src="currentChampion.summoner_spell_1[1]"
-                alt="Summoners spell 1"
-                class="w-16 h-16 item-icon border-2 border-black rounded-lg"
-              />
-              <img
-                :src="currentChampion.summoner_spell_2[1]"
-                alt="Summoners spell 2"
-                class="w-16 h-16 item-icon border-2 border-black rounded-lg"
-              />
-            </div>
 
             <!-- SPELL TO MAX -->
             <div class="relative">
@@ -49,6 +36,20 @@
               >
                 {{ convertSpellToMax(currentChampion.spell_to_max[0]) }}
               </span>
+            </div>
+
+            <!-- SUMMONER SPELLS -->
+            <div :class="{ 'disabled-img': !isFilterTypeSelected('summs') }" class="flex space-x-4">
+              <img
+                :src="currentChampion.summoner_spell_1[1]"
+                alt="Summoners spell 1"
+                class="w-16 h-16 item-icon border-2 border-black rounded-lg"
+              />
+              <img
+                :src="currentChampion.summoner_spell_2[1]"
+                alt="Summoners spell 2"
+                class="w-16 h-16 item-icon border-2 border-black rounded-lg"
+              />
             </div>
 
             <!-- ROLE -->
@@ -394,7 +395,7 @@
     </div>
   </div>
   <!-- FILTERS -->
-  <div class="mt-8">
+  <div>
     <DefaultFilters
       ref="defaultFilters"
       @generate="generate"
@@ -500,13 +501,6 @@ export default {
   position: absolute;
   left: 33px;
   top: 66px;
-  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.4);
-}
-
-.sub-runes-progress {
-  position: absolute;
-  left: 33px;
-  top: 65px;
   box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.4);
 }
 
