@@ -5,8 +5,8 @@
     <div class="flex-wrap">
       <!-- Container for the main row -->
       <div class="flex flex-wrap items-center justify-center space-x-4 mb-4">
-        <!-- CHAMPION ICON -->
-        <div>
+        <!-- CHAMPION ICON & NAME -->
+        <div class="flex w-full sm:w-auto items-center justify-center mb-4 sm:mb-0">
           <div class="text-center">
             <img
               :src="currentChampion.icon"
@@ -14,54 +14,54 @@
               class="w-16 h-16 md:w-24 md:h-24 border-2 border-black rounded-lg"
             />
           </div>
-        </div>
-
-        <!-- CHAMPION NAME -->
-        <div class="text-center">
-          <h2 class="text-2xl font-bold uppercase dark:text-white">
-            {{ currentChampion.name }}
-          </h2>
-        </div>
-
-        <!-- SUMMONER SPELLS -->
-        <div :class="{ 'disabled-img': !isFilterTypeSelected('summs') }" class="flex space-x-4">
-          <div class="text-center">
-            <img
-              :src="currentChampion.summoner_spell_1[1]"
-              alt="Summoners spell 1"
-              class="w-16 h-16 item-icon border-2 border-black rounded-lg"
-            />
-          </div>
-          <div class="text-center">
-            <img
-              :src="currentChampion.summoner_spell_2[1]"
-              alt="Summoners spell 2"
-              class="w-16 h-16 item-icon border-2 border-black rounded-lg"
-            />
+          <div class="text-center ml-4">
+            <h2 class="text-2xl font-bold uppercase dark:text-white">
+              {{ currentChampion.name }}
+            </h2>
           </div>
         </div>
 
-        <!-- SPELL TO MAX -->
-        <div>
-          <div class="text-center relative">
-            <img
-              :src="currentChampion.spell_to_max[1]"
-              alt="Spell to max"
-              class="w-16 h-16 border-2 border-black rounded-lg"
-            />
-            <span
-              class="absolute bottom-0 left-0 bg-gray-800 bg-opacity-50 text-white text-xl font-bold px-1 py-0.5"
-              >{{ convertSpellToMax(currentChampion.spell_to_max[0]) }}</span
-            >
+        <div class="w-full flex flex-col sm:flex-row sm:justify-center sm:items-center sm:space-x-6">
+          <div class="flex justify-center items-center flex-wrap gap-4 sm:flex-nowrap">
+            <!-- SUMMONER SPELLS -->
+            <div :class="{ 'disabled-img': !isFilterTypeSelected('summs') }" class="flex space-x-4">
+              <img
+                :src="currentChampion.summoner_spell_1[1]"
+                alt="Summoners spell 1"
+                class="w-16 h-16 item-icon border-2 border-black rounded-lg"
+              />
+              <img
+                :src="currentChampion.summoner_spell_2[1]"
+                alt="Summoners spell 2"
+                class="w-16 h-16 item-icon border-2 border-black rounded-lg"
+              />
+            </div>
+
+            <!-- SPELL TO MAX -->
+            <div class="relative">
+              <img
+                :src="currentChampion.spell_to_max[1]"
+                alt="Spell to max"
+                class="w-16 h-16 border-2 border-black rounded-lg"
+              />
+              <span
+                class="absolute bottom-0 left-0 bg-gray-800 bg-opacity-50 text-white text-xl font-bold px-1 py-0.5"
+              >
+                {{ convertSpellToMax(currentChampion.spell_to_max[0]) }}
+              </span>
+            </div>
+
+            <!-- ROLE -->
+            <div :class="{ 'disabled-img': !isFilterTypeSelected('roles') }">
+              <img
+                :src="currentChampion.role[1]"
+                alt="Role"
+                class="w-16 h-16 md:w-20 md:h-20"
+              />
+            </div>
           </div>
         </div>
 
-        <!-- ROLE -->
-        <div :class="{ 'disabled-img': !isFilterTypeSelected('roles') }">
-          <div class="text-center">
-            <img :src="currentChampion.role[1]" alt="Role" class="w-16 h-16 md:w-20 md:h-20" />
-          </div>
-        </div>
       </div>
 
       <!-- ITEMS -->
@@ -72,38 +72,38 @@
         <img
           :src="currentChampion.item_1[1]"
           alt="Items 1"
-          class="w-16 h-16 border-2 border-black rounded-lg mr-1"
+          class="w-16 h-16 border-2 border-black rounded-lg mr-1 mb-2 sm:mb-0 sm:mr-2 sm:w-20 sm:h-20 md:w-16 md:h-16"
         />
         <img
           :src="currentChampion.item_2[1]"
           alt="Items 2"
-          class="w-16 h-16 border-2 border-black rounded-lg mr-1"
+          class="w-16 h-16 border-2 border-black rounded-lg mr-1 mb-2 sm:mb-0 sm:mr-2 sm:w-20 sm:h-20 md:w-16 md:h-16"
         />
         <img
           :src="currentChampion.item_3[1]"
           alt="Items 3"
-          class="w-16 h-16 border-2 border-black rounded-lg mr-1"
+          class="w-16 h-16 border-2 border-black rounded-lg mr-1 mb-2 sm:mb-0 sm:mr-2 sm:w-20 sm:h-20 md:w-16 md:h-16"
         />
         <img
           :src="currentChampion.item_4[1]"
           alt="Items 4"
-          class="w-16 h-16 border-2 border-black rounded-lg mr-1"
+          class="w-16 h-16 border-2 border-black rounded-lg mr-1 mb-2 sm:mb-0 sm:mr-2 sm:w-20 sm:h-20 md:w-16 md:h-16"
         />
         <img
           :src="currentChampion.item_5[1]"
           alt="Items 5"
-          class="w-16 h-16 border-2 border-black rounded-lg mr-1"
+          class="w-16 h-16 border-2 border-black rounded-lg mr-1 mb-2 sm:mb-0 sm:mr-2 sm:w-20 sm:h-20 md:w-16 md:h-16"
         />
         <img
           :src="currentChampion.item_6[1]"
           alt="Items 6"
-          class="w-16 h-16 border-2 border-black rounded-lg mr-2"
+          class="w-16 h-16 border-2 border-black rounded-lg mr-2 mb-2 sm:mb-0 sm:mr-2 sm:w-20 sm:h-20 md:w-16 md:h-16"
         />
-        <div class="text-center relative">
+        <div class="text-center relative sm:ml-6 md:ml-0">
           <img
             :src="currentChampion.starter_item[1]"
             alt="Starter item"
-            class="w-16 h-16 border-2 border-black rounded-lg ml-12"
+            class="w-16 h-16 border-2 border-black rounded-lg ml-12 sm:ml-4"
           />
           <span
             class="absolute bottom-0 right-0 bg-gray-800 bg-opacity-50 text-white text-base font-bold px-1 py-0.5"
@@ -111,6 +111,8 @@
           >
         </div>
       </div>
+
+
     </div>
 
     <!-- RUNES -->
@@ -165,7 +167,7 @@
                       <circle
                         cx="25"
                         cy="25"
-                        r="24"
+                        r="23"
                         stroke-width="3"
                         fill="none"
                         :stroke="
@@ -191,7 +193,7 @@
                       <circle
                         cx="25"
                         cy="25"
-                        r="24"
+                        r="23"
                         stroke-width="3"
                         fill="none"
                         :stroke="
@@ -217,7 +219,7 @@
                       <circle
                         cx="25"
                         cy="25"
-                        r="24"
+                        r="23"
                         stroke-width="3"
                         fill="none"
                         :stroke="
@@ -254,7 +256,7 @@
                       <circle
                         cx="25"
                         cy="25"
-                        r="24"
+                        r="23"
                         stroke-width="3"
                         fill="none"
                         :stroke="
@@ -280,7 +282,7 @@
                       <circle
                         cx="25"
                         cy="25"
-                        r="24"
+                        r="23"
                         stroke-width="3"
                         fill="none"
                         :stroke="
@@ -310,7 +312,7 @@
                     <circle
                       cx="25"
                       cy="25"
-                      r="24"
+                      r="23"
                       stroke-width="3"
                       fill="none"
                       stroke="url(#gradient-stats)"
@@ -330,7 +332,7 @@
                     <circle
                       cx="25"
                       cy="25"
-                      r="24"
+                      r="23"
                       stroke-width="3"
                       fill="none"
                       stroke="url(#gradient-stats)"
@@ -350,7 +352,7 @@
                     <circle
                       cx="25"
                       cy="25"
-                      r="24"
+                      r="23"
                       stroke-width="3"
                       fill="none"
                       stroke="url(#gradient-stats)"
@@ -496,8 +498,15 @@ export default {
 
 .runes-progress {
   position: absolute;
-  left: 23px;
-  top: 50px;
+  left: 33px;
+  top: 66px;
+  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+.sub-runes-progress {
+  position: absolute;
+  left: 33px;
+  top: 65px;
   box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.4);
 }
 
@@ -506,24 +515,24 @@ export default {
 }
 
 .runes-secondary {
-  min-width: 50px;
+  min-width: 70px;
   display: flex;
-  margin-top: 50px;
+  margin-top: 70px;
   flex-direction: column;
   position: relative;
 }
 
 .runes-stats {
-  min-width: 50px;
+  min-width: 70px;
   display: flex;
-  margin-top: 50px;
+  margin-top: 70px;
   flex-direction: column;
   position: relative;
 }
 
 .main-keystone {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   margin: 0px auto;
 }
 
@@ -533,14 +542,14 @@ export default {
 
 .rune-icon {
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
 }
 
 .rune-icon-keystone {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 .rune-container {
@@ -548,8 +557,8 @@ export default {
   padding: 0px;
 }
 .runes-container {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   margin: 15px auto 0px;
 }
 
