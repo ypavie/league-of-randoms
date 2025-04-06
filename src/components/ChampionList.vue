@@ -40,7 +40,7 @@ export default {
       this.currentChampions = championList
     },
     getChampionIconUrl(championName) {
-      return `https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/${championName}.png`
+      return `https://ddragon.leagueoflegends.com/cdn/15.7.1/img/champion/${championName}.png`
     },
     getDisabledChampions() {
       return this.disabledChampions

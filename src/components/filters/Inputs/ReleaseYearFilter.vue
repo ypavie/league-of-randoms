@@ -78,9 +78,9 @@ export default {
   data() {
     return {
       minYear: 2009,
-      maxYear: 2024,
+      maxYear: 2025,
       currentMinYear: 2009,
-      currentMaxYear: 2024,
+      currentMaxYear: 2025,
       isSmallScreen: false
     }
   },

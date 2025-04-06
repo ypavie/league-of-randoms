@@ -14,7 +14,9 @@ const easterEggs = {
   aa: ['Varus', 'Kayn'],
   mario: ['Sett'],
   marlito: ['Sett'],
-  rhaast: ['Kayn']
+  rhaast: ['Kayn'],
+  caedrel: ['Malzahar'],
+  cancel: ['Malzahar'],
 }
 
 export function getRandomRunes() {
@@ -147,20 +149,20 @@ export function getSpellToMax(spells) {
   const randomIndex = Math.floor(Math.random() * 3)
   return [
     randomIndex,
-    'https://ddragon.leagueoflegends.com/cdn/14.24.1/img/spell/' + spells[randomIndex] + '.png'
+    'https://ddragon.leagueoflegends.com/cdn/15.7.1/img/spell/' + spells[randomIndex] + '.png'
   ]
 }
 
 export function getItems(role) {
   const build = generateItemBuild('', role) || []
-  const baseUrl = 'https://ddragon.leagueoflegends.com/cdn/14.24.1/img/item/'
+  const baseUrl = 'https://ddragon.leagueoflegends.com/cdn/15.7.1/img/item/'
 
   return build.map((item) => [item?.name || 'defaultItem', `${baseUrl}${item?.id || '0'}.png`])
 }
 
 export function getStarterItem(role) {
   const item = generateStarterItem(role) || 'defaultItem'
-  return [item, `https://ddragon.leagueoflegends.com/cdn/14.24.1/img/item/${item}.png`]
+  return [item, `https://ddragon.leagueoflegends.com/cdn/15.7.1/img/item/${item}.png`]
 }
 
 export function getChampionNamesFromFilters(filters) {
@@ -250,6 +252,7 @@ export function getChampionNamesFromFilters(filters) {
 
 export function getChampion(filters, disabledChampions) {
   let championNames = getChampionNamesFromFilters(filters)
+
   if (championNames.length === 0) {
     return null
   }
@@ -261,10 +264,11 @@ export function getChampion(filters, disabledChampions) {
   let champion = Object.values(champions).find((champ) => champ.id === randomChampion)
 
   champion.runes = getRandomRunes()
+
   champion.role = getRole(filters.lanes)
   champion.starter_item = getStarterItem(champion.role[0])
   champion.spell_to_max = getSpellToMax(champion.spells)
-  champion.icon = `https://ddragon.leagueoflegends.com/cdn/14.24.1/img/champion/${champion.id}.png`
+  champion.icon = `https://ddragon.leagueoflegends.com/cdn/15.7.1/img/champion/${champion.id}.png`
 
   const summoner_spells = getSummonerSpells(champion.role[0])
   champion.summoner_spell_1 = summoner_spells.summoner_spell_1

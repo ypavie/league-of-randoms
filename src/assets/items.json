@@ -39,6 +39,10 @@
     "name": "Boots of Swiftness",
     "unique_passive": ["BOOTS"]
   },
+  "3010": {
+    "name": "Symbiotic Soles",
+    "unique_passive": ["BOOTS"]
+  },
   "3013": {
     "name": "Synchronized Souls",
     "unique_passive": ["BOOTS"]
@@ -288,6 +292,10 @@
   },
   "4005": {
     "name": "Imperial Mandate"
+  },
+  "4010": {
+    "name": "Bloodletter's Curse",
+    "unique_passive": ["MAGIC_PEN"]
   },
   "4401": {
     "name": "Force of Nature"
