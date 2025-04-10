@@ -2059,7 +2059,7 @@
     "id": "LeeSin",
     "key": "64",
     "class": ["Fighter", "Assassin"],
-    "spells": ["BlindMonkQOne", "BlindMonkWOne", "BlindMonkEOne", "BlindMonkRKick"],
+    "spells": ["LeeSinQOne", "LeeSinWOne", "LeeSinEOne", "LeeSinRKick"],
     "gender": "Male",
     "positions": ["Jungle"],
     "species": ["Human", "Spiritualist"],
