@@ -153,8 +153,8 @@ export function getSpellToMax(spells) {
   ]
 }
 
-export function getItems(role) {
-  const build = generateItemBuild('', role) || []
+export function getItems(name, role) {
+  const build = generateItemBuild(name, role) || []
   const baseUrl = 'https://ddragon.leagueoflegends.com/cdn/15.7.1/img/item/'
 
   return build.map((item) => [item?.name || 'defaultItem', `${baseUrl}${item?.id || '0'}.png`])
@@ -274,7 +274,7 @@ export function getChampion(filters, disabledChampions) {
   champion.summoner_spell_1 = summoner_spells.summoner_spell_1
   champion.summoner_spell_2 = summoner_spells.summoner_spell_2
 
-  const items = getItems(champion.role[0])
+  const items = getItems(champion.name, champion.role[0])
   champion.item_1 = items[0]
   champion.item_2 = items[1]
   champion.item_3 = items[2]

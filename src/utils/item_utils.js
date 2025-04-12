@@ -113,7 +113,7 @@ export function generateStarterItem(championRole) {
 export function generateItemBuild(championName, role) {
   let itemsBuild = []
   const buildPathSize = 6
-
+  console.log('Champion name:', championName)
   if (championName !== 'Cassiopeia') {
     itemsBuild.push(getRandomBoot())
   }
