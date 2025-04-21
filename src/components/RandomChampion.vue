@@ -55,7 +55,7 @@
 
             <!-- ROLE -->
             <div :class="{ 'disabled-img': !isFilterTypeSelected('roles') }">
-              <img :src="currentChampion.role[1]" alt="Role" class="w-16 h-16 md:w-20 md:h-20" />
+              <img :src="currentChampion.role[1]" alt="Role" class="w-15 h-15 md:w-19 md:h-19" />
             </div>
           </div>
         </div>
@@ -493,8 +493,8 @@ export default {
 
 .runes-progress {
   position: absolute;
-  left: 33px;
-  top: 66px;
+  left: 28px;
+  top: 60px;
   box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.4);
 }
 
@@ -503,24 +503,24 @@ export default {
 }
 
 .runes-secondary {
-  min-width: 70px;
+  min-width: 60px;
   display: flex;
-  margin-top: 70px;
+  margin-top: 60px;
   flex-direction: column;
   position: relative;
 }
 
 .runes-stats {
-  min-width: 70px;
+  min-width: 60px;
   display: flex;
-  margin-top: 70px;
+  margin-top: 60px;
   flex-direction: column;
   position: relative;
 }
 
 .main-keystone {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   margin: 0px auto;
 }
 
