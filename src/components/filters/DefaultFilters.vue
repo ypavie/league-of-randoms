@@ -60,79 +60,75 @@
         </button>
       </div>
       <div class="pt-4 grid grid-cols-1 md:grid-cols-3 gap-4" v-if="showFilters">
-  <!-- Previous filters (3 per line) -->
-  <SelectFilter
-    label="Region"
-    :options="filters.region"
-    name="region"
-    @update-filter="updateFilterInput"
-  />
-  <SelectFilter
-    label="Species"
-    :options="filters.species"
-    name="species"
-    @update-filter="updateFilterInput"
-  />
-  <SelectFilter
-    label="Skinlines"
-    :options="filters.skinlines"
-    name="skinlines"
-    @update-filter="updateFilterInput"
-  />
-  <SelectFilter
-    label="Class"
-    :options="filters.class"
-    name="class"
-    @update-filter="updateFilterInput"
-  />
+        <!-- Previous filters (3 per line) -->
+        <SelectFilter
+          label="Region"
+          :options="filters.region"
+          name="region"
+          @update-filter="updateFilterInput"
+        />
+        <SelectFilter
+          label="Species"
+          :options="filters.species"
+          name="species"
+          @update-filter="updateFilterInput"
+        />
+        <SelectFilter
+          label="Skinlines"
+          :options="filters.skinlines"
+          name="skinlines"
+          @update-filter="updateFilterInput"
+        />
+        <SelectFilter
+          label="Class"
+          :options="filters.class"
+          name="class"
+          @update-filter="updateFilterInput"
+        />
 
-  <RadioFilter
-    label="Mana"
-    name="mana"
-    :options="[
-      { value: 'mana', label: 'Mana' },
-      { value: 'manaless', label: 'No mana' }
-    ]"
-    @update-filter="updateFilterInput"
-  />
+        <RadioFilter
+          label="Mana"
+          name="mana"
+          :options="[
+            { value: 'mana', label: 'Mana' },
+            { value: 'manaless', label: 'No mana' }
+          ]"
+          @update-filter="updateFilterInput"
+        />
 
-  <RadioFilter
-    label="Range"
-    name="range"
-    :options="[
-      { value: 'melee', label: 'Melee' },
-      { value: 'range', label: 'Range' }
-    ]"
-    @update-filter="updateFilterInput"
-  />
-  <RadioFilter label="Dots" name="dots" @update-filter="updateFilterInput" />
-  <RadioFilter label="Execution" name="execution" @update-filter="updateFilterInput" />
-  <RadioFilter label="Invocation" name="invocation" @update-filter="updateFilterInput" />
-  <RadioFilter label="Stacks" name="stacks" @update-filter="updateFilterInput" />
-  <RadioFilter label="Stealth" name="stealth" @update-filter="updateFilterInput" />
-  <RadioFilter label="Yasuo Friend" name="yasuofriend" @update-filter="updateFilterInput" />
+        <RadioFilter
+          label="Range"
+          name="range"
+          :options="[
+            { value: 'melee', label: 'Melee' },
+            { value: 'range', label: 'Range' }
+          ]"
+          @update-filter="updateFilterInput"
+        />
+        <RadioFilter label="Dots" name="dots" @update-filter="updateFilterInput" />
+        <RadioFilter label="Execution" name="execution" @update-filter="updateFilterInput" />
+        <RadioFilter label="Invocation" name="invocation" @update-filter="updateFilterInput" />
+        <RadioFilter label="Stacks" name="stacks" @update-filter="updateFilterInput" />
+        <RadioFilter label="Stealth" name="stealth" @update-filter="updateFilterInput" />
+        <RadioFilter label="Yasuo Friend" name="yasuofriend" @update-filter="updateFilterInput" />
 
-  <!-- Special case, Ultimate and ReleaseYearFilter as 50/50 -->
-  <div class="md:grid-cols-2 md:col-span-3 grid grid-cols-1 gap-4">
-    <RadioFilter
-      class="md:col-span-1"
-      label="Ultimate"
-      name="ultimate"
-      :options="[
-        { value: 'none', label: 'Classic' },
-        { value: 'semi', label: 'Semi' },
-        { value: 'global', label: 'Global' }
-      ]"
-      @update-filter="updateFilterInput"
-    />
+        <!-- Special case, Ultimate and ReleaseYearFilter as 50/50 -->
+        <div class="md:grid-cols-2 md:col-span-3 grid grid-cols-1 gap-4">
+          <RadioFilter
+            class="md:col-span-1"
+            label="Ultimate"
+            name="ultimate"
+            :options="[
+              { value: 'none', label: 'Classic' },
+              { value: 'semi', label: 'Semi' },
+              { value: 'global', label: 'Global' }
+            ]"
+            @update-filter="updateFilterInput"
+          />
 
-    <ReleaseYearFilter
-      class="md:col-span-1"
-      @update-filter="updateFilterInputReleaseYear"
-    />
-  </div>
-</div>
-
+          <ReleaseYearFilter class="md:col-span-1" @update-filter="updateFilterInputReleaseYear" />
+        </div>
+      </div>
     </div>
   </div>
 </template>

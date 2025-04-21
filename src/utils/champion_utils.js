@@ -16,7 +16,7 @@ const easterEggs = {
   marlito: ['Sett'],
   rhaast: ['Kayn'],
   caedrel: ['Malzahar'],
-  cancel: ['Malzahar'],
+  cancel: ['Malzahar']
 }
 
 export function getRandomRunes() {

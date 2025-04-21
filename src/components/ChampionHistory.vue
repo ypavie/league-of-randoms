@@ -11,7 +11,7 @@ export default {
       if (this.champions.length >= this.MAX_CHAMPIONS) {
         this.champions.shift()
       }
-      this.champions.push({...newChampion})
+      this.champions.push({ ...newChampion })
       this.saveToLocalStorage()
     },
     handleClick(champion) {

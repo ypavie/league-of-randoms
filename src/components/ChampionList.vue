@@ -107,30 +107,28 @@ export default {
       }
     },
     selectItemsInsideRect() {
-  const rect = {
-    x: Math.min(this.selectionStart.x, this.selectionEnd.x),
-    y: Math.min(this.selectionStart.y, this.selectionEnd.y),
-    width: Math.abs(this.selectionStart.x - this.selectionEnd.x),
-    height: Math.abs(this.selectionStart.y - this.selectionEnd.y)
-  }
-  
-  this.currentChampions.forEach((championName) => {
-    const iconElement = this.$el.querySelector(`[data-champion='${championName}'] img`)
-    const iconRect = iconElement.getBoundingClientRect()
-    
-    const isInside = (
-      iconRect.right > rect.x &&
-      iconRect.left < rect.x + rect.width &&
-      iconRect.bottom > rect.y &&
-      iconRect.top < rect.y + rect.height
-    )
-    
-    if (isInside) {
-      this.toggleBan(championName)
-    }
-  })
-}
+      const rect = {
+        x: Math.min(this.selectionStart.x, this.selectionEnd.x),
+        y: Math.min(this.selectionStart.y, this.selectionEnd.y),
+        width: Math.abs(this.selectionStart.x - this.selectionEnd.x),
+        height: Math.abs(this.selectionStart.y - this.selectionEnd.y)
+      }
 
+      this.currentChampions.forEach((championName) => {
+        const iconElement = this.$el.querySelector(`[data-champion='${championName}'] img`)
+        const iconRect = iconElement.getBoundingClientRect()
+
+        const isInside =
+          iconRect.right > rect.x &&
+          iconRect.left < rect.x + rect.width &&
+          iconRect.bottom > rect.y &&
+          iconRect.top < rect.y + rect.height
+
+        if (isInside) {
+          this.toggleBan(championName)
+        }
+      })
+    }
   },
   mounted() {
     // Initialize interact.js for dragging
@@ -174,7 +172,9 @@ export default {
   margin: 0 auto;
   display: block;
   object-fit: cover;
-  transition: transform 0.2s, filter 0.2s;
+  transition:
+    transform 0.2s,
+    filter 0.2s;
 }
 
 .champion-icon img.selected {
@@ -204,6 +204,4 @@ export default {
   background-color: rgba(169, 169, 169, 0.2);
   pointer-events: none;
 }
-
-
 </style>

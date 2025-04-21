@@ -21,9 +21,10 @@
           </div>
         </div>
 
-        <div class="w-full flex flex-col sm:flex-row sm:justify-center sm:items-center sm:space-x-6">
+        <div
+          class="w-full flex flex-col sm:flex-row sm:justify-center sm:items-center sm:space-x-6"
+        >
           <div class="flex justify-center items-center flex-wrap gap-4 sm:flex-nowrap">
-
             <!-- SPELL TO MAX -->
             <div class="relative">
               <img
@@ -54,15 +55,10 @@
 
             <!-- ROLE -->
             <div :class="{ 'disabled-img': !isFilterTypeSelected('roles') }">
-              <img
-                :src="currentChampion.role[1]"
-                alt="Role"
-                class="w-16 h-16 md:w-20 md:h-20"
-              />
+              <img :src="currentChampion.role[1]" alt="Role" class="w-16 h-16 md:w-20 md:h-20" />
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- ITEMS -->
@@ -112,8 +108,6 @@
           >
         </div>
       </div>
-
-
     </div>
 
     <!-- RUNES -->

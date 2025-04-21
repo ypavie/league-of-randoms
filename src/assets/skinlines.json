@@ -977,7 +977,18 @@
     "Yorick",
     "Viego"
   ],
-  "Arcane": ["Caitlyn", "Jayce", "Jinx", "Ekko", "Vi", "Mel", "Viktor", "Singed", "Heimerdinger", "Warwick"],
+  "Arcane": [
+    "Caitlyn",
+    "Jayce",
+    "Jinx",
+    "Ekko",
+    "Vi",
+    "Mel",
+    "Viktor",
+    "Singed",
+    "Heimerdinger",
+    "Warwick"
+  ],
   "Cafe Cuties": [
     "Annie",
     "Vladimir",
