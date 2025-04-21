@@ -1,9 +1,44 @@
+<template>
+  <div class="flex flex-col items-center p-2 md:space-y-2 champion-history" v-if="champions.length">
+    <p class="text-center text-gray-700 dark:text-white font-bold py-2 px-4 rounded">History</p>
+    <div
+      class="box flex flex-row md:flex-col space-x-2 md:space-x-0 md:space-y-2 overflow-x-auto md:overflow-x-visible whitespace-nowrap md:whitespace-normal"
+    >
+      <div
+        v-for="champion in champions.slice().reverse()"
+        :key="champion.id + Math.random()"
+        class="champion-icon flex flex-col items-center space-y-2 md:space-y-0 md:space-x-2 relative"
+      >
+        <img
+          :src="champion.icon"
+          :alt="champion.name"
+          class="w-20 h-20 max-h-[150px] champion-icon"
+          @click="handleClick(champion)"
+        />
+        <img
+          :src="champion.role[1]"
+          :alt="champion.role[0]"
+          class="absolute bottom-0 right-0 bg-gray-800 bg-opacity-50 text-white text-base font-bold px-1 py-0.5"
+          style="width: 35px; height: 32px"
+          @click="handleClick(champion)"
+        />
+      </div>
+    </div>
+    <p
+      class="text-center text-gray-700 dark:text-white font-bold py-2 px-4 rounded underline cursor-pointer"
+      @click="clearChampions"
+    >
+      Clear
+    </p>
+  </div>
+</template>
+
 <script>
 export default {
   data() {
     return {
       champions: [],
-      MAX_CHAMPIONS: 8
+      MAX_CHAMPIONS: 25
     }
   },
   methods: {
@@ -42,41 +77,6 @@ export default {
 }
 </script>
 
-<template>
-  <div class="flex flex-col items-center p-2 md:space-y-2" v-if="champions.length">
-    <p class="text-center text-gray-700 dark:text-white font-bold py-2 px-4 rounded">History</p>
-    <div
-      class="box flex flex-row md:flex-col space-x-2 md:space-x-0 md:space-y-2 overflow-x-auto md:overflow-x-visible whitespace-nowrap md:whitespace-normal"
-    >
-      <div
-        v-for="champion in champions.slice().reverse()"
-        :key="champion.id + Math.random()"
-        class="champion-icon flex flex-col items-center space-y-2 md:space-y-0 md:space-x-2 relative"
-      >
-        <img
-          :src="champion.icon"
-          :alt="champion.name"
-          class="w-20 h-20 max-h-[150px] champion-icon"
-          @click="handleClick(champion)"
-        />
-        <img
-          :src="champion.role[1]"
-          :alt="champion.role[0]"
-          class="absolute bottom-0 right-0 bg-gray-800 bg-opacity-50 text-white text-base font-bold px-1 py-0.5"
-          style="width: 35px; height: 32px"
-          @click="handleClick(champion)"
-        />
-      </div>
-    </div>
-    <p
-      class="text-center text-gray-700 dark:text-white font-bold py-2 px-4 rounded underline cursor-pointer"
-      @click="clearChampions"
-    >
-      Clear
-    </p>
-  </div>
-</template>
-
 <style scoped>
 .box {
   display: flex;
@@ -89,6 +89,11 @@ export default {
 
 .box::-webkit-scrollbar {
   display: none;
+}
+
+.champion-history {
+  height: calc(100vh - 5rem);
+  overflow-y: auto;
 }
 
 .champion-icon {
