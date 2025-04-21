@@ -3747,7 +3747,7 @@
     "id": "Skarner",
     "key": "72",
     "class": ["Fighter", "Tank"],
-    "spells": ["SkarnerVirulentSlash", "SkarnerExoskeleton", "SkarnerFracture", "SkarnerImpale"],
+    "spells": ["SkarnerQ", "SkarnerW", "SkarnerE", "SkarnerR"],
     "region": ["Shurima"],
     "gender": "Male",
     "positions": ["Jungle"],
