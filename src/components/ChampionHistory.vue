@@ -38,7 +38,7 @@ export default {
   data() {
     return {
       champions: [],
-      MAX_CHAMPIONS: 25
+      MAX_CHAMPIONS: 50
     }
   },
   methods: {
