@@ -18,7 +18,11 @@
       </div>
     </div>
     <!-- Selection rectangle (visible only during dragging) -->
-    <div v-if="isSelecting" class="selection-rect" :style="selectionStyle"></div>
+    <div
+      v-if="isSelecting && dragDistanceExceeded"
+      class="selection-rect"
+      :style="selectionStyle"
+    ></div>
   </div>
 </template>
 
@@ -33,6 +37,7 @@ export default {
       currentChampions: Object.keys(champions),
       disabledChampions: [],
       isSelecting: false,
+      dragDistanceExceeded: false,
       selectionStart: { x: 0, y: 0 },
       selectionEnd: { x: 0, y: 0 },
       selectionStyle: {
@@ -81,21 +86,34 @@ export default {
         height: `0px`
       }
       this.clearHoveredIcons()
+      this.dragDistanceExceeded = false
     },
     onMouseMove(event) {
       if (this.isSelecting) {
         this.selectionEnd.x = event.clientX
         this.selectionEnd.y = event.clientY
-        this.updateSelectionRect()
-        this.updateHoveredIcons()
+
+        const dx = Math.abs(this.selectionEnd.x - this.selectionStart.x)
+        const dy = Math.abs(this.selectionEnd.y - this.selectionStart.y)
+        this.dragDistanceExceeded = dx > 5 || dy > 5
+
+        if (this.dragDistanceExceeded) {
+          this.updateSelectionRect()
+          this.updateHoveredIcons()
+        }
       }
     },
     onMouseUp(event) {
-      if (this.isSelecting) {
-        this.isSelecting = false
+      const dx = Math.abs(this.selectionEnd.x - this.selectionStart.x)
+      const dy = Math.abs(this.selectionEnd.y - this.selectionStart.y)
+      const dragThreshold = 50
+
+      if (this.dragDistanceExceeded) {
         this.selectItemsInsideRect()
         this.clearHoveredIcons()
       }
+      this.isSelecting = false
+      this.dragDistanceExceeded = false
     },
     updateSelectionRect() {
       const x = Math.min(this.selectionStart.x, this.selectionEnd.x)
