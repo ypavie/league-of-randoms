@@ -89,16 +89,24 @@ export default {
   margin: 0 auto;
   display: block;
   object-fit: cover;
+  transition: transform 0.2s, filter 0.2s;
 }
 
-.selected {
+.champion-icon img.selected {
   filter: grayscale(100%);
 }
 
 .champion-icon img:hover {
   cursor: pointer;
   transform: scale(1.05);
-  filter: grayscale(100%) brightness(130%);
+}
+
+.champion-icon img.selected:hover {
+  filter: grayscale(100%);
+}
+
+.champion-icon img:not(.selected):hover {
+  filter: grayscale(10%) brightness(130%);
 }
 
 .champion-icon img:active {
