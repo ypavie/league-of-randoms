@@ -1,5 +1,5 @@
 <template>
-  <div class="md:w-3/12 bg-white dark:bg-gray-800 overflow-y-auto">
+  <div class="md:w-4/12 bg-white dark:bg-gray-800">
     <div class="champion-list-vue">
       <div class="champion-icons flex flex-wrap justify-center">
         <div v-for="championName in currentChampions" :key="championName" class="champion-icon">
@@ -70,19 +70,25 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-height: 92vh;
+  height: calc(100vh - 5rem);
   overflow-y: auto;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .champion-icon {
   text-align: center;
   margin: 2px;
+  flex: 0 0 auto;
+  height: 75px;
 }
 
 .champion-icon img {
   width: 75px;
   height: 75px;
   margin: 0 auto;
+  display: block;
+  object-fit: cover;
 }
 
 .selected {
@@ -92,17 +98,11 @@ export default {
 .champion-icon img:hover {
   cursor: pointer;
   transform: scale(1.05);
-}
-
-.champion-icon img:hover:not(.selected) {
-  filter: brightness(130%);
-}
-
-.champion-icon img:hover {
   filter: grayscale(100%) brightness(130%);
 }
 
 .champion-icon img:active {
   transform: scale(0.97);
 }
+
 </style>
