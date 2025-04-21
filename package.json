@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.11.0",
+    "interactjs": "^1.10.27",
     "vue": "^3.4.29"
   },
   "devDependencies": {

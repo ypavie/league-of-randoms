@@ -1,8 +1,13 @@
 <template>
   <div class="md:w-4/12 bg-white dark:bg-gray-800">
     <div class="champion-list-vue">
-      <div class="champion-icons flex flex-wrap justify-center">
-        <div v-for="championName in currentChampions" :key="championName" class="champion-icon">
+      <div class="champion-icons flex flex-wrap justify-center" ref="container">
+        <div
+          v-for="championName in currentChampions"
+          :key="championName"
+          class="champion-icon"
+          :data-champion="championName"
+        >
           <img
             :src="getChampionIconUrl(championName)"
             @click="toggleBan(championName)"
@@ -12,18 +17,30 @@
         </div>
       </div>
     </div>
+    <!-- Selection rectangle (visible only during dragging) -->
+    <div v-if="isSelecting" class="selection-rect" :style="selectionStyle"></div>
   </div>
 </template>
 
 <script>
 import champions from '@/assets/champions.json'
+import interact from 'interactjs'
 
 export default {
   data() {
     return {
       searchTerm: '',
       currentChampions: Object.keys(champions),
-      disabledChampions: []
+      disabledChampions: [],
+      isSelecting: false,
+      selectionStart: { x: 0, y: 0 },
+      selectionEnd: { x: 0, y: 0 },
+      selectionStyle: {
+        left: '0px',
+        top: '0px',
+        width: '0px',
+        height: '0px'
+      }
     }
   },
   methods: {
@@ -51,7 +68,75 @@ export default {
       } else {
         this.disabledChampions = this.currentChampions
       }
+    },
+    onMouseDown(event) {
+      this.isSelecting = true
+      this.selectionStart.x = event.clientX
+      this.selectionStart.y = event.clientY
+      this.selectionEnd = { x: event.clientX, y: event.clientY }
+      this.selectionStyle = {
+        left: `${this.selectionStart.x}px`,
+        top: `${this.selectionStart.y}px`,
+        width: `0px`,
+        height: `0px`
+      }
+    },
+    onMouseMove(event) {
+      if (this.isSelecting) {
+        this.selectionEnd.x = event.clientX
+        this.selectionEnd.y = event.clientY
+        this.updateSelectionRect()
+      }
+    },
+    onMouseUp(event) {
+      if (this.isSelecting) {
+        this.isSelecting = false
+        this.selectItemsInsideRect()
+      }
+    },
+    updateSelectionRect() {
+      const x = Math.min(this.selectionStart.x, this.selectionEnd.x)
+      const y = Math.min(this.selectionStart.y, this.selectionEnd.y)
+      const width = Math.abs(this.selectionStart.x - this.selectionEnd.x)
+      const height = Math.abs(this.selectionStart.y - this.selectionEnd.y)
+      this.selectionStyle = {
+        left: `${x}px`,
+        top: `${y}px`,
+        width: `${width}px`,
+        height: `${height}px`
+      }
+    },
+    selectItemsInsideRect() {
+  const rect = {
+    x: Math.min(this.selectionStart.x, this.selectionEnd.x),
+    y: Math.min(this.selectionStart.y, this.selectionEnd.y),
+    width: Math.abs(this.selectionStart.x - this.selectionEnd.x),
+    height: Math.abs(this.selectionStart.y - this.selectionEnd.y)
+  }
+  
+  this.currentChampions.forEach((championName) => {
+    const iconElement = this.$el.querySelector(`[data-champion='${championName}'] img`)
+    const iconRect = iconElement.getBoundingClientRect()
+    
+    const isInside = (
+      iconRect.right > rect.x &&
+      iconRect.left < rect.x + rect.width &&
+      iconRect.bottom > rect.y &&
+      iconRect.top < rect.y + rect.height
+    )
+    
+    if (isInside) {
+      this.toggleBan(championName)
     }
+  })
+}
+
+  },
+  mounted() {
+    // Initialize interact.js for dragging
+    interact(this.$refs.container).on('down', this.onMouseDown)
+    interact(this.$refs.container).on('move', this.onMouseMove)
+    interact(this.$refs.container).on('up', this.onMouseUp)
   }
 }
 </script>
@@ -112,5 +197,13 @@ export default {
 .champion-icon img:active {
   transform: scale(0.97);
 }
+
+.selection-rect {
+  position: absolute;
+  border: 4px solid #333;
+  background-color: rgba(169, 169, 169, 0.2);
+  pointer-events: none;
+}
+
 
 </style>
