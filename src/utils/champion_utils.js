@@ -11,7 +11,7 @@ import supportIcon from '@/assets/img/Position_Challenger-Support.png'
 
 import { CURRENT_PATCH } from '@/globals'
 
-rawSummonerSpells = {
+let rawSummonerSpells = {
   "flash": "SummonerFlash",
   "teleport": "SummonerTeleport",
   "smite": "SummonerSmite",
