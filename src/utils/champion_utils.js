@@ -1,5 +1,4 @@
 import champions from '@/assets/champions.json'
-import summonerSpells from '@/assets/summonerSpells.json'
 import runes from '@/assets/runes.json'
 
 import { generateItemBuild, generateStarterItem } from '@/utils/item_utils'
@@ -10,13 +9,28 @@ import middleIcon from '@/assets/img/Position_Challenger-Mid.png'
 import bottomIcon from '@/assets/img/Position_Challenger-Bot.png'
 import supportIcon from '@/assets/img/Position_Challenger-Support.png'
 
+import { CURRENT_PATCH } from '@/globals'
+
+rawSummonerSpells = {
+  "flash": "SummonerFlash",
+  "teleport": "SummonerTeleport",
+  "smite": "SummonerSmite",
+  "heal": "SummonerHeal",
+  "ignite": "SummonerDot",
+  "exhaust": "SummonerExhaust",
+  "barrier": "SummonerBarrier",
+  "ghost": "SummonerHaste",
+  "cleanse": "SummonerBoost"
+}
+
 const easterEggs = {
   aa: ['Varus', 'Kayn'],
   mario: ['Sett'],
   marlito: ['Sett'],
   rhaast: ['Kayn'],
   caedrel: ['Malzahar'],
-  cancel: ['Malzahar']
+  cancel: ['Malzahar'],
+  xdd: ['Twitch'],
 }
 
 export function getRandomRunes() {
@@ -91,37 +105,69 @@ export function getRandomRunes() {
   return random_runes
 }
 
+// export function getSummonerSpells(role) {
+//   role = role.toLowerCase()
+//   const summoner_spell_keys = Object.keys(summonerSpells)
+//   let randomIndex1, randomIndex2
+
+//   if (role === 'jungle') {
+//     randomIndex1 = summoner_spell_keys.indexOf('smite')
+//     randomIndex2 = Math.floor(Math.random() * summoner_spell_keys.length)
+//     while (randomIndex2 === randomIndex1) {
+//       randomIndex2 = Math.floor(Math.random() * summoner_spell_keys.length)
+//     }
+//   } else {
+//     randomIndex1 = Math.floor(Math.random() * summoner_spell_keys.length)
+//     while (summoner_spell_keys[randomIndex1] === 'smite') {
+//       randomIndex1 = Math.floor(Math.random() * summoner_spell_keys.length)
+//     }
+//     randomIndex2 = Math.floor(Math.random() * summoner_spell_keys.length)
+//     while (summoner_spell_keys[randomIndex2] === 'smite' || randomIndex2 === randomIndex1) {
+//       randomIndex2 = Math.floor(Math.random() * summoner_spell_keys.length)
+//     }
+//   }
+
+//   const summoner_spell_1 = summonerSpells[summoner_spell_keys[randomIndex1]]
+//   const summoner_spell_2 = summonerSpells[summoner_spell_keys[randomIndex2]]
+
+//   const summoner_spells = {
+//     summoner_spell_1: [summoner_spell_keys[randomIndex1], summoner_spell_1.icon],
+//     summoner_spell_2: [summoner_spell_keys[randomIndex2], summoner_spell_2.icon]
+//   }
+
+//   return summoner_spells
+// }
+
 export function getSummonerSpells(role) {
+  const summonerSpells = Object.fromEntries(
+    Object.entries(rawSummonerSpells).map(([key, name]) => [
+      key,
+      { icon: `https://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/spell/${name}.png` }
+    ])
+  )
+
   role = role.toLowerCase()
-  const summoner_spell_keys = Object.keys(summonerSpells)
+  const keys = Object.keys(summonerSpells)
   let randomIndex1, randomIndex2
 
   if (role === 'jungle') {
-    randomIndex1 = summoner_spell_keys.indexOf('smite')
-    randomIndex2 = Math.floor(Math.random() * summoner_spell_keys.length)
-    while (randomIndex2 === randomIndex1) {
-      randomIndex2 = Math.floor(Math.random() * summoner_spell_keys.length)
-    }
+    randomIndex1 = keys.indexOf('smite')
+    do {
+      randomIndex2 = Math.floor(Math.random() * keys.length)
+    } while (randomIndex2 === randomIndex1)
   } else {
-    randomIndex1 = Math.floor(Math.random() * summoner_spell_keys.length)
-    while (summoner_spell_keys[randomIndex1] === 'smite') {
-      randomIndex1 = Math.floor(Math.random() * summoner_spell_keys.length)
-    }
-    randomIndex2 = Math.floor(Math.random() * summoner_spell_keys.length)
-    while (summoner_spell_keys[randomIndex2] === 'smite' || randomIndex2 === randomIndex1) {
-      randomIndex2 = Math.floor(Math.random() * summoner_spell_keys.length)
-    }
+    do {
+      randomIndex1 = Math.floor(Math.random() * keys.length)
+    } while (keys[randomIndex1] === 'smite')
+    do {
+      randomIndex2 = Math.floor(Math.random() * keys.length)
+    } while (keys[randomIndex2] === 'smite' || randomIndex2 === randomIndex1)
   }
 
-  const summoner_spell_1 = summonerSpells[summoner_spell_keys[randomIndex1]]
-  const summoner_spell_2 = summonerSpells[summoner_spell_keys[randomIndex2]]
-
-  const summoner_spells = {
-    summoner_spell_1: [summoner_spell_keys[randomIndex1], summoner_spell_1.icon],
-    summoner_spell_2: [summoner_spell_keys[randomIndex2], summoner_spell_2.icon]
+  return {
+    summoner_spell_1: [keys[randomIndex1], summonerSpells[keys[randomIndex1]].icon],
+    summoner_spell_2: [keys[randomIndex2], summonerSpells[keys[randomIndex2]].icon]
   }
-
-  return summoner_spells
 }
 
 export function getRole(roles) {
@@ -147,23 +193,24 @@ export function getRole(roles) {
 
 export function getSpellToMax(spells) {
   const randomIndex = Math.floor(Math.random() * 3)
-  return [
+  return  [
     randomIndex,
-    'https://ddragon.leagueoflegends.com/cdn/15.7.1/img/spell/' + spells[randomIndex] + '.png'
+    `https://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/spell/${spells[randomIndex]}.png`
   ]
 }
 
 export function getItems(name, role) {
   const build = generateItemBuild(name, role) || []
-  const baseUrl = 'https://ddragon.leagueoflegends.com/cdn/15.7.1/img/item/'
+  const baseUrl = `https://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/item/`
 
   return build.map((item) => [item?.name || 'defaultItem', `${baseUrl}${item?.id || '0'}.png`])
 }
 
 export function getStarterItem(role) {
   const item = generateStarterItem(role) || 'defaultItem'
-  return [item, `https://ddragon.leagueoflegends.com/cdn/15.7.1/img/item/${item}.png`]
+  return [item, `https://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/item/${item}.png`]
 }
+
 
 export function getChampionNamesFromFilters(filters) {
   let championsList = Object.keys(champions)
@@ -268,7 +315,7 @@ export function getChampion(filters, disabledChampions) {
   champion.role = getRole(filters.lanes)
   champion.starter_item = getStarterItem(champion.role[0])
   champion.spell_to_max = getSpellToMax(champion.spells)
-  champion.icon = `https://ddragon.leagueoflegends.com/cdn/15.7.1/img/champion/${champion.id}.png`
+  champion.icon = `https://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/champion/${champion.id}.png`
 
   const summoner_spells = getSummonerSpells(champion.role[0])
   champion.summoner_spell_1 = summoner_spells.summoner_spell_1

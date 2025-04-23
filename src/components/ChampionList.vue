@@ -29,6 +29,7 @@
 <script>
 import champions from '@/assets/champions.json'
 import interact from 'interactjs'
+import { CURRENT_PATCH } from '@/globals'
 
 export default {
   data() {
@@ -62,7 +63,7 @@ export default {
       this.currentChampions = championList
     },
     getChampionIconUrl(championName) {
-      return `https://ddragon.leagueoflegends.com/cdn/15.7.1/img/champion/${championName}.png`
+      return `https://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/champion/${championName}.png`
     },
     getDisabledChampions() {
       return this.disabledChampions
