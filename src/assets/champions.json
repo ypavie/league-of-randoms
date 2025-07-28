@@ -4862,6 +4862,30 @@
     "execution": false,
     "stealth": false
   },
+  "Yunara": {
+    "id": "Yunara",
+    "key": "804",
+    "class": ["Marksman"],
+    "spells": ["YunaraQ", "YunaraW", "YunaraE", "YunaraR"],
+    "region": ["Ionia"],
+    "gender": "Female",
+    "positions": ["Marksman"],
+    "species": ["Human"],
+    "range": ["range"],
+    "year": 2025,
+    "mana": "mana",
+    "name": "Yunara",
+    "tags": ["Marksman"],
+    "skinlines": [
+    ],
+    "invocation": false,
+    "ultimate": "none",
+    "yasuofriend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
+  },
   "Zac": {
     "id": "Zac",
     "key": "154",
