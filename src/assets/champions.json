@@ -5169,5 +5169,28 @@
     "stacks": false,
     "execution": false,
     "stealth": false
+  },
+  "Zaahen": {
+    "id": "Zaahen",
+    "key": "904",
+    "class": ["Fighter", "Assassin"],
+    "spells": ["ZaahenQ", "ZaahenW", "ZaahenE", "ZaahenR"],
+    "region": ["Shurima"],
+    "gender": "Male",
+    "positions": ["Top"],
+    "species": ["Darkin"],
+    "range": ["melee"],
+    "year": 2025,
+    "mana": "mana",
+    "name": "Zaahen",
+    "tags": ["Fighter", "Assassin"],
+    "skinlines": ["default", "Immortal Journey Zaahen"],
+    "invocation": false,
+    "ultimate": "none",
+    "yasuofriend": false,
+    "dots": false,
+    "stacks": false,
+    "execution": false,
+    "stealth": false
   }
 }
